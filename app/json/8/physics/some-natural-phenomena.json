@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Balloons and Static Electricity",
+    "id": "balloons-static-energy",
+    "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/balloons_en.html"]},
+    "keywords":["",""],
+    "type":"apps",
+    "description": "An electronics kit in your computer! Build circuits with resistors, light bulbs, batteries, and switches. Take measurements with the realistic ammeter and voltmeter. View the circuit as a schematic diagram, or switch to a life-like view.",
+    "manuals": [
+      {"title":"Introduction", "src":{"command": "pdf-reader", "args":["/var/www/manuals/magnets.pdf"]} }
+    ]
+  },
+  {
+    "name": "John Travoltage",
+    "id": "john-travoltage",
+    "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/john-travoltage_en.html"]},
+    "keywords":["",""],
+    "type":"apps",
+    "description": "Make sparks fly with John Travoltage. Explore how charging Johnnie up and moving his hand changes how he gets shocked!",
+    "manuals": [
+    ]
+  }
+]

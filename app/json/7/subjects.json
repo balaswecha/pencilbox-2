@@ -1,0 +1,20 @@
+[
+    {
+        "name":"Science",
+        "id":"science",
+        "color": "#1c75bc",
+        "topics_present" : true
+    },
+    {
+        "name":"Mathematics",
+        "id":"mathematics",
+        "color": "#1c75bc",
+        "topics_present" : true
+    },
+    {
+        "name":"Social",
+        "id":"social",
+        "color": "#1c75bc",
+        "topics_present" : true
+    }
+]

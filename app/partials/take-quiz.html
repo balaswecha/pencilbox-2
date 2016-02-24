@@ -1,0 +1,170 @@
+<div class="mask quiz" id="take-quiz-mask" quiz-panel>
+    <div class="overlay" ng-class="{'score-overlay': showScore}">
+        <div class="container">
+            <div class="overlay-container">
+                <a href="#"
+                   class="close a-container" id="close-overlay" ng-click="closeOverlay($event)">X</a>
+                <!-- put your content here -->
+                <div id="add-new-quiz-content" class="c-q-overlay border-left bor`er-right" ng-hide="showScore">
+                    <header class="q-o-header two-column resize-mobile border-bottom clear">
+                        <div class="a-container header-logo fixed left">
+                            <img src="image/logo.png" alt="logo"/>
+                        </div>
+                        <div class="flexible t-center right">
+                            <div class="wrapper">
+                                <p class="title">Take your Quiz</p>
+                            </div>
+                        </div>
+                    </header>
+                    <section class="q-o-section">
+                        <div class="wrapper">
+                            <div class="question-panel">
+                                <div class="wrapper border-left">
+
+                                    <div class="other-questions border-bottom">
+                                        <ul class="question-number-list t-center">
+                                            <li ng-class="$index == selectedQuestion ? 'question-number highlight border' : 'question-number border'"
+                                                data-answered="{{question.hasAnswered}}" data-type="{{question.type}}"
+                                                ng-repeat="question in quizJson.questions"
+                                                ng-click="selectQuestion($index)">{{$index + 1}}
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="current-question-panel">
+                                        <div class="wrapper">
+                                            <div class="wrapper-inner border">
+                                                <section class="question-section">
+                                                    <div class="question-box border">
+                                                        <div ng-include src="'partials/questions/fill-the-blanks.html'"
+                                                             ng-if="currentQuestionType == 'fill-the-blanks'"></div>
+                                                        <div ng-include src="'partials/questions/multiple-option.html'"
+                                                             ng-if="currentQuestionType == 'multiple-options'"></div>
+                                                        <div ng-include
+                                                             src="'partials/questions/match-the-following.html'"
+                                                             ng-if="currentQuestionType == 'match-the-following'"></div>
+                                                    </div>
+                                                </section>
+                                            </div>
+
+                                            <footer class="question-footer clear">
+                                                <div class="app-button other-apps save-question-button right"
+                                                     ng-click="submitQuiz()">
+                                                    <a href="" class="a-container">
+                                                        <div class="img-container">
+                                                            <img src="image/next.png" alt="Save Question"/>
+                                                        </div>
+                                                        <span>Submit</span>
+                                                    </a>
+                                                </div>
+                                                <div ng-class="selectedQuestion == quizJson.questions.length -1 ? 'app-button disable other-apps save-question-button right' : 'app-button other-apps save-question-button right'"
+                                                     ng-click="navigateQuestion(1)">
+                                                    <a href="" class="a-container">
+                                                        <div class="img-container">
+                                                            <img src="image/next.png" alt="Save Question"/>
+                                                        </div>
+                                                        <span>Next</span>
+                                                    </a>
+                                                </div>
+                                                <div ng-class="selectedQuestion == 0 ? 'app-button other-apps right download-quiz-button disable' : 'app-button other-apps right download-quiz-button'">
+                                                    <a href="" class="a-container" download="quiz.json"
+                                                       ng-click="navigateQuestion(-1)" id="download-json">
+                                                        <div class="img-container">
+                                                            <img src="image/previous.png" alt="Download Quiz"/>
+                                                        </div>
+                                                        <span>Previous</span>
+                                                    </a>
+                                                </div>
+                                            </footer>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div id="score" ng-show="showScore">
+                    <div class="scorecard">
+                        <p>Your score is</p>
+
+                        <p class="marks">
+                            <span>{{marks}}</span>
+                            <span>{{totalMarks}}</span>
+                        </p>
+                    </div>
+                    <div class="navigation">
+                        <div class="question-no" ng-repeat="question in quizJson.questions"
+                             ng-class="{correct: question.correct, incorrect: !question.correct}" scroll-to container="answers" target="answer-no-{{$index + 1}}">
+                            {{$index + 1}}
+                        </div>
+                    </div>
+                    <div class="answers" id="answers">
+
+                        <div class="answered-list" ng-repeat="question in quizJson.questions" id="answer-no-{{$index + 1}}">
+                            <h3 class="question-no" ng-class="{correct: question.correct, incorrect: !question.correct}">
+                                {{$index + 1}}
+                            </h3>
+
+                            <div ng-show="question.type == 'fill-the-blanks'">
+                                <h4>Your Answer:</h4>
+
+                                <p class="student-answer">
+                                    <span ng-repeat="q in question.questionCollection"
+                                          ng-class="{blank: q.type == 'answer'}" ng-trim="false">
+                                        {{q.value || '____'}}
+                                    </span>
+                                </p>
+
+                                <h4>Expected Answer:</h4>
+
+                                <p class="expected-answer">
+                                    <span ng-repeat="q in question.questionCollection"
+                                          ng-class="{blank: q.type == 'answer'}">
+                                        {{q.type === 'answer' ? q.correctAnswer : q.value}}
+                                    </span>
+                                </p>
+                            </div>
+                            <div ng-show="question.type == 'multiple-options'">
+                                <p>{{question.question}}</p>
+                                <h4>Your Answer:</h4>
+
+                                <ul>
+                                    <li ng-repeat="q in filteredAnswers = (question.options | filter:{answer: true})">
+                                        {{q.value}}
+                                    </li>
+                                </ul>
+                                <p ng-hide="filteredAnswers.length">You haven't answered!</p>
+                                
+                                <h4>Expected Answer:</h4>
+
+                                <ul>
+                                    <li ng-repeat="q in question.options | filter:{correctAnswer: true}">
+                                        {{q.value}}
+                                    </li>
+                                </ul>
+                            </div>
+                            <div ng-show="question.type == 'match-the-following'">
+                                <h4>Your Answer:</h4>
+                                <table class="table">
+                                    <tr ng-repeat="q in question.questions">
+                                        <td>{{q.question}}</td>
+                                        <td>{{q.answer}}</td>
+                                    </tr>
+                                </table>
+                                <h4>Expected Answer:</h4>
+                                <table class="table">
+                                    <tr ng-repeat="q in question.questions">
+                                        <td>{{q.question}}</td>
+                                        <td>{{q.correctAnswer}}</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="empty-space"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

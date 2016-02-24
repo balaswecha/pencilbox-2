@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Sound",
+    "id": "sound",
+    "type":"apps",
+    "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/sound_en.jar"]},
+    "subject": "chemistry",
+    "keywords":["",""],
+    "description": "This simulation lets you see sound waves. Adjust the frequency or volume and you can see and hear how the wave changes. Move the listener around and hear what she hears.",
+    "manuals": [
+      {"title":"Sound and Wave Basics", "src":{"command": "pdf-reader", "args":["/var/www/manuals/Sound and Wave Basics.pdf"]} }
+    ]
+  }
+]

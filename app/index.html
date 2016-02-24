@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pencilBoxApp">
+<head>
+    <meta charset="utf-8">
+    <title>BalaSwecha</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/buttons.css"/>
+    <link rel="stylesheet" href="css/table.css"/>
+    <link rel="stylesheet" href="css/landing-page.css"/>
+    <link rel="stylesheet" href="css/subject-page.css"/>
+    <link rel="stylesheet" href="css/chapters-view.css">
+    <link rel="stylesheet" href="css/contents-view.css">
+    <link rel="stylesheet" href="css/overlay.css" type="text/css">
+    <link rel="stylesheet" href="css/quiz-overlay.css" type="text/css">
+    <link rel="stylesheet" href="css/component.css"/>
+    <link rel="stylesheet" href="css/mobile.css"/>
+    <link rel="stylesheet" href="css/other-apps.css">
+    <link rel="stylesheet" href="css/search.css">
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <!--<script	src="bower_components/angular-mocks/angular-mocks.js"></script>-->
+
+    <script src="js/draggable-with-type.js"></script>
+    <!--<script src="js/draggable.js"></script>-->
+    <script src="js/app.js"></script>
+    <script src="js/autofocus.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/quiz-controller.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/file-upload.js"></script>
+    <script src="js/take-quiz-controller.js"></script>
+    <script src="js/overlay.js"></script>
+    <script src="js/custom-alert.js"></script>
+
+    <script>
+       var spawn = require('child_process').spawn;
+        window.CommandApi = {
+            invokeCommand: function (command) {
+                spawn(command.command, command.args);
+            }
+        };
+        function invokeCommand(command) {
+            CommandApi.invokeCommand(command);
+        }
+    </script>
+
+
+</head>
+<body>
+<div ng-view></div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Kalzium",
+    "id": "kalzium",
+    "exec": {"command": "kalzium", "args": []},
+    "subject": "chemistry",
+    "keywords": [
+      "",
+      ""
+    ],
+    "type": "apps"
+  }
+]

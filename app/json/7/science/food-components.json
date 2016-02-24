@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Eating & Exercise",
+    "id": "eating-exercise",
+    "exec": {"command": "java", "args":["-jar","/opt/phet/biology/eating-and-exercise_en.jar"]},
+    "subject": "biology",
+    "keywords":["",""],
+    "type": "apps",
+    "description": "How many calories are in your favorite foods? How much exercise would you have to do to burn off these calories? What is the relationship between calories and weight? Explore these issues by choosing diet and exercise and keeping an eye on your weight.",
+    "manuals": [
+      {"title":"Lesson", "src":{"command": "doc-reader", "args":["/var/www/manuals/eating-and-exercise-simulation-project-lesson.docx"]}},
+      {"title":"Exercises", "src":{"command": "doc-reader", "args":["/var/www/manuals/eating-and-exercise-simulation-project-exercises.docx"]}}
+    ]
+  },
+  {
+    "name": "Nutrition",
+    "id": "food-component",
+    "type": "videos",
+    "keywords": [
+        "",
+        ""
+    ]
+  }
+]

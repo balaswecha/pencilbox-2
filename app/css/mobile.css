@@ -1,0 +1,119 @@
+@media (max-width: 600px) {
+    .main-section {
+        padding-top: 57px;
+    }
+    .m-border-bottom {
+        border-bottom: 1px solid darkgray;
+    }
+    .m-no-left {
+        float: none;
+        width: auto ! important;
+    }
+    .resize-mobile .header-logo {
+        max-width: 120px;
+    }
+    .resize-mobile .other-apps {
+        max-width: 170px;
+        margin: 0px 0px 0px 5px !important;
+    }
+    .resize-mobile .search-box .search-input > div {
+        margin-right: 45px;
+    }
+    .resize-mobile input[type='text'] {
+        font-size: 19px;
+    }
+    .resize-mobile .search-box .search-icon {
+        width: auto;
+        padding: 7px;
+    }
+
+    /* subjects header */
+    .subjects-head .subjects-wrapper {
+        border: none;
+    }
+    .subjects-head ul.subjects li {
+        padding: 0px 8px;
+    }
+    .subjects-head ul.subjects li img {
+        width: 40px;
+        height: 40px;
+    }
+    .subjects-head ul.subjects li .subject-name {
+        font-size: 15px;
+    }
+    .content-list-wrapper > .wrapper ul.content-list .row ul li {
+        margin-right: 0px;
+    }
+
+    /* overlay styles */
+    header.q-o-header.two-column > div:last-child > .wrapper .title {
+        font-size: 15px;
+    }
+    section.q-o-section ul.question-types {
+        height: auto;
+    }
+    header.q-o-header .title input {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 800px) {
+    .content-list-wrapper > .wrapper ul.content-list .row ul li {
+        max-width: 202px;
+        margin: auto !important;
+        margin-top: 20px !important;
+        display: block;
+    }
+    .content-list-wrapper > .wrapper ul.content-list .row.quiz-panel .wrapper .m-no-left, .current-question-panel .other-apps {
+        float: none;
+        width: auto !important;
+        margin: 0px !important;
+    }
+    .content-list-wrapper > .wrapper ul.content-list .row.quiz-panel .wrapper .wrapper {
+        margin: 10px 0px 0px 0px !important;
+    }
+    .content-list-wrapper > .wrapper ul.content-list .row.quiz-panel .button-container .other-apps {
+        max-width: 122px;
+    }
+    .content-list-wrapper > .wrapper ul.content-list .row.quiz-panel .button-container .other-apps:last-child {
+        float: left;
+    }
+    .content-list-wrapper > .wrapper ul.content-list .row.quiz-panel .other-apps {
+        margin-left: 0px !important;
+    }
+    .content-list-wrapper > .wrapper ul.content-list .row.quiz-panel .button-container .other-apps .img-container,
+    .current-question-panel .other-apps .img-container,
+    .content-list-wrapper > .wrapper ul.content-list .row.quiz-panel .button-container .other-apps img {
+        width: 20px;
+    }
+    .content-list-wrapper > .wrapper ul.content-list .row.quiz-panel .button-container .other-apps span,
+    .current-question-panel .other-apps span {
+        font-size: 14px;
+    }
+    /* overlay styles */
+    .question-footer .other-apps, .question-header .other-apps {
+        margin-bottom: 20px !important;
+    }
+    /* match the following */
+    .match-the-following p.title {
+        float: none;
+    }
+    .match-the-following > div > .other-apps {
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+    .app-button.upload-button, .app-button.upload-button form {
+        height: 32px;
+    }
+    .app-button.upload-button, .app-button.upload-button form .button {
+        padding: 0px;
+        top: 7px;
+        left: 5px;
+        line-height: normal;
+        font-size: 14px;
+        text-align: left;
+    }
+    .app-button.upload-button, .app-button.upload-button form .upload-input {
+        max-width: 122px;
+    }
+}

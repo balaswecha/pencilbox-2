@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Geo Gebra",
+    "id": "geo-gebra",
+    "exec": {"command": "geogebra", "args": []},
+    "type":"apps",
+    "subject": "mathematics",
+    "keywords":["",""]
+  },
+  {
+        "name": "Construction",
+        "id": "type-of-triangles",
+        "type": "videos",
+        "keywords": [
+            "",
+            ""
+        ]
+    }
+]

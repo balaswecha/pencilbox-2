@@ -1,0 +1,17 @@
+.button {
+    padding: 1px;
+    line-height: 31px;
+    color: #fff;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    background: none;
+}
+.button > .icon {
+    width: 30px;
+    vertical-align: middle;
+}
+
+.button.close {
+
+}

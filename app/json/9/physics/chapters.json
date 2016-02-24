@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Matter Around Us",
+        "id": "matter-around-us"
+    },
+    {
+        "name": "Motion",
+        "id": "motion"
+    },
+    {
+        "name": "Laws of Motion",
+        "id": "laws-of-motion"
+    },
+    {
+        "name": "Is Matter Pure",
+        "id": "is-matter-pure"
+    },
+    {
+        "name": "Atoms & Molecules",
+        "id": "atoms-and-molecules"
+    },
+    {
+        "name": "What is Inside the Atom",
+        "id": "what-is-inside-the-atom"
+    },
+    {
+        "name": "Gravitation",
+        "id": "gravitation"
+    },
+    {
+        "name": "Floating Bodies",
+        "id": "floating-bodies"
+    },
+    {
+        "name": "Work and Energy",
+        "id": "work-and-energy"
+    },
+    {
+        "name": "Sound",
+        "id": "sound"
+    }
+]

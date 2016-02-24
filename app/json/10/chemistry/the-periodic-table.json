@@ -1,0 +1,46 @@
+[
+    {
+      "name": "Kalzium",
+      "id": "kalzium",
+      "exec": {"command": "kalzium", "args": []},
+      "type":"apps",
+      "subject": "chemistry",
+      "keywords":["",""]
+    },
+    {
+        "name": "Build an Atom",
+        "id": "build-an-atom",
+        "type":"apps",
+        "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/build-an-atom_en.html"]},
+        "subject": "chemistry",
+        "keywords":["",""],
+        "description": "Build an atom out of protons, neutrons, and electrons, and see how the element, charge, and mass change. Then play a game to test your ideas!",
+        "manuals": [
+            {"title":"Activity", "src":{"command": "pdf-reader", "args":["/var/www/manuals/Build An Atom Exercises.pdf"]} }
+        ]
+    },
+    {
+        "name": "Element Builder",
+        "id": "element-builder",
+        "type":"apps",
+        "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/ElementBuilder/index.html"]},
+        "subject": "chemistry",
+        "keywords":["",""],
+        "description": "Build an atom out of protons, neutrons, and electrons, and see how the element, charge, and mass change. Then play a game to test your ideas!",
+        "manuals": [
+            {"title":"Activity", "src":{"command": "pdf-reader", "args":["/var/www/manuals/Build An Atom Exercises.pdf"]} }
+        ]
+    },
+    {
+        "name": "Isotopes & Atomic Mass",
+        "id": "isotopes-and-atomic mass",
+        "type":"apps",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/isotopes-and-atomic-mass_en.jar"]},
+        "subject": "chemistry",
+        "keywords":["",""],
+        "description": "Are all atoms of an element the same? How can you tell one isotope from another? Use the sim to learn about isotopes and how abundance relates to the average atomic mass of an element.",
+        "manuals": [
+            {"title":"Exploring Average Atomic Mass", "src":{"command": "doc-reader", "args":["/var/www/manuals/Exploring Average Atomic Mass.docx"]}}
+        ]
+    }
+]

@@ -1,0 +1,59 @@
+[
+
+    {
+        "name": "Real Numbers",
+        "id": "real-numbers"
+    },
+    {
+        "name": "Sets",
+        "id": "sets"
+    },
+    {
+        "name": "Polynomials",
+        "id": "polynomials"
+    },
+    {
+        "name": "Pair of Linear Equations in two variables",
+        "id": "pair-of-linear-equations-in-two-variables"
+    },
+    {
+        "name": "Quadratic Equations",
+        "id": "quadratic-equations"
+    },
+    {
+        "name": "Progressions",
+        "id": "progressions"
+    },
+    {
+        "name": "Coordinate Geometry",
+        "id": "coordinate-geometry"
+    },
+    {
+        "name": "Similar Triangles",
+        "id": "similar-triangles"
+    },
+    {
+        "name": "Tangents and Secants to a Circle",
+        "id": "tangents-and-secants-to-a-circle"
+    },
+    {
+        "name": "Mensuration",
+        "id": "mensuration"
+    },
+    {
+        "name": "Trigonometry",
+        "id": "trigonometry"
+    },
+    {
+        "name": "Applications of Trigonometry",
+        "id": "applications-of-trigonometry"
+    },
+    {
+        "name": "Probability",
+        "id": "probability"
+    },
+    {
+       "name":"Statistics",
+       "id": "statistics"
+    }
+]

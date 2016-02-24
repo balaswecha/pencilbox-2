@@ -1,0 +1,51 @@
+<div class="match-the-following question-area take-question-area">
+    <div class="list-container">
+        <h2>Match the following</h2>
+
+        <div class="mtf-container clear">
+            <div class="question-block left">
+                <div class="wrapper">
+                    <h4 class="title t-center">Question</h4>
+                    <ul class="list">
+                        <li class="question-row content" ng-repeat="row in currentQuestion.questions">{{row.question}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="answer-block left">
+                <div class="wrapper">
+                    <h4 class="title t-center">Answer</h4>
+                    <ul class="list answer-list">
+                        <li class="question-row content" ng-repeat="row in currentQuestion.questions">
+                            <ul dnd-allowed-types="['answer']" class="drop-list"
+                                dnd-list="currentQuestion.answers[$index]"
+                                dnd-inserted="onInsert($index, item)">
+                                <li dnd-type="'answer'" class="question-row content"
+                                    dnd-draggable="currentQuestion.answers[$index][0]"
+                                    dnd-moved="currentQuestion.questions[$index].answer = ''; currentQuestion.answers[$index].splice(0, 1)"
+                                    dnd-effect-allowed="move">{{currentQuestion.answers[$index][0].answer}}
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="answer-bucket left">
+                <div class="wrapper">
+                    <h4 class="title t-center">Bucket</h4>
+                    <ul dnd-allowed-types="['answer']" class="list" dnd-list="currentQuestion.answerBucket">
+                        <li dnd-type="'answer'" class="question-row content"
+                            ng-repeat="item in currentQuestion.answerBucket" dnd-draggable="item"
+                            dnd-moved="currentQuestion.answerBucket.splice($index, 1); currentQuestion.hasAnswered = true; droppedAnswer()"
+                            dnd-effect-allowed="move">{{item.answer}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

@@ -1,0 +1,13 @@
+[
+  {
+    "name": "States of Matter: Basics",
+    "id": "states-of-matter-basics",
+    "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/states-of-matter-basics_en.jar"]},
+    "keywords":["",""],
+    "type": "apps",
+    "description": "Heat, cool and compress atoms and molecules and watch as they change between solid, liquid and gas phases.",
+    "manuals": [
+      {"title":"Introduction", "src":{"command": "doc-reader", "args":["/var/www/manuals/states-of-matter-basics.pptx"]}}
+    ]
+  }
+]

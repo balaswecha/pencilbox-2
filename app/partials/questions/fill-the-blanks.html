@@ -1,0 +1,12 @@
+<div class="fill-blank question-area take-question-area">
+    <h3>Fill in the blanks</h3>
+    <div class="question-box border">
+
+        <span ng-repeat="question in currentQuestion.questionCollection">
+            <input type="text" name="answer" ng-if="question.type == 'answer'"  ng-change="hasAnswered()" ng-model="question.value" placeholder="enter your answer" class="answer-block"/>
+            <span ng-if="question.type == 'question'">{{question.value}}</span>
+        </span>
+
+        </div>
+    </div>
+</div>

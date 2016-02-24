@@ -1,0 +1,76 @@
+{
+  "questions": [
+    {
+      "type": "fill-the-blanks",
+      "question": "__Nehru__ 's birthday is __Children__ 's day.",
+      "questionCollection": [
+        {
+          "type": "answer",
+          "value": "Nehru"
+        },
+        {
+          "type": "question",
+          "value": "'s"
+        },
+        {
+          "type": "question",
+          "value": "birthday"
+        },
+        {
+          "type": "question",
+          "value": "is"
+        },
+        {
+          "type": "answer",
+          "value": "Children"
+        },
+        {
+          "type": "question",
+          "value": "'s"
+        },
+        {
+          "type": "question",
+          "value": "day."
+        }
+      ],
+      "$$hashKey": "object:14"
+    },
+    {
+      "type": "multiple-options",
+      "question": "What is your name of the country?",
+      "options": [
+        {
+          "value": "India",
+          "answer": true
+        },
+        {
+          "value": "Pakistan",
+          "answer": true
+        },
+        {
+          "value": "America",
+          "answer": false
+        }
+      ],
+      "$$hashKey": "object:22"
+    },
+    {
+      "type": "match-the-following",
+      "questions": [
+        {
+          "question": "Vinoth",
+          "answer": "Kumar"
+        },
+        {
+          "question": "2",
+          "answer": "2"
+        },
+        {
+          "question": "Nikhil",
+          "answer": "Test Match"
+        }
+      ],
+      "$$hashKey": "object:34"
+    }
+  ]
+}

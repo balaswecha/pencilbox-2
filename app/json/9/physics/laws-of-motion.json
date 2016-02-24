@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Ramp: Forces and Motion",
+    "id": "ramp-forces-and-motion",
+    "type":"apps",
+    "exec": {"command": "java", "args":["-jar","/opt/phet/physics/ramp-forces-and-motion_en.jar"]},
+    "subject": "physics",
+    "keywords":["",""],
+    "description": "Explore the forces at work when pulling against a cart,and pushing a refrigerator, crate, or person. Create an applied force and see how it makes objects move. Change friction and see how it affects the motion of objects.",
+    "manuals": [
+      {"title":"Work Energy on Ramp", "src":{"command": "doc-reader", "args":["/var/www/manuals/work-energy-on-ramp.docx"]}}
+    ]
+  },
+  {
+    "name": "Gravity Force Lab",
+    "id": "gravity-force-lab",
+    "type":"apps",
+    "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/gravity-force-lab_en.html"]},
+    "subject": "physics",
+    "keywords":["",""],
+    "description": "Visualize the gravitational force that two objects exert on each other. Adjust properties of the objects to see how changing the properties affects the gravitational attraction.",
+    "manuals": [
+      {"title":"Exploring Gravity", "src":{"command": "pdf-reader", "args":["/var/www/manuals/Exploring_Gravity.pdf"]} }
+    ]
+  },
+  {
+    "name": "Collision Lab",
+    "id": "collision-lab",
+    "type":"apps",
+    "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/phet-collision-lab/collision-lab_en.html"]},
+    "subject": "physics",
+    "keywords":["",""],
+    "description": "Use an air hockey table to investigate simple collisions in 1D and more complex collisions in 2D. Experiment with the number of discs, masses, and initial conditions. Vary the elasticity and see how the total momentum and kinetic energy changes during collisions.",
+    "manuals": [
+      {"title":"Collision Lab", "src":{"command": "pdf-reader", "args":["/var/www/manuals/Collision Lab.pdf"]} }
+    ]
+  }
+]

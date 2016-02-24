@@ -1,0 +1,92 @@
+/* header styles */
+.subject-page .main-header {
+    padding: 9px;
+}
+.subject-page .header-logo {
+    max-width: 160px;
+    margin-right: 10px;
+}
+header.main-header .other-apps {
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+/* header ends */
+
+/* Search bar styles */
+.subject-page .search-bar {
+    padding: 20px 10px;
+}
+.subject-page .search-bar .search-box {
+    margin: auto;
+}
+/* ends here */
+
+/* subjects header styles */
+header.subject-header .selected-grade .wrapper {
+    padding: 5px;
+}
+header.subject-header .grade-text {
+    max-width: 330px;
+    margin: 10px auto;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+/* ended */
+
+/* subject styles */
+.subject-section ul {
+    padding: 10px;
+}
+.subject-section ul.subjects li[data-subject='physics'] {
+    background: #6F6F6F;
+}
+.subject-section ul.subjects li[data-subject='mathematics'] {
+    background: #6F6F6F;
+}
+.subject-section ul.subjects li[data-subject='biology'] {
+    background: #6F6F6F;
+}
+.subject-section ul.subjects li[data-subject='social'] {
+    background: #6F6F6F;
+}
+.subject-section ul.subjects li[data-subject='chemistry'] {
+    background: #6F6F6F;
+}
+.subject-section ul.subjects li[data-subject='english'] {
+    background: #6F6F6F;
+}
+.subject-section ul.subjects li[data-subject='science'] {
+    background: #6F6F6F;
+}
+.subject-section ul.subjects li {
+    display: inline-block;
+    vertical-align: top;
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+    margin: 10px;
+    background: #3498db;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #222;
+}
+.subject-section ul.subjects li .img-container {
+    margin: auto;
+    width: 140px;
+    height: 140px;
+}
+.subject-section ul.subjects li a {
+    display: block;
+    color: rgb(0, 0, 0);
+}
+.subject-section ul.subjects li img {
+    max-height: 100%;
+}
+.subject-section ul.subjects li .subject-name {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    margin-top: 12px;
+}
+
+/* ends here */

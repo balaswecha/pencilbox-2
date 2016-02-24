@@ -1,0 +1,78 @@
+<div class="other-apps-view view">
+    <div class="header-content">
+        <a href="#/grades">
+            <img class="main-logo" src="images/logo.png" alt="logo">
+        </a>
+        <div class="app-button other-apps other-apps-bg right">
+            <a href="/All" class="a-container">
+                <div class="img-container">
+                    <img src="image/otherapps.png" alt="other apps icon"/>
+                </div>
+                <span>All Apps</span>
+            </a>
+        </div>
+        <div class="search-container">
+            <search></search>
+        </div>
+    </div>
+    <div class="other-apps-content">
+        <div class="other-app-container">
+            <div class="other-app-container-header">
+                <img src="images/app.png" class="app-icon"/>
+                <span class="container-name">Applications </span>
+            </div>
+            <div class="apps-list">
+                <div class="app-details" ng-click="selectApp(app)"
+                     ng-repeat="app in apps | filter:{name:keyword, type:'apps'}">
+                    <a>
+                        <img src="images/{{app.id}}.png"/>
+
+                        <div class="app-name">
+                            {{app.name}}
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal app-modal" ng-show="!!selectedApp" ng-click="deselectApp()">
+        <div class="modal-body" ng-click="handleModalContentClick($event)">
+            <header class="modal-header">
+                <h3 class="modal-title">{{selectedApp.name}}</h3>
+                <button class="modal-close" ng-click="deselectApp()">×</button>
+            </header>
+            <main class="modal-content app-modal">
+                <button class="launcher" ng-click="invokeCommand(selectedApp.exec)">
+                    <img src="images/{{selectedApp.id}}.png" alt="app-icon"
+                         class="subject-img">
+                    <span>Launch App</span>
+                </button>
+                <div class="description">
+                    <p>
+                        {{selectedApp.description || "Click the button to launch the application."}}
+                    </p>
+                    <div class="materials">
+                        <div class="audio" ng-show="!!selectedApp.audio">
+                            <h3>Instructions</h3>
+                            <p>
+                                <button class="audio-button" ng-click="isPlaying = !isPlaying">
+                                    <img src="/image/audio-pause.svg" ng-show="isPlaying"/>
+                                    <img src="/image/audio-play.svg" ng-show="!isPlaying"/>
+                                </button>
+                                <audio src="{{selectedApp.audio}}" id="player"></audio>
+                            </p>
+                        </div>
+                        <div class="manuals" ng-show="!!(selectedApp.manuals && selectedApp.manuals.length)">
+                            <h3>Manuals</h3>
+                            <ul class="manual-list">
+                                <li ng-repeat="manual in selectedApp.manuals">
+                                    <a href="#" ng-click="invokeCommand(manual.src)">{{manual.title}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>

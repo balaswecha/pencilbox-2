@@ -1,0 +1,43 @@
+<div class="match-the-following question-area">
+    <div class="clear">
+        <p class="title left">Click the button to create a row</p>
+
+        <div class="app-button other-apps left add-new-row" ng-click="addRow()">
+            <a href="" class="a-container">
+                <div class="img-container">
+                    <img src="image/row.png" alt="Download Quiz"/>
+                </div>
+                <span>Add a row</span>
+            </a>
+        </div>
+    </div>
+    <div class="list-container">
+        <ul class="match-list border">
+            <li class="clear border-bottom title-row t-center">
+                <div class="match-question item left"><span class="border-right">Questions</span></div>
+                <div class="match-answer item left"><span>Answer</span></div>
+            </li>
+
+            <li class="clear border-bottom" ng-repeat="row in currentQuestion.questions">
+                <div class="match-question item left">
+                    <div class="border-right">
+                        <div ng-class="!row.question.trim() ? 'input-container error border' : 'input-container border-transparent'">
+                            <input type="text" maxlength="100" ng-model="row.question"
+                                   ng-change="validateInput(row.question, 100)" placeholder="Enter your question"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="match-answer item left">
+                    <div class="left flexible">
+                        <div ng-class="!row.answer.trim() ? 'input-container error border wrapper' : 'input-container border-transparent wrapper'">
+                            <input type="text" maxlength="100" ng-model="row.answer"
+                                   ng-change="validateInput(row.answer, 100)" placeholder="Enter your answer"/>
+                        </div>
+                    </div>
+                    <div ng-class="currentQuestion.questions.length < 3 ? 'right fixed invisible' : 'right fixed'"><span
+                            class="delete theme-orange-bg link" ng-click="deleteRow($index)">Delete</span></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+/* button styles */
+.app-button {
+    width: 100%;
+    max-width: 190px;
+    box-shadow: 2px 2px 2px #585858;
+    background: #2a88d4;
+    border-radius: 3px;
+}
+
+.app-button {
+    width: 100%;
+    max-width: 165px;
+    box-shadow: 2px 2px 2px #585858;
+    background: #2a88d4;
+    border-radius: 3px;
+}
+
+.question-button {
+    width: 100%;
+    max-width: 190px;
+    box-shadow: 2px 2px 2px #585858;
+    background: #2a88d4;
+    border-radius: 3px;
+}
+
+.app-button > a, .question-button > a, .quiz-button > a {
+    padding: 5px;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+}
+.app-button > a > *, .other-apps > a > * {
+    display: inline-block;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.app-button > a .img-container, .other-apps > a .img-container {
+    width: 24px;
+}
+.app-button:active {
+    box-shadow: none;
+    padding-top: 2px;
+}
+/* ended */

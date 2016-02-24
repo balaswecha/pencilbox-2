@@ -1,0 +1,43 @@
+[
+
+    {
+        "name": "Nutrition",
+        "id": "nutrition"
+    },
+    {
+        "name": "Respiration",
+        "id": "respiration"
+    },
+    {
+        "name": "Transportation",
+        "id": "transportation"
+    },
+    {
+        "name": "Excretion",
+        "id": "excretion"
+    },
+    {
+        "name": "Coordination",
+        "id": "coordination"
+    },
+    {
+        "name": "Reproduction",
+        "id": "reproduction"
+    },
+    {
+        "name": "Coordination in life processes",
+        "id": "coordination-in-life-processes"
+    },
+    {
+        "name": "Heredity",
+        "id": "heredity"
+    },
+    {
+        "name": "Our environment",
+        "id": "our-environment"
+    },
+    {
+        "name": "Natural resources",
+        "id": "natural-resources"
+    }
+]

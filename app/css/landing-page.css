@@ -1,0 +1,41 @@
+.landing-page {
+    padding: 10px;
+}
+
+/* main page */
+.logo {
+    max-width: 300px;
+}
+.main-logo {
+    display: block;
+    margin: 20px auto;
+}
+/* ends here */
+.search {
+    margin: 20px auto;
+}
+/* grades list */
+.grades-container {
+    max-width: 1024px;
+    margin: 20px auto;
+}
+
+
+.grades-container ul li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 180px;
+    height: 180px;
+    color: rgb(255, 255, 255);
+    font-size: 101px;
+    line-height: 180px;
+    margin: 10px;
+    box-shadow: 1px 1px 5px #222;
+    background-color: #6F6F6F;
+    border-radius: 5px;
+}
+
+.grades-container ul li a {
+    color: rgb(255, 255, 255);
+    display: block;
+}

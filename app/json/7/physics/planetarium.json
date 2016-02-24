@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Stellarium",
+        "id": "stellarium",
+        "exec": {"command": "stellarium", "args": []},
+        "audio": "/audio/stellarium.wav",
+        "keywords":["",""]
+    },
+    {
+        "name": "Celestia",
+        "id": "celestia",
+        "exec": {"command": "celestia", "args": []},
+        "keywords":["",""]
+    },
+    {
+        "name": "My Solar System",
+        "id": "my-solar-system",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/physics/my-solar-system_en.jar"]},
+        "keywords":["",""]
+    }
+]

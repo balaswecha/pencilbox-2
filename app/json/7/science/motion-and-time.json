@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Forces and Motion",
+    "id": "forces-and-motion",
+    "type":"apps",
+    "exec": {"command": "java", "args":["-jar","/opt/phet/physics/forces-and-motion_en.jar"]},
+    "subject": "physics",
+    "keywords":["",""],
+    "description": "Explore the forces at work when you try to push a filing cabinet. Create an applied force and see the resulting friction force and total force acting on the cabinet. Charts show the forces, position, velocity, and acceleration vs. time. View a Free Body Diagram of all the forces (including gravitational and normal forces).",
+    "manuals": [
+      {"title":"Questions", "src":{"command": "doc-reader", "args":["/var/www/manuals/Forces and Motion.docx"]}}
+    ]
+  },
+  {
+    "name": "Time",
+    "id": "understanding-time",
+    "type": "videos",
+    "keywords": [
+        "",
+        ""
+    ]
+  }
+]

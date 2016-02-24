@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Natural Selection",
+    "id": "natural-selection",
+    "type":"apps",
+    "exec": {"command": "java", "args":["-jar","/opt/phet/biology/natural-selection_en.jar"]},
+    "subject": "biology",
+    "keywords":["",""],
+    "description": "Explore natural selection by controlling the environment and causing mutations in bunnies.",
+    "manuals": [
+      {"title":"Activity", "src":{"command": "doc-reader", "args":["/var/www/manuals/Activity Natural Selection.docx"]}}
+    ]
+  },
+  {
+    "name": "Ecosystem and Biodiversity",
+    "id": "ecosystem-services-and-biodiversity",
+    "type": "videos",
+    "keywords": [
+        "",
+        ""
+    ]
+  }
+]

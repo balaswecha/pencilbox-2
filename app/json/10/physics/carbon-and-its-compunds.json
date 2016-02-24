@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Radioactive Dating Game",
+    "id": "radio-active-dating-game",
+    "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/radioactive-dating-game_en.jar"]},
+    "subject": "chemistry",
+    "keywords": [
+      "",
+      ""
+    ],
+    "type": "apps"
+  }
+]

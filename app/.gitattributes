@@ -1,0 +1,4 @@
+audio/celestia.wav filter=lfs diff=lfs merge=lfs -text
+audio/kgeography.wav filter=lfs diff=lfs merge=lfs -text
+audio/open-teacher.wav filter=lfs diff=lfs merge=lfs -text
+audio/stellarium.wav filter=lfs diff=lfs merge=lfs -text

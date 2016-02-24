@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Sound",
+    "id": "sound",
+    "type":"apps",
+    "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/sound_en.jar"]},
+    "subject": "chemistry",
+    "keywords":["",""],
+    "description": "This simulation lets you see sound waves. Adjust the frequency or volume and you can see and hear how the wave changes. Move the listener around and hear what she hears.",
+    "manuals": [
+      {"title":"Sound and Wave Basics", "src":{"command": "pdf-reader", "args":["/var/www/manuals/Sound and Wave Basics.pdf"]} }
+    ]
+  },
+  {
+    "name": "Wave on a String",
+    "id": "wave-on-a-string",
+    "type":"apps",
+    "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/wave-on-a-string_en.html"]},
+    "subject": "chemistry",
+    "keywords":["",""],
+    "description": "Explore the wonderful world of waves! Even observe a string vibrate in slow motion. Wiggle the end of the string and make waves, or adjust the frequency and amplitude of an oscillator.",
+    "manuals": [
+      {"title":"Activity", "src":{"command": "doc-reader", "args":["/var/www/manuals/student directions for waves on a string.doc"]}}
+    ]
+  }
+]

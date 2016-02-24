@@ -1,0 +1,63 @@
+.other-apps-view .header-content {
+    background-color: #f1f2f2;
+    height:110px;
+    width:100%;
+    border-bottom:1px solid #000;
+}
+.other-apps-view .header-content .main-logo {
+    width: 250px;
+    float: left;
+}
+
+.other-apps-view .search-container {
+    overflow: hidden;
+}
+.header-content > .other-apps {
+    margin-top: 30px;
+}
+.other-app-container {
+    width:70%;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.other-app-container .other-app-container-header {
+    height: 75px;
+    border-bottom: 1px solid;
+    background-color: #f1f2f2;
+}
+.other-app-container-header img {
+    width: 56px;
+    vertical-align: middle;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+.other-app-container-header .container-name {
+    font-size: 20px;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+.app-details {
+    display: inline-block;
+    margin :2px 30px;
+    padding-top: 20px;
+}
+.app-details a {
+    text-decoration: none;
+}
+.app-details img {
+    background-color: #939598;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: 120px 120px;
+    background-position: center;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}

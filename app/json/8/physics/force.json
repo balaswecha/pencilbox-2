@@ -1,0 +1,26 @@
+[
+  {
+    "name": "The Moving Man",
+    "id": "moving-man",
+    "type":"apps",
+    "exec": {"command": "java", "args":["-jar","/opt/phet/physics/moving-man_en.jar"]},
+    "subject": "physics",
+    "keywords":["",""],
+    "description": "Learn about position, velocity, and acceleration graphs. Move the little man back and forth with the mouse and plot his motion. Set the position, velocity, or acceleration and let the simulation move the man for you.",
+    "manuals": [
+      {"title":"The Moving Man : Velocity", "src":{"command": "doc-reader", "args":["/var/www/manuals/technology lesson.doc"]}}
+    ]
+  },
+  {
+    "name": "Magnets and Electromagnets",
+    "id": "magnets-and-electromagnets",
+    "type":"apps",
+    "exec": {"command": "java", "args":["-jar","/opt/phet/physics/magnets-and-electromagnets_en.jar"]},
+    "subject": "physics",
+    "keywords":["",""],
+    "description": "Explore the interactions between a compass and bar magnet. Discover how you can use a battery and wire to make a magnet! Can you make it a stronger magnet? Can you make the magnetic field reverse?",
+    "manuals": [
+      {"title":"Investigating Mangetic Field", "src":{"command": "doc-reader", "args":["/var/www/manuals/INVESTIGATING MAGNETIC FIELD.doc"]}}
+    ]
+  }
+]

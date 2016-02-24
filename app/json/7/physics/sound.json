@@ -1,0 +1,8 @@
+[
+    {
+        "name": "Sound",
+        "id": "sound",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/sound_en.jar"]},
+        "keywords":["",""] 
+    }
+]

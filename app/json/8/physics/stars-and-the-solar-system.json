@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Stellarium",
+    "id": "stellarium",
+    "type":"apps",
+    "exec": {"command": "stellarium", "args": []},
+    "subject": "physics",
+    "audio": "/audio/stellarium.wav",
+    "keywords":["",""]
+  },
+  {
+    "name": "Celestia",
+    "id": "celestia",
+    "type":"apps",
+    "exec": {"command": "celestia", "args": []},
+    "subject": "physics",
+    "audio": "/audio/celestia.wav",
+    "keywords":["",""]
+  }
+]

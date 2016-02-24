@@ -1,0 +1,114 @@
+/* header styles */
+.chapter-page .main-header {
+    padding: 9px;
+}
+.chapter-page .header-logo {
+    max-width: 160px;
+    margin-right: 10px;
+}
+
+/* header ends */
+
+/* Search bar styles */
+.chapter-page .search-bar {
+    padding: 10px;
+}
+.chapter-page .search-bar .search-box {
+    margin: auto;
+}
+/* ends here */
+
+/* subjects header styles */
+.chapter-page header.subject-header .selected-grade,
+section.chapter-section .chapter-list-wrapper {
+    width: 249px;
+    min-height: 100px;
+    position: relative;
+    z-index: 1;
+}
+.chapter-page header.subject-header .subjects-head,
+section.chapter-section .content-list-wrapper {
+    width: 100%;
+    margin-left: -250px;
+}
+.chapter-page header.subject-header .subjects-head > div:first-child,
+section.chapter-section .content-list-wrapper > div:first-child {
+    margin-left: 250px;
+}
+.chapter-page header.subject-header .selected-grade .wrapper {
+    padding: 5px;
+}
+.chapter-page header.subject-header .grade-text {
+    width: 50px;
+    margin: 5px auto;
+    font-size: 40px;
+    line-height: 40px;
+    padding: 10px;
+}
+
+/* subject styles */
+.subjects-head ul {
+    padding: 12px;
+}
+.subjects-head ul.subjects li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0px 15px;
+}
+.subjects-head ul.subjects li a {
+    padding: 6px 0px 0px 0px;
+    /*background: #3498db;*/
+    color: #6d6e71;
+}
+.subjects-head ul.subjects li img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    background: #939598;
+}
+.subjects-head ul.subjects li.selected img {
+    background: #ff9735;
+}
+.subjects-head ul.subjects li.selected .subject-name {
+    color: #ff9735;
+}
+/* ends here */
+section.chapter-section {
+    border-top: none;
+}
+section.chapter-section ul.chapter-list li {
+    border-bottom: 1px solid darkgray;
+}
+section.chapter-section ul.chapter-list li a {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+section.chapter-section ul.chapter-list li a > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+section.chapter-section ul.chapter-list li .img-container {
+    width: 49px;
+    margin-right: 10px;
+}
+section.chapter-section ul.chapter-list li .chapter-name {
+    max-width: 164px;
+}
+
+/* hide the contents view here */
+.chapter-page ul.content-list .row {
+    visibility: hidden;
+}
+.chapter-page .navigation-chapter .pointerText{
+    font-family:sans-serif;
+    font-size:24px;
+    font-weight:bold;
+}
+.chapter-page .navigation-chapter .pointer1{
+    margin-top: -77px;
+    margin-left:40px;
+    width:150px;
+}
+.chapter-page .navigation-chapter{
+    margin-top: 200px;
+}

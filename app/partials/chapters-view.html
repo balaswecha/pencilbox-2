@@ -1,0 +1,178 @@
+<div class="chapter-page">
+    <header class="main-header resize-mobile clear">
+        <a href="#/grades"><img src="image/logo.png" alt="logo" class="header-logo left"/></a>
+        <div class="app-button other-apps other-apps-bg right">
+            <a href="/All" class="a-container">
+                <div class="img-container">
+                    <img src="image/otherapps.png" alt="other apps icon"/>
+                </div>
+                <span>All Apps</span>
+            </a>
+        </div>
+    </header>
+    <section class="main-section">
+
+        <search></search>
+
+        <div class="subject-container">
+            <header class="subject-header border clear">
+                <div class="selected-grade left m-no-left m-border-bottom">
+                    <div class="wrapper">
+                        <div class="grade-box t-center">
+                            <div class="grade-title">Grade</div>
+                            <a href="#/grades" class="grade-text theme-orange-bg border a-container">{{current_grade}}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="subjects-head flexible left  m-no-left">
+                    <div class="subjects-wrapper border-left">
+                        <ul class="subjects t-center">
+                            <li ng-repeat="subject in subjects" ng-class="isCurrentSubject(subject.id) ? 'selected t-center' : 't-center'">
+                                <a href="#/grades/{{current_grade}}/subject/{{subject.id}}/" class="a-container">
+                                    <div class="img-container circle">
+                                        <img src="images/subjects/{{subject.id}}.png" alt="{{subject.id}}" class="subject-img circle theme-orange-bg-hover"/>
+                                    </div>
+                                    <div class="subject-name">{{subject.name}}</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <section class="chapter-section border clear" chapter-section>
+                <div class="chapter-list-wrapper left border-right">
+                    <div class="wrapper">
+                        <ul class="chapter-list t-left">
+
+                            <li ng-repeat="chapter in chapters" ng-class="isCurrentChapter(chapter.id) ? 'selected theme-orange-bg t-left theme-orange-bg-hover' : 't-left theme-orange-bg-hover'">
+                                <a href="#/grades/{{current_grade}}/subject/{{current_subject}}/{{chapter.id}}/" class="a-container">
+                                    <div class="img-container circle">
+                                        <img src='images/topics/grey/g-{{chapter.id}}.png' alt="{{chapter.id}}" class="chapter-img"/>
+                                    </div>
+                                    <div class="chapter-name">{{chapter.name}}</div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-list-wrapper left m-no-left">
+                    <div class="wrapper">
+                      <div class="navigation-chapter">
+                        <img class ="pointer1" src="images/arrow.png" alt="pointer">
+                        <span class="pointerText">Select a chapter</span>
+                      </div>
+                        <ul class="content-list">
+
+
+                            <li class="row app-panel">
+                                <div class="row-header border">Applications</div>
+                                <ul class="content-items border t-center">
+
+                                    <li ng-if="isApplication(content.type)" ng-repeat="content in contents" class="item border">
+                                        <a href="{content.exec}" class="a-container wrapper">
+                                            <div class="img-container">
+                                                <img src="images/subjects/{{content.subject}}.png" alt="biology" class="subject-img">
+                                            </div>
+                                            <p class="subject-name t-center border-top">{{content.name}}</p>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="row video-panel">
+                                <div class="row-header border">Videos</div>
+                                <ul class="content-items border t-center">
+
+                                    <li ng-if="isVideo(content.type)" ng-repeat="content in contents" class="item border">
+                                        <a href="{content.exec}" class="a-container wrapper">
+                                            <div class="img-container">
+                                                <img src="images/subjects/{{content.subject}}.png" alt="biology" class="subject-img">
+                                            </div>
+                                            <p class="subject-name t-center border-top">{{content.name}}</p>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="row quiz-panel">
+                                <div class="row-header border">Quiz</div>
+                                <ul class="content-items border t-center">
+
+                                    <li ng-if="isQuiz(content.type)" ng-repeat="content in contents" class="item border">
+                                        <a href="{content.exec}" class="a-container wrapper">
+                                            <div class="img-container">
+                                                <img src="images/subjects/{{content.subject}}.png" alt="biology" class="subject-img">
+                                            </div>
+                                            <p class="subject-name t-center border-top">{{content.name}}</p>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+</div>
+
+<!--<div class="chapters-view view">-->
+  <!--<div class="header-content">-->
+    <!--<div class="header-content">-->
+          <!--<a id="link" href="#/search" class="otherApps">-->
+            <!--<img class="otherAppImage" src="images/otherapps.png" alt="otherApps"/>-->
+            <!--<span class="otherAppText">Other apps</span>-->
+          <!--</a>-->
+          <!--<div class="search">-->
+              <!--<input type="text" ng-model="keyword" onkeypress="detectEnterKey(event)" placeholder="Search app with subject, topic" />-->
+              <!--<a href="#/search/{{keyword}}"><button id="search-icon"></button></a>-->
+          <!--</div>-->
+            <!--<a href="#/grades">-->
+                <!--<img class="main-logo" src="images/logo.png" alt="logo">-->
+            <!--</a>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--<div class="subject-header">-->
+      <!--<div class="gradeBlock">-->
+      <!--<span class="gradeText">Grade</span>-->
+      <!--<img class="gradeBlockImage" src="images/grades/{{current_grade}}.png">-->
+    <!--</div>-->
+      <!--<div class = "subjects-main">-->
+      <!--<div ng-repeat="subject in subjects" class="header-icon">-->
+        <!--<a ng-if="isNotCurrentSubject(subject.id)" class="icon"-->
+           <!--style="background-image: url('images/subjects/{{subject.id}}.png')"-->
+           <!--href="#/grades/{{current_grade}}/subject/{{subject.id}}/"></a>-->
+        <!--<a ng-if="isCurrentSubject(subject.id)" class="icon"-->
+        <!--style="background-image: url('images/subjects/{{subject.id}}.png'); background-color:#f7941e;"-->
+        <!--href="#/grades/{{current_grade}}/subject/{{subject.id}}/"></a>-->
+        <!--<a ng-if="isNotCurrentSubject(subject.id)" class="icon-text"-->
+           <!--href="#/subjects/{{subject.id}}">{{subject.name}}</a>-->
+        <!--<a ng-if="isCurrentSubject(subject.id)" class="icon-text" style="color:#f7941e;"-->
+           <!--href="#/subjects/{{subject.id}}">{{subject.name}}</a>-->
+      <!--</div>-->
+    <!--</div>-->
+
+  <!--</div>-->
+    <!--<div class="clearfix"></div>-->
+    <!--<div class="main-content">-->
+        <!--<div class="chapters-container">-->
+            <!--<div class="clearfix"></div>-->
+            <!--<div id ="side-menu">-->
+              <!--<span class="listText">List of chapters</span>-->
+              <!--<div ng-repeat="chapter in chapters" class="chapters-block">-->
+                <!--<a style="background-image: url('images/topics/grey/g-{{chapter.id}}.png')"-->
+                <!--href="#/grades/{{current_grade}}/subject/{{current_subject}}/{{chapter.id}}/" class="img-class"></a>-->
+                <!--<div class="chapters-block-text">-->
+                  <!--<a href="#/grades/{{current_grade}}/subject/{{current_subject}}/{{chapter.id}}/" class="text-class">-->
+                    <!--{{chapter.name}}</a>-->
+                <!--</div>-->
+                <!--<hr class="lines">-->
+              <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<img class ="pointer1" src="images/arrow.png" alt="pointer">-->
+        <!--<span class="pointerText">Select a chapter to get content</span>-->
+                    <!--</div>-->
+            <!--</div>-->

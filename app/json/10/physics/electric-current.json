@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Color Vision",
+    "id": "color-vision",
+    "exec": {"command": "java", "args":["-jar","/opt/phet/physics/color-vision_en.jar"]},
+    "keywords":["",""],
+    "type": "apps",
+    "description": "Make a whole rainbow by mixing red, green, and blue light. Change the wavelength of a monochromatic beam or filter white light. View the light as a solid beam, or see the individual photons.",
+    "manuals": [
+      {"title":"Questions", "src":{"command": "doc-reader", "args":["/var/www/manuals/seeing-colors-activity.docx"]}}
+    ]
+  },
+  {
+    "name": "Electric Field Hockey",
+    "id": "electric-field-hockey",
+    "type":"apps",
+    "exec": {"command": "java", "args":["-jar","/opt/phet/physics/electric-hockey_en.jar"]},
+    "keywords":["",""],
+    "description": "Play hockey with electric charges. Place charges on the ice, then hit start to try to get the puck in the goal. View the electric field. Trace the puck's motion. Make the game harder by placing walls in front of the goal. This is a clone of the popular simulation of the same name marketed by Physics Academic Software and written by Prof. Ruth Chabay of the Dept of Physics at North Carolina State University.",
+    "manuals": [
+      {"title":"Introduction", "src":{"command": "doc-reader", "args":["/var/www/manuals/electric-field-hockey-lesson-plan.doc"]}}
+    ]
+  },
+  {
+    "name": "Electric Field of Dreams",
+    "id": "electric-field-of- dreams",
+    "type":"apps",
+    "exec": {"command": "java", "args":["-jar","/opt/phet/physics/efield_en.jar"]},
+    "keywords":["",""],
+    "description": "Play ball! Add charges to the Field of Dreams and see how they react to the electric field. Turn on a background electric field and adjust the direction and magnitude. (Kevin Costner not included).",
+    "manuals": [
+      {"title":"Assignments", "src":{"command": "doc-reader", "args":["/var/www/manuals/field-of-dreams-tasks.doc"]}}
+    ]
+  },
+  {
+    "name": "Charges and Fields",
+    "id": "charges-and-fields",
+    "type":"apps",
+    "exec": {"command": "java", "args":["-jar","/opt/phet/physics/charges-and-fields_en.jar"]},
+    "keywords":["",""],
+    "description": "Move point charges around on the playing field and then view the electric field, voltages, equipotential lines, and more. It's colorful, it's dynamic, it's free.",
+    "manuals": [
+      {"title":"Introduction", "src":{"command": "doc-reader", "args":["/var/www/manuals/electric-field-lab.doc"]}}
+    ]
+  },
+  {
+    "name": "Ohm's Law",
+    "id": "ohms-law",
+    "type":"apps",
+    "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/ohms-law_en.html"]},
+    "keywords":["",""],
+    "description": "See how the equation form of Ohm's law relates to a simple circuit. Adjust the voltage and resistance, and see the current change according to Ohm's law.",
+    "manuals": [
+      {"title":"Introduction", "src":{"command": "pdf-reader", "args":["/var/www/manuals/ohms-law.pdf"]} }
+    ]
+  },
+  {
+    "name": "Resistance in a Wire",
+    "id": "resistance-in-wire",
+    "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/resistance-in-a-wire_en.html"]},
+    "keywords":["",""],
+    "type": "apps",
+    "description": "Learn about the physics of resistance in a wire. Change its resistivity, length, and area to see how they affect the wire's resistance.",
+    "manuals": [
+      {"title":"Questions", "src":{"command": "doc-reader", "args":["/var/www/manuals/ResistanceWireAP_Student.docx"]}}
+    ]
+  },
+  {
+    "name": "Circuit Construction Kit (DC Only)",
+    "id": "circuit-construction- kit",
+    "exec": {"command": "java", "args":["-jar","\/opt\/phet\/physics\/circuit-construction-kit-dc_en.jar"]},
+    "type": "apps",
+    "keywords": [
+      "",
+      ""
+    ],
+    "description": "An electronics kit in your computer! Build circuits with resistors, light bulbs, batteries, and switches. Take measurements with the realistic ammeter and voltmeter. View the circuit as a schematic diagram, or switch to a life-like view.",
+    "manuals": [
+      {"title":"Introduction", "src":{"command": "pdf-reader", "args":["/var/www/manuals/circuit-directions.pdf"]} },
+      {"title":"Series and Parallel", "src":{"command": "doc-reader", "args":["/var/www/manuals/circuit-series-parallel.doc"]}}
+    ]
+  }
+]

@@ -1,0 +1,200 @@
+/* hide the contents view here */
+.content-page ul.content-list .row {
+    visibility: visible;
+}
+/* ends here */
+.content-list-wrapper > .wrapper {
+    padding: 20px;
+}
+.content-list-wrapper > .wrapper ul.content-list .row {
+    margin-bottom: 20px;
+}
+.content-list-wrapper > .wrapper ul.content-list .row .row-header {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-bottom: none;
+}
+
+.content-list-wrapper > .wrapper ul.content-list .row.quiz-panel .row-header .header-title {
+    width: 90px;
+}
+.content-list-wrapper > .wrapper ul.content-list .row.quiz-panel .wrapper > div.button-container {
+    width: 100%;
+    margin-left: -90px;
+}
+.content-list-wrapper > .wrapper ul.content-list .row.quiz-panel .wrapper > div.button-container .wrapper {
+    margin-left: 90px;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+.content-list-wrapper > .wrapper ul.content-list .row .other-apps a {
+    padding: 5px;
+}
+.content-list-wrapper > .wrapper ul.content-list .row.only-title .row-header .other-apps a {
+    padding: 0px;
+    cursor: default;
+}
+
+.content-list-wrapper > .wrapper ul.content-list .row.quiz-panel .row-header .other-apps {
+    margin-left: 10px;
+    max-width: 160px;
+}
+
+.content-list-wrapper > .wrapper ul.content-list .row ul {
+    padding: 0px 20px 20px 20px;
+    min-height: 269px;
+}
+.content-list-wrapper > .wrapper ul.content-list .row ul li {
+    margin-right: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.content-list-wrapper > .wrapper ul.content-list .row ul li:last-child {
+    margin-right: 0px;
+}
+.content-list-wrapper > .wrapper ul.content-list .row ul li a {
+    color: rgb(255, 255, 255)
+}
+.content-list-wrapper > .wrapper ul.content-list .row ul li .img-container {
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+}
+.content-list-wrapper > .wrapper ul.content-list .row ul li img {
+    width: inherit;
+    height: inherit;
+    border-radius: 5px;
+}
+.content-list-wrapper > .wrapper ul.content-list .row ul li .subject-name {
+    margin: 0px;
+    max-width: 202px;
+    max-height: 26px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.upload-container {
+    position: relative;
+    overflow: hidden;
+    height: 34px;
+}
+.upload-container > .upload-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0;
+}
+.upload-container > .upload-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    margin: 0;
+}
+
+.item {
+    position: relative;
+}
+.item > .delete-quiz {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.3em;
+    border: 0;
+    color: red;
+    background-color: #fff;
+    cursor: pointer;
+}
+.item > .delete-quiz:hover {
+    font-size: 1.4em;
+}
+
+.item > a > .download-quiz {
+    background-color: #2A88D4;
+    cursor: pointer;
+    box-shadow: none;
+    border-radius: 2px;
+    border: none;
+    color:white;
+    box-shadow: 1px 1px 1px #585858;
+}
+
+.item > a > .download-quiz:active {
+    box-shadow: none;
+    background-color: #2A88D4;
+}
+
+.app-modal {
+    padding: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.app-modal > .launcher {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    flex: 0 0 250px;
+}
+
+.app-modal > .launcher:hover {
+    background-color: #ccc;
+}
+
+.app-modal > .launcher > img {
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.app-modal > .launcher > span {
+    font-size: 1.2em;
+}
+
+.app-modal .description {
+    padding: 10px;
+}
+
+.app-modal .description p {
+    margin-top: 0;
+}
+
+.app-modal .manual-list li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.materials {
+    display: flex;
+    justify-content: space-between;
+}
+
+.materials .audio, .materials .manuals {
+    width: 50%;
+}
+
+.materials .audio .audio-button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.materials .audio .audio-button:hover {
+    background-color: #ccc;
+}

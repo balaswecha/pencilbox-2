@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Bending Light",
+    "id": "bending-light",
+    "exec": {"command": "java", "args":["-jar","/opt/phet/physics/bending-light_en.jar"]},
+    "keywords":["",""],
+    "type": "apps",
+    "description": "Explore bending of light between two media with different indices of refraction. See how changing from air to water to glass changes the bending angle. Play with prisms of different shapes and make rainbows.",
+    "manuals": [
+      {"title":"Reflection of Light", "src":{"command": "pdf-reader", "args":["/var/www/manuals/refraction-of-light.pdf"]} }
+    ]
+  },
+  {
+    "name": "Law of Reflection",
+    "id": "reflection-and-mirrors",
+    "type": "videos",
+    "keywords": [
+        "",
+        ""
+    ]
+   }
+
+]

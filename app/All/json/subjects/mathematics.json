@@ -1,0 +1,104 @@
+[
+    {
+        "name": "Geo Gebra",
+        "id": "geo-gebra",
+        "exec": {"command": "geogebra", "args": []},
+        "keywords":["",""]
+    },
+    {
+        "name": "Tux Math",
+        "id": "tux-math",
+        "exec": {"command": "tuxmath", "args": []},
+        "keywords":["",""]
+    },
+    {
+        "name": "KBruch",
+        "id": "KBruch",
+        "exec": {"command": "kbruch", "args": []},
+        "keywords":["",""]
+    },
+    {
+        "name": "Area Builder",
+        "id": "area-builder",
+        "exec": {"command": "firefox", "args":["--new-window","/opt/phet/maths/area-builder_en.html"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Arithmetic",
+        "id": "arithmetic",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/maths/arithmetic_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Build a Fraction",
+        "id": "build-a-fraction",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/maths/build-a-fraction_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Calculus Grapher",
+        "id": "calculus-grapher",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/maths/calculus-grapher_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Curve Fitting",
+        "id": "curve-fitting",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/maths/curve-fitting_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Equation Grapher",
+        "id": "equation-grapher",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/maths/equation-grapher_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Estimation",
+        "id": "estimation",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/maths/estimation_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Fractions Intro",
+        "id": "fractions-intro",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/maths/fractions-intro_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Fraction Matcher",
+        "id": "fraction-matcher",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/maths/fraction-matcher_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Fourier: Making Waves",
+        "id": "fourier",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/maths/fourier_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Graphing Lines",
+        "id": "graphing-lines",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/maths/graphing-lines_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Least-Squares Regression",
+        "id": "least-squares-regression",
+        "exec": {"command": "firefox", "args":["--new-window","/opt/phet/maths/least-squares-regression_en.html"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Plinko Probability",
+        "id": "plinko",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/maths/plinko-probability_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Vector Addition",
+        "id": "vector-addition",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/maths/vector-addition_en.jar"]},
+        "keywords":["",""]
+    }
+]

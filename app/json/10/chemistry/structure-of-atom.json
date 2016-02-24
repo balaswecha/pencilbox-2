@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Models of the Hydrogen Atom",
+    "id": "models-of-hydrogen-atom",
+    "type":"apps",
+    "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/hydrogen-atom_en.jar"]},
+    "subject": "chemistry",
+    "keywords":["",""],
+    "description": "How did scientists figure out the structure of atoms without looking at them? Try out different models by shooting light at the atom. Check how the prediction of the model matches the experimental results.",
+    "manuals": [
+      {"title":"Activity", "src":{"command": "doc-reader", "args":["/var/www/manuals/Models of the Hydrogen Atom Handout.doc"]}}
+    ]
+  }
+]

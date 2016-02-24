@@ -1,0 +1,154 @@
+html, body {
+    font-family: "Open Sans", "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", "微软雅黑", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6em;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+}
+
+textarea, input[type='text'], input[type='password'] {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: none;
+    display: block;
+    padding: 0px;
+    font-size: 24px;
+}
+.disable {
+    opacity: 0.5;
+    cursor: default;
+}
+a {
+    text-decoration: none;
+}
+a.a-container {
+    display: block;
+}
+img {
+    vertical-align: top;
+    width: 100%;
+}
+ul, li {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.bold-text {
+    font-weight: bold;
+}
+.link {
+    cursor: pointer;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.t-center {
+    text-align: center;
+}
+.t-left {
+    text-align: left;
+}
+
+.clear:after {
+    content: " ";
+    display: block;
+    clear: both;
+    float: none;
+}
+.border, .round-border {
+    border: 1px solid darkgray;
+}
+.border-transparent {
+    border: 1px solid transparent;
+}
+.border.error {
+    border: 1px solid red !important;
+}
+.border-left {
+    border-left: 1px solid darkgray;
+}
+/*.border-top {*/
+/*border-top: 1px solid darkgray;*/
+/*}*/
+.border-right {
+    border-right: 1px solid darkgray;
+}
+.border-bottom {
+    border-bottom: 1px solid darkgray;
+}
+.round-border {
+    border-radius: 3px;
+}
+
+.input-container {
+    padding: 11px;
+}
+
+.theme-gray {
+    background-color: #E1E1E1;
+}
+.app-theme-header {
+    background: #f1f2f2;
+    color: #000000 !important;
+}
+.app-theme-highlight {
+    background: #FF9735 !important;
+    color: rgb(255, 255, 255) !important;
+}
+.dark-text {
+    color: #000000 !important;
+}
+.light-text {
+    color: rgb(255, 255, 255) !important;
+}
+.theme-orange-bg, .theme-orange-bg a, .theme-orange-bg-hover:hover, .subject-list > li:hover, .highlight {
+    background-color: #FF9735 !important;
+    color: rgb(255, 255, 255) !important;
+}
+.other-apps-bg {
+    background: #3498db;
+}
+
+.circle {
+    border-radius: 500px;
+}
+
+.invisible {
+    display: none !important;
+}
+
+/* two colum style */
+.two-column > div.fixed {
+    width: 250px;
+    position: relative;
+    z-index: 1;
+}
+.two-column > div.flexible {
+    width: 100%;
+    margin-left: -250px;
+}
+.two-column > div.flexible > .wrapper {
+    margin-left: 250px;
+}
+
+.main-header {
+    background: #f1f2f2;
+    box-shadow: 1px 1px 2px darkgray;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+}
+.main-section {
+    padding-top: 68px;
+}

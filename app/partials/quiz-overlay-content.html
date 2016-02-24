@@ -1,0 +1,124 @@
+<div class="mask quiz" id="create-quiz-mask" quiz-panel>
+    <div class="overlay">
+        <div class="container">
+            <div class="overlay-container">
+                <!-- put your content here -->
+                <div id="add-new-quiz-content" class="c-q-overlay border-left border-right">
+                    <header class="q-o-header border-bottom">
+                        <p><img class="logo" src="image/logo.png" alt="logo"/></p>
+
+                        <p class="title"><input type="text" ng-required="true" ng-model="quizJson.name" placeholder="Name of Quiz"/></p>
+
+                        <p><a href="#/grades/{{current_grade}}/subject/{{current_subject}}/{{current_chapter}}/"
+                              class="button close" id="close-overlay" ng-click="closeQuiz($event)">×</a></p>
+                    </header>
+                    <section class="q-o-section">
+                        <div class="wrapper two-column clear">
+                            <div class="question-type-panel fixed left m-no-left">
+                                <ul class="question-types border-right">
+                                    <li class="question-type border-bottom" ng-class="{highlight: (currentQuestion.type === questionType.type)}"
+                                        ng-repeat="questionType in questionTypes"
+                                        ng-click="setQuestionType(questionType.type)">
+                                        <div class="img-container">
+                                            <img src="image/{{questionType.type}}.png" alt="{questionType.image}"/>
+                                        </div>
+                                        <div class="question-name">{{questionType.name}}</div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="question-panel flexible left m-no-left">
+                                <div class="wrapper">
+
+                                    <div class="other-questions border-bottom">
+                                        <ul class="question-number-list  color-set t-center">
+                                            <li ng-class="$index == currentQuestionIndex ? 'question-number highlight border' : 'question-number border'"
+                                                data-type="{{question.type}}" ng-repeat="question in quizJson.questions"
+                                                ng-click="selectQuestion($index)">{{$index + 1}}
+                                            </li>
+                                        </ul>
+                                        <div class="navigation-arrow">
+                                                <img class ="pointer1" src="images/arrow.png" alt="pointer">
+                                                <span class="pointerText">Select a question type</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="current-question-panel">
+                                        <div class="wrapper">
+                                            <div class="wrapper-inner border">
+                                                <header class="question-header clear">
+                                                    <div class="marks left">
+                                                        <label>Assign Marks:</label>
+                                                        <input type="number" ng-model="currentQuestion.marks" min="1" max="10" onkeydown="return false"/>
+                                                    </div>
+                                                    <div class="navigation right clear" ng-if="quizJson.questions.length > 1">
+                                                        <img src="image/previous.png" alt="prev" class="left circle" ng-click="previousQuestion()"/>
+                                                        <img src="image/next.png" alt="prev" class="right circle" ng-click="nextQuestion()"/>
+                                                    </div>
+
+                                                </header>
+
+                                                <section class="question-section">
+                                                    <div class="question-box border">
+                                                        <div ng-include
+                                                             src="'partials/question-templates/fill-the-blanks.html'"
+                                                             ng-if="currentQuestion.type == 'fill-the-blanks'"></div>
+                                                        <div ng-include
+                                                             src="'partials/question-templates/multiple-option.html'"
+                                                             ng-if="currentQuestion.type == 'multiple-options'"></div>
+                                                        <div ng-include
+                                                             src="'partials/question-templates/match-the-following.html'"
+                                                             ng-if="currentQuestion.type == 'match-the-following'"></div>
+                                                    </div>
+                                                </section>
+                                                <div class="question-footer clear">
+                                                    <div class="question-button other-apps save-question-button right" ng-click="addQuestion()">
+                                                        <a href="" class="a-container">
+                                                            <div class="img-container">
+                                                                <img src="image/addoption.png" alt="Add Question"/>
+                                                            </div>
+                                                            <span>Add Question</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="question-button other-apps right" ng-if="quizJson.questions.length > 1">
+                                                        <a href="" class="a-container" ng-click="deleteQuestion()" ng-disabled="!canDeleteQuestion()">
+                                                            <div class="img-container">
+                                                                <img src="image/delete.png" alt="Delete Question"/>
+                                                            </div>
+                                                            <span>Delete Question</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <footer class="question-footer clear">
+                                                <div class="app-button other-apps right">
+                                                    <a href="#/grades/{{current_grade}}/subject/{{current_subject}}/{{current_chapter}}/" class="a-container" ng-click="closeQuiz($event)">
+                                                        <div class="img-container">
+                                                            <img src="image/delete.png" alt="Cancel"/>
+                                                        </div>
+                                                        <span>Cancel Quiz </span>
+                                                    </a>
+                                                </div>
+                                                <div class="app-button other-apps right download-quiz-button">
+                                                    <a href="" class="a-container" ng-click="verifySaveQuiz()">
+                                                        <div class="img-container">
+                                                            <img src="image/savequestion.png" alt="Save Quiz"/>
+                                                        </div>
+                                                        <span>Save Quiz</span>
+                                                    </a>
+                                                </div>
+
+                                            </footer>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

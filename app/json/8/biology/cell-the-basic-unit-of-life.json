@@ -1,0 +1,21 @@
+[
+	{
+    "name": "Cell Structure",
+    "id": "cell-structure",
+    "type": "apps",
+        "exec": {"command": "chromium-browser --new-window http:localhost/phetsims/cell-structure/cell-structure_en.html", "args": []},
+    "keywords": [
+        "",
+        ""
+    ]
+	},
+	{
+    "name": "The Cell",
+    "id": "cell-basic-unit-of-life",
+    "type": "videos",
+    "keywords": [
+        "",
+        ""
+    ]
+    }
+]

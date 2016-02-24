@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Salts & Solubility",
+    "id": "salts-solubility",
+    "type":"apps",
+    "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/soluble-salts_en.jar"]},
+    "subject": "chemistry",
+    "keywords":["",""],
+    "description": "Add different salts to water, then watch them dissolve and achieve a dynamic equilibrium with solid precipitate. Compare the number of ions in solution for highly soluble NaCl to other slightly soluble salts. Relate the charges on ions to the number of ions in the formula of a salt. Calculate Ksp values.",
+    "manuals": [
+      {"title":"Salts and Solubility Activities", "src":{"command": "pdf-reader", "args":["/var/www/manuals/Salts and Solubility.pdf"]}}
+    ]
+  },
+  {
+    "name": "Concentration",
+    "id": "concentration",
+    "type":"apps",
+    "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/concentration_en.html"]},
+    "subject": "chemistry",
+    "keywords":["",""],
+    "description": "Watch your solution change color as you mix chemicals with water. Then check molarity with the concentration meter. What are all the ways you can change the concentration of your solution? Switch solutes to compare different chemicals and find out how concentrated you can go before you hit saturation!",
+    "manuals": [
+      {"title":"Saturated solutions", "src":{"command": "pdf-reader", "args":["/var/www/manuals/Saturated solutions-Lecture Demo Guide.pdf"]} }
+    ]
+  }
+]

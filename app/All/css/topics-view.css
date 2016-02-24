@@ -1,0 +1,44 @@
+.topics-view .header-content {
+    background-color: #f1f2f2;
+    border-bottom: 1px solid;
+}
+
+.topics-view .header-content .search {
+    display: inline-block;
+    padding: 20px;
+    float: right;
+}
+
+.topics-view .header-content .search input {
+    display: inline-block;
+    float: left;
+    border-radius: 10px 0px 0px 10px;
+    font-family: sans-serif;
+    border: 1px solid #656467;
+    padding-left: 10px;
+}
+
+.topics-view .header-content .search button {
+    display: inline-block;
+    float: left;
+    background-image: url("../images/search.png");
+    border:none;
+    background-position: -5px -1px;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -10px;
+}
+
+.topics-view .main-content {
+    width: 100%;
+}
+
+.topics-view .main-content .subjects-container {
+    display: inline-block;
+    float: left;
+}
+
+.topics-view .main-content .blocks {
+    border-radius: 15px;
+    border: 1px solid #000000;
+    padding: 0px;
+}

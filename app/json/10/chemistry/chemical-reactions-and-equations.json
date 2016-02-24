@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Kalzium",
+    "id": "kalzium",
+    "exec": {"command": "kalzium", "args": []},
+    "type":"apps",
+    "subject": "chemistry",
+    "keywords":["",""]
+  },
+  {
+    "name": "Balancing Chemical Equations",
+    "id": "balancing-chemical-equations",
+    "type":"apps",
+    "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/balancing-chemical-equations_en.html"]},
+    "subject": "chemistry",
+    "keywords":["",""],
+    "description": "How do you know if a chemical equation is balanced? What can you change to balance an equation? Play a game to test your ideas!",
+    "manuals": [
+      {"title":"Activity", "src":{"command": "doc-reader", "args":["/var/www/manuals/BalancingChemicalEquations_Student.docx"]}}
+    ]
+  },
+  {
+    "name": "Reactions & Rates",
+    "id": "reactions-and-rates",
+    "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/reactions-and-rates_en.jar"]},
+    "keywords":["",""],
+    "type": "apps",
+    "description": "Explore what makes a reaction happen by colliding atoms and molecules. Design experiments with different reactions, concentrations, and temperatures. When are reactions reversible? What affects the rate of a reaction?",
+    "manuals": [
+      {"title":"Collision Theory", "src":{"command": "pdf-reader", "args":["/var/www/manuals/collision-theory.pdf"]} }
+    ]
+  }
+]

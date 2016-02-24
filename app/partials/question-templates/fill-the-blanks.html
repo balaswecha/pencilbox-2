@@ -1,0 +1,17 @@
+<div class="fill-blank question-area">
+    <div class="app-button other-apps left" style="margin-right: 10px;">
+        <a href="" class="a-container" ng-click="addBlank(selectedQuestion)">
+            <div class="img-container">
+                <img src="image/blank.png" alt="Add Blank"/>
+            </div>
+            <span>Add Blank</span>
+        </a>
+    </div>
+    <br/>
+    <h3>Question: </h3>
+    	<textarea type="text" ngautofocus id="fill-in-the-blank-question" ng-model="currentQuestion.question" ng-change="validateInput(currentQuestion.question, 500)" minlength="1" maxlength="500" ng-required="true" ng-pattern="/__[^_]+__/" ng-model-options="{allowInvalid: true}" placeholder="Enter your question here ..."></textarea>
+    <div class="preview">
+        <h3>Student View: </h3>
+        {{fillInTheBlankPreview()}}
+    </div>
+</div>

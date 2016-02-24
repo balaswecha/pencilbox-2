@@ -1,0 +1,296 @@
+[
+    {
+        "name": "Element Builder",
+        "id": "element-builder",
+        "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/ElementBuilder/index.html"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Kalzium",
+        "id": "kalzium",
+        "exec": {"command": "kalzium", "args": []},
+        "keywords":["",""]
+    },
+    {
+        "name": "Alpha Decay",
+        "id": "alpha-decay",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/alpha-decay_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Molecule Polarity",
+        "id": "molecule-polarity",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/molecule-polarity_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Molecule Motors",
+        "id": "molecular-motors",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/molecular-motors_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Models of the Hydrogen Atom",
+        "id": "models-of-hydrogen-atom",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/hydrogen-atom_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Plinko Probability",
+        "id": "plinko",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/plinko-probability_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Semiconductors",
+        "id": "semiconductor",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/semiconductor_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Reactions & Rates",
+        "id": "reactions-and-rates",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/reactions-and-rates_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Salts & Solubility",
+        "id": "salts-solubility",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/soluble-salts_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Sound",
+        "id": "sound",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/sound_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Sugar and Salt Solutions",
+        "id": "sugar-salt-solutions",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/sugar-and-salt-solutions_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Acid - Base Solutions",
+        "id": "acid-base-solutions",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/acid-base-solutions_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Atomic Interactions",
+        "id": "atomic-interactions",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/atomic-interactions_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Balancing Chemical Equations",
+        "id": "balancing-chemical-equations",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/balancing-chemical-equations_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Beer's Law Lab",
+        "id": "beers-law",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/beers-law-lab_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Beta Decay",
+        "id": "beta-decay",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/beta-decay_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Build a Molecule",
+        "id": "build-a-molecule",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/build-a-molecule_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Build an Atom",
+        "id": "build-an-atom",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/build-an-atom_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Concentration",
+        "id": "concentration",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/concentration_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Davisson-Germer: Electron Diffraction",
+        "id": "davission-germer",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/davisson-germer_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Molarity",
+        "id": "molarity",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/molarity_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Isotopes & Atomic Mass",
+        "id": "isotopes-and-atomic mass",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/isotopes-and-atomic-mass_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Neon Lights & Other Discharge Lamps",
+        "id": "neon-lights-and-other-discharge-lamps",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/discharge-lamps_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Nuclear Fission",
+        "id": "nuclear-fission",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/nuclear-fission_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Photoelectric Effect",
+        "id": "photoelectric-effect",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/photoelectric_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "pH Scale: Basics",
+        "id": "ph-scale-basics",
+        "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/ph-scale-basics_en.html"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Radio Waves & Electromagnetic Fields",
+        "id": "radio-waves",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/radio-waves_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Reactants, Products and Leftovers",
+        "id": "reactants-products-leftovers",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/reactants-products-and-leftovers_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Reversible Reactions",
+        "id": "reversable-reactions",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/reversible-reactions_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Rutherford Scattering",
+        "id": "rutherfford-scattering",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/rutherford-scattering_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "States of Matter",
+        "id": "states-of-matter",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/states-of-matter_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "States of Matter: Basics",
+        "id": "states-of-matter -basics",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/states-of-matter-basics_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Energy Forms & Charges",
+        "id": "energy-froms-and- charges",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/energy-forms-and-changes_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Conductivity",
+        "id": "conductivity",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/conductivity_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Quantum Wave Interference ",
+        "id": "wave-interference",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/quantum-wave-interference_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Double Wells and Covalent Bonds",
+        "id": "covalent-bonds",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/covalent-bonds_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Fluid Pressure and Flow",
+        "id": "fluid-pressure-and-flow",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/fluid-pressure-and-flow_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Under Pressure",
+        "id": "under-pressure",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/under-pressure_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Molecules and Light",
+        "id": "molecules-and-lights",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/molecules-and-light_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Gravity and Orbits",
+        "id": "gravity-and-orbits",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/gravity-and-orbits_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Glaciers",
+        "id": "glaciers",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/glaciers_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Balloons & Buoyancy",
+        "id": "ballons-buoyancy",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/balloons-and-buoyancy_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Gas Properties",
+        "id": "gas-properties",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/gas-properties_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Balloons and Static Electricity",
+        "id": "balloons-static-energy",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/balloons_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "The Greenhouse Effect",
+        "id": "greenhouse",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/greenhouse_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Wave on a String",
+        "id": "wave-on-a- string",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/wave-on-a-string_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "My Solar System",
+        "id": "my-solar-system",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/my-solar-system_en.jar"]},
+        "keywords":["",""]
+    },
+    {
+        "name": "Radioactive Dating Game",
+        "id": "radio-active-dating- game",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/radioactive-dating-game_en.jar"]},
+        "keywords":["",""]
+    }
+]

@@ -1,0 +1,256 @@
+<div class="chapter-page content-page">
+    <header class="main-header resize-mobile clear">
+        <a href="#/grades"><img src="image/logo.png" alt="logo" class="header-logo left"/></a>
+
+        <div class="app-button other-apps other-apps-bg right">
+            <a href="/All" class="a-container">
+                <div class="img-container">
+                    <img src="image/otherapps.png" alt="other apps icon"/>
+                </div>
+                <span>All Apps</span>
+            </a>
+        </div>
+    </header>
+    <section class="main-section">
+
+        <search></search>
+
+        <div class="subject-container">
+            <header class="subject-header border clear">
+                <div class="selected-grade left m-no-left m-border-bottom">
+                    <div class="wrapper">
+                        <div class="grade-box t-center">
+                            <div class="grade-title">Grade</div>
+                            <a href="#/grades"
+                               class="grade-text theme-orange-bg border a-container">{{current_grade}}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="subjects-head flexible left  m-no-left">
+                    <div class="subjects-wrapper border-left">
+                        <ul class="subjects t-center">
+                            <li ng-repeat="subject in subjects"
+                                ng-class="isCurrentSubject(subject.id) ? 'selected t-center' : 't-center'">
+                                <a href="#/grades/{{current_grade}}/subject/{{subject.id}}/" class="a-container">
+                                    <div class="img-container circle">
+                                        <img src="images/subjects/{{subject.id}}.png" alt="{{subject.id}}"
+                                             class="subject-img circle theme-orange-bg-hover"/>
+                                    </div>
+                                    <div class="subject-name">{{subject.name}}</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <section class="chapter-section border clear" chapter-section>
+                <div class="chapter-list-wrapper left border-right">
+                    <div class="wrapper">
+                        <ul class="chapter-list t-left">
+
+                            <li ng-repeat="chapter in chapters"
+                                ng-class="isCurrentChapter(chapter.id) ? 'selected theme-orange-bg t-left theme-orange-bg-hover' : 't-left theme-orange-bg-hover'">
+                                <a href="#/grades/{{current_grade}}/subject/{{current_subject}}/{{chapter.id}}/"
+                                   class="a-container">
+                                    <div class="img-container circle">
+                                        <img src='images/topics/grey/g-{{chapter.id}}.png' alt="{{chapter.id}}"
+                                             class="chapter-img"/>
+                                    </div>
+                                    <div class="chapter-name">{{chapter.name}}</div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-list-wrapper left m-no-left">
+                    <div class="wrapper">
+                        <ul class="content-list">
+
+                            <li class="row video-panel only-title" ng-show="hasVideos(contents)">
+
+                                <div class="row-header app-theme-header border">
+                                    <div class="wrapper clear">
+                                        <div class="header-title left">
+                                            <div class="other-apps">
+                                                <a href="" class="a-container">
+                                                    <div class="img-container">
+                                                        <img src="images/video.png" alt="other apps icon"/>
+                                                    </div>
+                                                    <span class="dark-text">Videos</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="button-container right"></div>
+                                    </div>
+                                </div>
+
+                                <ul class="content-items border t-center">
+
+                                    <li ng-if="isVideo(content.type)" ng-repeat="content in contents" class="item"
+                                        ng-click="showOverlay(content.type, content)">
+                                        <a href="" class="a-container wrapper">
+                                            <div class="img-container">
+                                                <img src="images/video.png" alt="biology" class="subject-img">
+                                            </div>
+                                            <p class="subject-name t-center border-top">{{content.name}}</p>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="row app-panel only-title" ng-show="hasApplications(contents)">
+
+                                <div class="row-header app-theme-header border">
+                                    <div class="wrapper clear">
+                                        <div class="header-title left">
+                                            <div class="other-apps">
+                                                <a href="" class="a-container">
+                                                    <div class="img-container">
+                                                        <img src="images/app.png" alt="other apps icon"/>
+                                                    </div>
+                                                    <span class="dark-text">Applications</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="button-container right"></div>
+                                    </div>
+                                </div>
+
+                                <ul class="content-items border t-center">
+
+                                    <li ng-if="isApplication(content.type)" ng-repeat="content in contents" class="item"
+                                        ng-click="selectApp(content)">
+                                        <a href="" class="a-container wrapper">
+                                            <div class="img-container">
+                                                <img src="images/{{content.id}}.png" alt="app-icon"
+                                                     class="subject-img">
+                                            </div>
+                                            <p class="subject-name t-center border-top">{{content.name}}</p>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="row quiz-panel">
+
+                                <div class="row-header app-theme-header border">
+                                    <div class="wrapper clear">
+                                        <div class="header-title left m-no-left">
+                                            <div class="other-apps">
+                                                <a href="" class="a-container">
+                                                    <div class="img-container">
+                                                        <img src="images/quiz.png" alt="other apps icon"/>
+                                                    </div>
+                                                    <span class="dark-text">Quiz</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="button-container left m-no-left clear">
+                                            <div class="wrapper clear">
+                                                <div class="app-button upload-button other-apps right">
+                                                    <form name="uploadForm" action="/upload.php"
+                                                          enctype="multipart/form-data" method="post"
+                                                          class="upload-container">
+                                                        <input type="hidden" name="grade" value="{{current_grade}}"/>
+                                                        <input type="hidden" name="return_url"
+                                                               value="{{currentPath()}}"/>
+                                                        <input type="hidden" name="subject"
+                                                               value="{{current_subject}}"/>
+                                                        <input type="hidden" name="chapter"
+                                                               value="{{current_chapter}}"/>
+                                                        <input id="upload-input" class="upload-input" type="file"
+                                                               name="file"
+                                                               ng-click="verifyPassword($event);" file-upload
+                                                               on-file-load="uploadFile"/>
+                                                        <button class="button upload-button">
+                                                            <img class="icon" src="image/upload.png"
+                                                                 alt="other apps icon"/>
+                                                            Upload Quiz
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                                <div class="app-button other-apps right"
+                                                     ng-click="adminPasswordDialog($event, 'redirect');">
+                                                    <a href="#/grades/{{current_grade}}/subject/{{current_subject}}/{{current_chapter}}/create-quiz/"
+                                                       class="a-container">
+                                                        <div class="img-container">
+                                                            <img src="image/create.png" alt="other apps icon"/>
+                                                        </div>
+                                                        <span>Create Quiz</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul class="content-items border t-center">
+
+                                    <li ng-if="isQuiz(content.type)" ng-repeat="content in contents" class="item">
+                                        <a href="#/grades/{{current_grade}}/subject/{{current_subject}}/{{current_chapter}}/take-quiz/{{$index}}"
+                                           class="a-container wrapper">
+                                            <div class="img-container">
+                                                <img src="images/quiz.png" alt="Quiz image" class="subject-img">
+                                            </div>
+                                            <p class="subject-name t-center border-top">{{content.name}}</p>
+                                        </a>
+                                        <button class="delete-quiz" ng-click="deleteQuiz($index)">×</button>
+                                        <a href="" download="{{content.name}}.bsquiz" ng-click="downloadQuiz($index)"
+                                           id="quiz-download-{{$index}}">
+                                            <button class="download-quiz">Download Quiz</button>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <div class="modal app-modal" ng-show="!!selectedApp" ng-click="deselectApp()">
+        <div class="modal-body" ng-click="handleModalContentClick($event)">
+            <header class="modal-header">
+                <h3 class="modal-title">{{selectedApp.name}}</h3>
+                <button class="modal-close" ng-click="deselectApp()">×</button>
+            </header>
+            <main class="modal-content app-modal">
+                <button class="launcher" ng-click="invokeCommand(selectedApp.exec)">
+                    <img src="images/{{selectedApp.id}}.png" alt="app-icon"
+                         class="subject-img">
+                    <span>Launch App</span>
+                </button>
+                <div class="description">
+                    <p>
+                        {{selectedApp.description || "Click the button to launch the application."}}
+                    </p>
+                    <div class="materials">
+                        <div class="audio" ng-show="!!selectedApp.audio">
+                            <h3>Instructions</h3>
+                            <p>
+                                <button class="audio-button" ng-click="isPlaying = !isPlaying">
+                                    <img src="/image/audio-pause.svg" ng-show="isPlaying"/>
+                                    <img src="/image/audio-play.svg" ng-show="!isPlaying"/>
+                                </button>
+                                <audio src="{{selectedApp.audio}}" id="player"></audio>
+                            </p>
+                        </div>
+                        <div class="manuals" ng-show="!!(selectedApp.manuals && selectedApp.manuals.length)">
+                            <h3>Manuals</h3>
+                            <ul class="manual-list">
+                                <li ng-repeat="manual in selectedApp.manuals">
+                                    <a href="#" ng-click="invokeCommand(manual.src)">{{manual.title}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>

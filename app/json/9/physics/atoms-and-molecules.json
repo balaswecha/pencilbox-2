@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Build a Molecule",
+    "id": "build-a-molecule",
+    "type":"apps",
+    "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/build-a-molecule_en.jar"]},
+    "subject": "chemistry",
+    "keywords":["",""],
+    "description": "Starting from atoms, see how many molecules you can build. Collect your molecules and see them in 3D!",
+    "manuals": [
+      {"title":"Activity", "src":{"command": "doc-reader", "args":["/var/www/manuals/BuildAMolecule-Activity.doc"]}}
+    ]
+  },
+  {
+    "name": "Element Builder",
+    "id": "element-builder",
+    "type":"apps",
+    "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/ElementBuilder/index.html"]},
+    "subject": "chemistry",
+    "keywords":["",""],
+    "description": "Build an atom out of protons, neutrons, and electrons, and see how the element, charge, and mass change. Then play a game to test your ideas!",
+    "manuals": [
+      {"title":"Activity", "src":{"command": "pdf-reader", "args":["/var/www/manuals/Build An Atom Exercises.pdf"]} }
+    ]
+  }
+]

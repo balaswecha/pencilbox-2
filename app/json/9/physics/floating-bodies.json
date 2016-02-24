@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Density",
+    "id": "density",
+    "type":"apps",
+    "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/phet-density/density_en.html"]},
+    "subject": "physics",
+    "keywords":["",""],
+    "description": "Why do objects like wood float in water? Does it depend on size? Create a custom object to explore the effects of mass and volume on density. Can you discover the relationship? Use the scale to measure the mass of an object, then hold the object under water to measure its volume. Can you identify all the mystery objects?",
+    "manuals": [
+      {"title":"Activity", "src":{"command": "pdf-reader", "args":["/var/www/manuals/Density_SimActivity.pdf"]} }
+    ]
+  },
+  {
+    "name": "Buoyancy",
+    "id": "buoyancy",
+    "type":"apps",
+    "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/phet-buoyancy/buoyancy_en.html"]},
+    "subject": "physics",
+    "keywords":["",""],
+    "description": "When will objects float and when will they sink? Learn how buoyancy works with blocks. Arrows show the applied forces, and you can modify the properties of the blocks and the fluid.",
+    "manuals": [
+      {"title":"Activity", "src":{"command": "pdf-reader", "args":["/var/www/manuals/Buoyancy_student_directions.pdf"]} },
+      {"title":"Activity 2", "src":{"command": "doc-reader", "args":["/var/www/manuals/Buoyancy Activity.docx"]}}
+    ]
+  },
+  {
+    "name": "Under Pressure",
+    "id": "under-pressure",
+    "type":"apps",
+    "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/under-pressure_en.html"]},
+    "subject": "chemistry",
+    "keywords":["",""],
+    "description": "Explore pressure under and above water. See how pressure changes as you change fluids, gravity, container shapes, and volume.",
+    "manuals": [
+      {"title":"Activity", "src":{"command": "pdf-reader", "args":["/var/www/manuals/UnderPressure_Student_directions.pdf"]} }
+    ]
+  }
+]

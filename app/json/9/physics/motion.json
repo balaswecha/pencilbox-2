@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Forces and Motion: Basics",
+    "id": "forces-and-motions-basics",
+    "type":"apps",
+    "exec": {"command": "java", "args":["-jar","/opt/phet/physics/forces-and-motion-basics_en.jar"]},
+    "subject": "physics",
+    "keywords":["",""],
+    "description": "Explore the forces at work when pulling against a cart,and pushing a refrigerator, crate, or person. Create an applied force and see how it makes objects move. Change friction and see how it affects the motion of objects.",
+    "manuals": [
+      {"title":"Questions", "src":{"command": "doc-reader", "args":["/var/www/manuals/Forces and Motion.docx"]}}
+    ]
+  },
+  {
+    "name": "Ramp: Forces and Motion",
+    "id": "ramp-forces-and -motion",
+    "type":"apps",
+    "exec": {"command": "java", "args":["-jar","/opt/phet/physics/ramp-forces-and-motion_en.jar"]},
+    "subject": "physics",
+    "keywords":["",""],
+    "description": "Explore the forces at work when pulling against a cart,and pushing a refrigerator, crate, or person. Create an applied force and see how it makes objects move. Change friction and see how it affects the motion of objects.",
+    "manuals": [
+      {"title":"Work Energy on Ramp", "src":{"command": "doc-reader", "args":["/var/www/manuals/work-energy-on-ramp.docx"]}}
+    ]
+  },
+  {
+    "name": "The Moving Man",
+    "id": "moving-man",
+    "type":"apps",
+    "exec": {"command": "java", "args":["-jar","/opt/phet/physics/moving-man_en.jar"]},
+    "subject": "physics",
+    "keywords":["",""],
+    "description": "Learn about position, velocity, and acceleration graphs. Move the little man back and forth with the mouse and plot his motion. Set the position, velocity, or acceleration and let the simulation move the man for you.",
+    "manuals": [
+      {"title":"The Moving Man : Velocity", "src":{"command": "doc-reader", "args":["/var/www/manuals/technology lesson.doc"]}}
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+<div class="multiple-options question-area">
+    <div ng-class="currentQuestion.question.length < 1 ? 'input-container border error' : 'input-container border'">
+        <textarea name="question" ngautofocus id="question" cols="30" rows="4" maxlength="500" placeholder="Type your question here" ng-model="currentQuestion.question" ng-change="validateInput(currentQuestion.question, 500)"></textarea>
+    </div>
+    <div class="options-container border">
+        <div class="app-button other-apps">
+            <a href="" class="a-container" ng-click="addRow()" id="download-json">
+                <div class="img-container">
+                    <img src="image/addoption.png" alt="Download Quiz"/>
+                </div>
+                <span>Add an option</span>
+            </a>
+        </div>
+        <ul class="options">
+            <li ng-class="mcHasError ? 'option border t heme-gray error' : 'option border theme-gray'" ng-repeat="option in currentQuestion.options">
+                <span class="input-container"><input type="text" maxlength="50" class="input" placeholder="Type your choice here" ng-model="option.value" required ng-trim="true" ng-change="isValidMultipleOption(); validateInput(option.value, 50)"/></span>
+                <span class="input-container"><input type="checkbox" ng-model="option.answer" class="checkbox" data-index="{{$index}}" ng-change="isValidMultipleOption()"/></span>
+                <span ng-class="currentQuestion.options.length == 2 ? 'input-container theme-orange-bg invisible' : 'input-container theme-orange-bg'" ng-click="deleteRow($index)"><span class="delete">Delete</span></span>
+            </li>
+        </ul>
+    </div>
+</div>

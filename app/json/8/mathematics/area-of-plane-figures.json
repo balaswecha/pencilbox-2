@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Area Builder",
+    "id": "area-builder",
+    "type":"apps",
+    "exec": {"command": "firefox", "args":["--new-window","/opt/phet/maths/area-builder_en.html"]},
+    "subject": "mathematics",
+    "keywords":["",""],
+    "description": "Create your own shapes using colorful blocks and explore the relationship between perimeter and area. Compare the area and perimeter of two shapes side-by-side. Challenge yourself in the game screen to build shapes or find the area of funky figures. Try to collect lots of stars!",
+    "manuals": [
+      {"title":"Introduction", "src":{"command": "doc-reader", "args":["/var/www/manuals/AreaBuilder.docx"]}}
+    ]
+  },
+  	{
+        "name": "Rectangle : Area and Perimeter",
+        "id": "area-and-perimeter-of-rectangle",
+        "type": "videos",
+        "keywords": [
+            "",
+            ""
+            ]
+    },
+	{
+        "name": "Area and Perimeter",
+        "id": "area-and-perimeter",
+        "type": "videos",
+        "keywords": [
+            "",
+            ""
+        ]
+    },
+    {
+        "name": "Parallelogram : Area",
+        "id": "Area-of-square-and-parallelogram",
+        "type": "videos",
+        "keywords": [
+            "",
+            ""
+        ]
+    }
+]

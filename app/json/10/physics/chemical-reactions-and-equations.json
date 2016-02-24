@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Balancing Chemical Equations",
+        "id": "balancing-chemical-equations",
+        "type":"apps",
+        "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/balancing-chemical-equations_en.html"]},
+        "subject": "chemistry",
+        "keywords":["",""],
+        "description": "How do you know if a chemical equation is balanced? What can you change to balance an equation? Play a game to test your ideas!",
+        "manuals": [
+            {"title":"Activity", "src":{"command": "doc-reader", "args":["/var/www/manuals/BalancingChemicalEquations_Student.docx"]}}
+        ]
+    },
+    {
+        "name": "Reactants, Products and Leftovers",
+        "id": "reactants-products-leftovers",
+        "type":"apps",
+        "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/reactants-products-and-leftovers_en.jar"]},
+        "subject": "chemistry",
+        "keywords":["",""],
+        "description": "Create your own sandwich and then see how many sandwiches you can make with different amounts of ingredients. Do the same with chemical reactions. See how many products you can make with different amounts of reactants. Play a game to test your understanding of reactants, products and leftovers. Can you get a perfect score on each level?",
+        "manuals": [
+            {"title":"Introduction", "src":{"command": "pdf-reader", "args":["/var/www/manuals/RPAL-Student_directions1_intro.pdf"]} }
+        ]
+    },
+    {
+        "name": "Kalzium",
+        "id": "kalzium",
+        "exec": {"command": "kalzium", "args": []},
+        "type":"apps",
+        "subject": "chemistry",
+        "keywords":["",""]
+    }
+]

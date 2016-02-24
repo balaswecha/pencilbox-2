@@ -1,0 +1,20 @@
+[
+  	{
+	    "name": "K Geography",
+	    "id": "kgeography",
+	    "type":"apps",
+	    "exec": {"command": "kgeography", "args": []},
+	    "subject": "social",
+	    "keywords":["",""],
+		"audio": "/audio/kgeography.wav"
+	},
+	{
+        "name": "Reading Map",
+        "id": "reading-maps",
+        "type": "videos",
+        "keywords": [
+            "",
+            ""
+        ]
+    }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Gravity and Orbits",
+    "id": "gravity-and-orbits",
+    "type":"apps",
+    "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/gravity-and-orbits_en.jar"]},
+    "subject": "chemistry",
+    "keywords":["",""],
+    "description": "Move the sun, earth, moon and space station to see how it affects their gravitational forces and orbital paths. Visualize the sizes and distances between different heavenly bodies, and turn off gravity to see what would happen without it!",
+    "manuals": [
+      {"title":"Activity", "src":{"command": "doc-reader", "args":["/var/www/manuals/GravityAndOrbits-StudentActivity.doc"]}}
+    ]
+  },
+  {
+    "name": "Gravity Force Lab",
+    "id": "gravity-force-lab",
+    "type":"apps",
+    "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/gravity-force-lab_en.html"]},
+    "subject": "physics",
+    "keywords":["",""],
+    "description": "Visualize the gravitational force that two objects exert on each other. Adjust properties of the objects to see how changing the properties affects the gravitational attraction.",
+    "manuals": [
+      {"title":"Exploring Gravity", "src":{"command": "pdf-reader", "args":["/var/www/manuals/Exploring_Gravity.pdf"]} }
+    ]
+  },
+  {
+    "name": "Freefall Tower",
+    "id": "freefall-tower",
+    "type":"apps",
+    "exec": {"command": "firefox", "args":["--new-window","file:///opt/applications-bin/freefalltower/index.html"]},
+    "subject": "physics",
+    "keywords":["",""]
+  }
+]
