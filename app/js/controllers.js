@@ -6,7 +6,14 @@
 
 pencilBoxApp.controller('GradeListController', ['$scope', 'Grades', '$http',
     function ($scope, Grades, $http) {
-        $scope.grades = Grades.query();
+        Grades.callback(function() {
+            Grades.query().then(function(grades){
+                $scope.grades = grades;
+            });
+        });
+        Grades.query().then(function(grades){
+            $scope.grades = grades;
+        });
     }]);
 
 pencilBoxApp.controller('SubjectListController', ['$scope', '$routeParams', 'Subjects', 'Grades',

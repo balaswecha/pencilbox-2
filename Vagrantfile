@@ -69,6 +69,15 @@ Vagrant.configure(2) do |config|
     curl -fsSL https://get.docker.com/ | sh
     sudo usermod -aG docker vagrant
     sudo apt-get install -y git nodejs
+    sudo apt-get install build-essential
+    sudo apt-get install erlang-base-hipe
+    sudo apt-get install erlang-dev
+    sudo apt-get install erlang-manpages
+    sudo apt-get install erlang-eunit
+    sudo apt-get install erlang-nox
+    sudo apt-get install libicu-dev
+    sudo apt-get install libmozjs-dev
+    sudo apt-get install libcurl4-openssl-dev
     cat <<INIT | sudo tee /etc/init/kinto.conf
 start on filesystem and started docker
 stop on runlevel [!2345]
