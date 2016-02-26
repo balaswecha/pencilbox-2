@@ -24,10 +24,10 @@
                 <div class="subjects-wrapper border-left">
                     <h2 class="title t-center">Select subject</h2>
                     <ul class="subjects subject-list t-center">
-                        <li ng-repeat="subject in subjects" data-subject="{{subject.id}} " ng-class="isCurrentSubject(subject.id) ? 'selected t-center' : 't-center'">
-                            <a href="#/grades/{{current_grade}}/subject/{{subject.id}}/" class="a-container theme-orange-bg-hover">
+                        <li ng-repeat="subject in subjects" data-subject="{{subject.slug}} " ng-class="isCurrentSubject(subject.id) ? 'selected t-center' : 't-center'">
+                            <a href="#/grades/{{current_grade}}/subject/{{subject.slug}}/" class="a-container theme-orange-bg-hover">
                                 <div class="img-container">
-                                    <img src="images/subjects/{{subject.id}}.png" alt="{{subject.id}}" class="subject-img"/>
+                                    <img src="images/subjects/{{subject.slug}}.png" alt="{{subject.slug}}" class="subject-img"/>
                                 </div>
                                 <div class="subject-name">{{subject.name}}</div>
                             </a>

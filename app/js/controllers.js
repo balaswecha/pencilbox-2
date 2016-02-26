@@ -4,24 +4,48 @@
 //     $scope.subjects = Subjects.query();
 //   }]);
 
-pencilBoxApp.controller('GradeListController', ['$scope', 'Grades', '$http',
-    function ($scope, Grades, $http) {
-        Grades.callback(function() {
-            Grades.query().then(function(grades){
+pencilBoxApp.controller('GradeListController', ['$scope', 'Grades', '$timeout',
+    function ($scope, Grades, $timeout) {
+        Grades.queryAndKeepUpdated(function(grades) {
+            $timeout(function() {
                 $scope.grades = grades;
+            }, 0);
+        });
+    }]);
+
+pencilBoxApp.controller('SubjectListController', ['$scope', '$routeParams', 'Subjects', '$timeout',
+    function ($scope, $routeParams, Subjects, $timeout) {
+        $scope.current_grade = $routeParams.gradeId;
+        Subjects.queryAndKeepUpdated($scope.current_grade, function(subjects) {
+            $timeout(function() {
+                $scope.subjects = subjects;
+                $scope.current_subject = $scope.subjects[0] ? $scope.subjects[0].id : "";
+            }, 0);
+        });
+
+        $scope.isCurrentSubject = function (subject) {
+            return $scope.current_subject.toLowerCase() === subject.toLowerCase();
+        };
+        $scope.isNotCurrentSubject = function (subject) {
+            return $scope.current_subject.toLowerCase() !== subject.toLowerCase();
+        };
+    }]);
+
+pencilBoxApp.controller('ChapterListController', ['$scope', '$routeParams', 'Chapters', 'Subjects', '$timeout',
+    function ($scope, $routeParams, Chapters, Subjects, $timeout) {
+        $scope.current_grade = $routeParams.gradeId;
+        $scope.current_subject = $routeParams.subjectId;
+
+        Subjects.queryAndKeepUpdated($scope.current_grade, function(subjects) {
+            $timeout(function() {
+                $scope.subjects = subjects;
+            }, 0);
+        });
+        Chapters.queryAndKeepUpdated($scope.current_grade, $scope.current_subject, function(chapters) {
+            $timeout(function() {
+                $scope.chapters = chapters;
             });
         });
-        Grades.query().then(function(grades){
-            $scope.grades = grades;
-        });
-    }]);
-
-pencilBoxApp.controller('SubjectListController', ['$scope', '$routeParams', 'Subjects', 'Grades',
-    function ($scope, $routeParams, Subjects, Grades) {
-        $scope.subjects = Subjects.query({gradeId: $routeParams.gradeId});
-
-        $scope.current_subject = $scope.subjects[0] ? $scope.subjects[0].id : "";
-        $scope.current_grade = $routeParams.gradeId;
         $scope.isCurrentSubject = function (subject) {
             return $scope.current_subject.toLowerCase() === subject.toLowerCase();
         };
@@ -30,35 +54,33 @@ pencilBoxApp.controller('SubjectListController', ['$scope', '$routeParams', 'Sub
         };
     }]);
 
-pencilBoxApp.controller('ChapterListController', ['$scope', '$routeParams', 'Chapters', 'Subjects',
-    function ($scope, $routeParams, Chapters, Subjects) {
-        $scope.subjects = Subjects.query({gradeId: $routeParams.gradeId});
-        $scope.chapters = Chapters.query({subjectId: $routeParams.subjectId, gradeId: $routeParams.gradeId});
-        $scope.current_grade = $routeParams.gradeId;
-        //$scope.current_chapter="";
-        $scope.current_subject = $routeParams.subjectId;
-        $scope.isCurrentSubject = function (subject) {
-            return $scope.current_subject.toLowerCase() === subject.toLowerCase();
-        };
-        $scope.isNotCurrentSubject = function (subject) {
-            return $scope.current_subject.toLowerCase() !== subject.toLowerCase();
-        };
-    }]);
-
-pencilBoxApp.controller('ContentListController', ['$scope', '$routeParams', 'Contents', 'Chapters', 'Subjects', '$location', '$http', '$q', '$sce',
-    function ($scope, $routeParams, Contents, Chapters, Subjects, $location, $http, $q, $sce) {
+pencilBoxApp.controller('ContentListController', ['$scope', '$routeParams', 'Contents', 'Chapters', 'Subjects', '$location', '$timeout', '$sce', '$q',
+    function ($scope, $routeParams, Contents, Chapters, Subjects, $location, $timeout, $sce, $q) {
         $scope.current_grade = $routeParams.gradeId;
         $scope.current_subject = $routeParams.subjectId;
         $scope.current_chapter = $routeParams.chapterId;
+        $scope.subjects = [];
+        $scope.chapters = [];
+        $scope.contents = [];
         $scope.currentPath = function () {
             return $location.path();
         };
-        $scope.subjects = Subjects.query({gradeId: $routeParams.gradeId});
-        $scope.chapters = Chapters.query({subjectId: $routeParams.subjectId, gradeId: $routeParams.gradeId});
-        $scope.contents = Contents.query({
-            chapterId: $routeParams.chapterId,
-            subjectId: $routeParams.subjectId, gradeId: $routeParams.gradeId
+        Subjects.queryAndKeepUpdated($scope.current_grade, function(subjects) {
+            $timeout(function() {
+                $scope.subjects = subjects;
+            }, 0);
         });
+        Chapters.queryAndKeepUpdated($scope.current_grade, $scope.current_subject, function(chapters) {
+            $timeout(function() {
+                $scope.chapters = chapters;
+            });
+        });
+        Contents.queryAndKeepUpdated($scope.current_grade, $scope.current_subject, $scope.current_chapter, function(contents) {
+            $timeout(function() {
+                $scope.contents = contents;
+            });
+        });
+
         $scope.selectedApp = null;
         $scope.selectApp = function (app) {
             $scope.selectedApp = app;

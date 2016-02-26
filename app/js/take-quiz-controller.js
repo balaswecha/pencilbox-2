@@ -4,10 +4,7 @@ pencilBoxApp.controller('TakeQuizController', ['$scope', '$routeParams', 'Conten
         $scope.current_subject = $routeParams.subjectId;
         $scope.current_chapter = $routeParams.chapterId;
 
-        $scope.contents = Contents.query({
-            chapterId: $routeParams.chapterId,
-            subjectId: $routeParams.subjectId, gradeId: $routeParams.gradeId
-        }, function () {
+        Contents.queryAndKeepUpdated($scope.current_grade, $scope.current_subject, $scope.current_chapter, function(contents) {
             $scope.quizJson = $scope.contents[$routeParams.id];
             $scope.shuffleQuestions();
             $scope.preprocessJson();

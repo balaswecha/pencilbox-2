@@ -27,10 +27,10 @@
                 <div class="subjects-head flexible left  m-no-left">
                     <div class="subjects-wrapper border-left">
                         <ul class="subjects t-center">
-                            <li ng-repeat="subject in subjects" ng-class="isCurrentSubject(subject.id) ? 'selected t-center' : 't-center'">
-                                <a href="#/grades/{{current_grade}}/subject/{{subject.id}}/" class="a-container">
+                            <li ng-repeat="subject in subjects" ng-class="isCurrentSubject(subject.slug) ? 'selected t-center' : 't-center'">
+                                <a href="#/grades/{{current_grade}}/subject/{{subject.slug}}/" class="a-container">
                                     <div class="img-container circle">
-                                        <img src="images/subjects/{{subject.id}}.png" alt="{{subject.id}}" class="subject-img circle theme-orange-bg-hover"/>
+                                        <img src="images/subjects/{{subject.slug}}.png" alt="{{subject.slug}}" class="subject-img circle theme-orange-bg-hover"/>
                                     </div>
                                     <div class="subject-name">{{subject.name}}</div>
                                 </a>
@@ -44,10 +44,10 @@
                     <div class="wrapper">
                         <ul class="chapter-list t-left">
 
-                            <li ng-repeat="chapter in chapters" ng-class="isCurrentChapter(chapter.id) ? 'selected theme-orange-bg t-left theme-orange-bg-hover' : 't-left theme-orange-bg-hover'">
-                                <a href="#/grades/{{current_grade}}/subject/{{current_subject}}/{{chapter.id}}/" class="a-container">
+                            <li ng-repeat="chapter in chapters" ng-class="isCurrentChapter(chapter.slug) ? 'selected theme-orange-bg t-left theme-orange-bg-hover' : 't-left theme-orange-bg-hover'">
+                                <a href="#/grades/{{current_grade}}/subject/{{current_subject}}/{{chapter.slug}}/" class="a-container">
                                     <div class="img-container circle">
-                                        <img src='images/topics/grey/g-{{chapter.id}}.png' alt="{{chapter.id}}" class="chapter-img"/>
+                                        <img src="images/topics/grey/g-{{chapter.slug}}.png" alt="{{chapter.slug}}" class="chapter-img"/>
                                     </div>
                                     <div class="chapter-name">{{chapter.name}}</div>
                                 </a>

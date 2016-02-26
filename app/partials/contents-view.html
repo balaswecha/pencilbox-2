@@ -30,10 +30,10 @@
                     <div class="subjects-wrapper border-left">
                         <ul class="subjects t-center">
                             <li ng-repeat="subject in subjects"
-                                ng-class="isCurrentSubject(subject.id) ? 'selected t-center' : 't-center'">
-                                <a href="#/grades/{{current_grade}}/subject/{{subject.id}}/" class="a-container">
+                                ng-class="isCurrentSubject(subject.slug) ? 'selected t-center' : 't-center'">
+                                <a href="#/grades/{{current_grade}}/subject/{{subject.slug}}/" class="a-container">
                                     <div class="img-container circle">
-                                        <img src="images/subjects/{{subject.id}}.png" alt="{{subject.id}}"
+                                        <img src="images/subjects/{{subject.slug}}.png" alt="{{subject.name}}"
                                              class="subject-img circle theme-orange-bg-hover"/>
                                     </div>
                                     <div class="subject-name">{{subject.name}}</div>
@@ -49,11 +49,11 @@
                         <ul class="chapter-list t-left">
 
                             <li ng-repeat="chapter in chapters"
-                                ng-class="isCurrentChapter(chapter.id) ? 'selected theme-orange-bg t-left theme-orange-bg-hover' : 't-left theme-orange-bg-hover'">
-                                <a href="#/grades/{{current_grade}}/subject/{{current_subject}}/{{chapter.id}}/"
+                                ng-class="isCurrentChapter(chapter.slug) ? 'selected theme-orange-bg t-left theme-orange-bg-hover' : 't-left theme-orange-bg-hover'">
+                                <a href="#/grades/{{current_grade}}/subject/{{current_subject}}/{{chapter.slug}}/"
                                    class="a-container">
                                     <div class="img-container circle">
-                                        <img src='images/topics/grey/g-{{chapter.id}}.png' alt="{{chapter.id}}"
+                                        <img src='images/topics/grey/g-{{chapter.slug}}.png' alt="{{chapter.slug}}"
                                              class="chapter-img"/>
                                     </div>
                                     <div class="chapter-name">{{chapter.name}}</div>
@@ -124,7 +124,7 @@
                                         ng-click="selectApp(content)">
                                         <a href="" class="a-container wrapper">
                                             <div class="img-container">
-                                                <img src="images/{{content.id}}.png" alt="app-icon"
+                                                <img src="images/{{content.slug}}.png" alt="app-icon"
                                                      class="subject-img">
                                             </div>
                                             <p class="subject-name t-center border-top">{{content.name}}</p>
@@ -221,7 +221,7 @@
             </header>
             <main class="modal-content app-modal">
                 <button class="launcher" ng-click="invokeCommand(selectedApp.exec)">
-                    <img src="images/{{selectedApp.id}}.png" alt="app-icon"
+                    <img src="images/{{selectedApp.slug}}.png" alt="app-icon"
                          class="subject-img">
                     <span>Launch App</span>
                 </button>

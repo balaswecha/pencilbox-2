@@ -5,9 +5,8 @@ pencilBoxApp.controller('CreateQuizController', ['$scope', '$routeParams', 'Cont
         $scope.current_grade = $routeParams.gradeId;
         $scope.current_subject = $routeParams.subjectId;
         $scope.current_chapter = $routeParams.chapterId;
-        $scope.contents = Contents.query({
-            chapterId: $routeParams.chapterId,
-            subjectId: $routeParams.subjectId, gradeId: $routeParams.gradeId
+        Contents.queryAndKeepUpdated($scope.current_grade, $scope.current_subject, $scope.current_chapter, function(contents) {
+            $scope.contents = contents;
         });
 
         $scope.questionTypes = {
@@ -205,7 +204,6 @@ pencilBoxApp.controller('CreateQuizController', ['$scope', '$routeParams', 'Cont
             $scope.promptDialog(null, null, function (inputText) {
                 if(!inputText){return;}
                 answer = inputText;
-                console.log(answer);
                 $timeout(function () {
                     $scope.currentQuestion.question = insertAt($scope.currentQuestion.question, ' __' + answer + '__ ', caretPosition);
                 }, 0);
@@ -313,19 +311,19 @@ pencilBoxApp.controller('CreateQuizController', ['$scope', '$routeParams', 'Cont
                 chapter: $scope.current_chapter,
                 quiz: $scope.quizJson
             };
-            $http.post('/save.php', data, {headers: {'Content-Type': 'application/json'}}).
-                    then(function () {
-                        $scope.hasChange = false;
-                        $scope.closeOverlay();
-                        var options = {
-                            title: "Success",
-                            description: "Successfully saved the quiz.",
-                            buttons: ["ok"]
-                        };
-                        new CustomDialog($q, options);
-                    }, function () {
-                        console.log(arguments);
-                    });
+            data.quiz.type = 'quiz';
+            Contents.addQuiz(data).then(function() {
+                $scope.hasChange = false;
+                $scope.closeOverlay();
+                var options = {
+                    title: "Success",
+                    description: "Successfully saved the quiz.",
+                    buttons: ["ok"]
+                };
+                new CustomDialog($q, options);
+            }).catch(function(err) {
+                console.log(err);
+            });
         };
 
         $scope.verifySaveQuiz = function () {
