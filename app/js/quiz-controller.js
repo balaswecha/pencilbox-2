@@ -1,5 +1,5 @@
-pencilBoxApp.controller('CreateQuizController', ['$scope', '$routeParams', 'Contents', 'CreateQuiz', '$http', '$q', '$timeout',
-    function ($scope, $routeParams, Contents, CreateQuiz, $http, $q, $timeout) {
+pencilBoxApp.controller('CreateQuizController', ['$scope', '$routeParams', 'Contents', '$http', '$q', '$timeout',
+    function ($scope, $routeParams, Contents, $http, $q, $timeout) {
         $scope.hasChange = false;
         $scope.hasError = false;
         $scope.current_grade = $routeParams.gradeId;

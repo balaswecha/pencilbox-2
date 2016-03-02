@@ -24,7 +24,6 @@
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="pouchdb.min.js"></script>
-    <script src="pouchdb.find.min.js"></script>
     <!--<script	src="bower_components/angular-mocks/angular-mocks.js"></script>-->
 
     <script src="js/draggable-with-type.js"></script>
@@ -42,7 +41,8 @@
     <script src="js/custom-alert.js"></script>
 
     <script>
-       var spawn = require('child_process').spawn;
+        var spawn = require('child_process').spawn;
+        var fs = require('fs');
         window.CommandApi = {
             invokeCommand: function (command) {
                 spawn(command.command, command.args);
@@ -51,6 +51,14 @@
         function invokeCommand(command) {
             CommandApi.invokeCommand(command);
         }
+        window.FileIO = {
+            writeToFile: function (filename, contents) {
+                fs.writeFileSync(filename, contents);
+            },
+            getUserHome: function() {
+              return process.env[(process.platform == 'win32') ? 'USERPROFILE' : 'HOME'];
+            }
+        };
     </script>
 
 

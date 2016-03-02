@@ -193,9 +193,8 @@ pencilBoxApp.controller('ContentListController', ['$scope', '$routeParams', 'Con
                 };
                 new CustomDialog($q, options);
             } else {
-                $http.post('/save.php', requestJson).then(function () {
-                    window.location.reload();
-                });
+                requestJson.quiz.type = 'quiz';
+                Contents.addQuiz(requestJson);
             }
         };
 
@@ -207,19 +206,14 @@ pencilBoxApp.controller('ContentListController', ['$scope', '$routeParams', 'Con
                     chapter: $scope.current_chapter,
                     name: $scope.contents[index].name
                 };
-                $http.post('/delete.php', requestJson).then(function () {
-                    window.location.reload();
-                });
+                Contents.deleteQuiz(requestJson);
             });
         };
 
         $scope.downloadQuiz = function (index) {
-            var fileName = $scope.contents[index]['name'] + '.bsquiz';
-            var fileContents = JSON.stringify($scope.contents[index])
-                    .replace(/"/g,'&QUOT')
-                    .replace(/ /g,'&SPAC');
-            var command = '/var/www/download.py "' + fileContents + '" "' + fileName + '"';
-            CommandApi.invokeCommand(command);
+            var fileName = FileIO.getUserHome() + "/Desktop/" + $scope.contents[index]['name'] + '.bsquiz';
+            var fileContents = JSON.stringify($scope.contents[index]);
+            FileIO.writeToFile(fileName, fileContents);
             new CustomDialog($q, {
                 title: "Alert",
                 description: "The quiz has been saved as " + fileName + " on the Desktop.",

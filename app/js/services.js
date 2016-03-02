@@ -5,6 +5,22 @@ var remoteCouch = 'http://localhost:5984/grades';
 var opts = {live: true};
 var sync = PouchDB.sync('grades', remoteCouch, opts);
 
+// create a design doc
+var ddoc = {
+  _id: '_design/gradeSlug',
+  views: {
+    gradeSlug: {
+      map: function mapFun(doc) {
+        if (doc.grade) {
+          emit(doc.grade);
+        }
+      }.toString()
+    }
+  }
+}
+
+db.put(ddoc);
+
 pencilBoxApp.factory('Grades', ['$q', function ($q) {
     return {
         queryAndKeepUpdated: function(callback) {
@@ -13,7 +29,7 @@ pencilBoxApp.factory('Grades', ['$q', function ($q) {
                     if (err) {
                         console.log('ERROR', err);
                     }
-                    callback(doc.rows.map(function(r) { return r.doc; }));
+                    callback(doc.rows.map(function(r) { return r.doc; }).filter(function(r){return typeof r.grade !== 'undefined'}));
                 });
             };
 
@@ -64,6 +80,13 @@ pencilBoxApp.factory('Chapters', ['Subjects', function (Subjects) {
 }]);
 
 pencilBoxApp.factory('Contents', ['Grades', 'Subjects', 'Chapters', function (Grades, Subjects, Chapters) {
+    var getCurrentChapter = function(gradeDoc, subject, chapter){
+        return gradeDoc.subjects.find(function(s) {
+               return s.slug == subject;
+           }).chapters.find(function(c) {
+               return c.slug == chapter;
+           });
+    };
     return {
         queryAndKeepUpdated: function(grade, subject, chapter, callback) {
             Chapters.queryAndKeepUpdated(grade, subject, function(chapters) {
@@ -73,29 +96,23 @@ pencilBoxApp.factory('Contents', ['Grades', 'Subjects', 'Chapters', function (Gr
         },
         addQuiz: function(data) {
             return Grades.get(data.grade)
-                    .then(function(grade){
-                        var chapter = grade.subjects.find(function(s) {
-                            return s.slug == data.subject;
-                        }).chapters.find(function(c) {
-                            return c.slug == data.chapter;
-                        });
-                        chapter.contents.push(data.quiz);
-                        Grades.put(grade);
-                    })
+                .then(function(grade){
+                    var chapter = getCurrentChapter(grade, data.subject, data.chapter);
+                    chapter.contents.push(data.quiz);
+                    Grades.put(grade);
+                });
+        },
+        deleteQuiz: function(data) {
+            return Grades.get(data.grade)
+                .then(function(grade){
+                    var chapter = getCurrentChapter(grade, data.subject, data.chapter);
+                    chapter.contents = chapter.contents.filter(function(content){
+                        return content.type!=="quiz" || content.name!==data.name;
+                    });
+                    Grades.put(grade);
+                });
         }
     };
-}]);
-
-pencilBoxApp.factory('CreateQuiz', ['$resource', function ($resource) {
-    return $resource('json/create-quiz.json', {}, {
-        query: {method: 'GET', isObject: true}
-    });
-}]);
-
-pencilBoxApp.factory('TakeQuiz', ['$resource', function ($resource) {
-    return $resource('json/create-quiz.json', {}, {
-        query: {method: 'GET', isObject: true}
-    });
 }]);
 
 pencilBoxApp.factory('Apps', ['$resource', function ($resource) {

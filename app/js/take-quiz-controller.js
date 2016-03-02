@@ -5,6 +5,7 @@ pencilBoxApp.controller('TakeQuizController', ['$scope', '$routeParams', 'Conten
         $scope.current_chapter = $routeParams.chapterId;
 
         Contents.queryAndKeepUpdated($scope.current_grade, $scope.current_subject, $scope.current_chapter, function(contents) {
+            $scope.contents = contents;
             $scope.quizJson = $scope.contents[$routeParams.id];
             $scope.shuffleQuestions();
             $scope.preprocessJson();
@@ -78,11 +79,12 @@ pencilBoxApp.controller('TakeQuizController', ['$scope', '$routeParams', 'Conten
         }
 
         $scope.selectQuestion = function (index) {
-            index = typeof index != 'undefined' && index != null ? index : 0;
-            $scope.selectedQuestion = index;
-            $scope.currentQuestion = $scope.quizJson.questions[$scope.selectedQuestion];
-            $scope.currentQuestionType = $scope.currentQuestion.type;
-            console.log($scope.currentQuestion)
+            $timeout(function(){
+                index = typeof index != 'undefined' && index != null ? index : 0;
+                $scope.selectedQuestion = index;
+                $scope.currentQuestion = $scope.quizJson.questions[$scope.selectedQuestion];
+                $scope.currentQuestionType = $scope.currentQuestion.type;
+            },0);
         }
 
         $scope.navigateQuestion = function (position) {
