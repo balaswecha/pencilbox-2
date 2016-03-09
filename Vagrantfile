@@ -66,24 +66,13 @@ Vagrant.configure(2) do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
     curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
-    curl -fsSL https://get.docker.com/ | sh
-    sudo usermod -aG docker vagrant
+    sudo apt-get install software-properties-common -y
+    sudo add-apt-repository ppa:couchdb/stable -y
+    sudo apt-get update
     sudo apt-get install -y git nodejs
-    sudo apt-get install build-essential
-    sudo apt-get install erlang-base-hipe
-    sudo apt-get install erlang-dev
-    sudo apt-get install erlang-manpages
-    sudo apt-get install erlang-eunit
-    sudo apt-get install erlang-nox
-    sudo apt-get install libicu-dev
-    sudo apt-get install libmozjs-dev
-    sudo apt-get install libcurl4-openssl-dev
-    cat <<INIT | sudo tee /etc/init/kinto.conf
-start on filesystem and started docker
-stop on runlevel [!2345]
-respawn
-exec docker run -p 8888:8888 kinto/kinto-server
-INIT
+    sudo npm install -g electron-prebuilt
+    sudo apt-get install couchdb -y
+
   SHELL
-  config.vm.provision :reload
+  #config.vm.provision :reload
 end
