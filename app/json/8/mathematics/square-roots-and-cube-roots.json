@@ -1,7 +1,7 @@
 [
 	{
     "name": "Sqaure Root",
-    "id": "square-roots",
+    "slug": "square-roots",
     "type": "videos",
     "keywords": [
         "",
@@ -10,7 +10,7 @@
     },
 	{
     "name": "Cube Root",
-    "id": "understanding-cube-roots",
+    "slug": "understanding-cube-roots",
     "type": "videos",
     "keywords": [
         "",

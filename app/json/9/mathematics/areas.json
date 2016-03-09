@@ -1,7 +1,7 @@
 [
   {
     "name": "Area Builder",
-    "id": "area-builder",
+    "slug": "area-builder",
     "type":"apps",
     "exec": {"command": "firefox", "args":["--new-window","/opt/phet/maths/area-builder_en.html"]},
     "subject": "mathematics",

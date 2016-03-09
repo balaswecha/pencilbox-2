@@ -1,7 +1,7 @@
 [
   {
     "name": "Faraday's Electromagnetic Lab",
-    "id": "faradays-electromagnetic-lab",
+    "slug": "faradays-electromagnetic-lab",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/faraday_en.jar"]},
     "keywords": ["",""],
     "type": "apps",
@@ -12,7 +12,7 @@
   },
   {
     "name": "Magnets and Electromagnets",
-    "id": "magnets-and-electromagnets",
+    "slug": "magnets-and-electromagnets",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/magnets-and-electromagnets_en.jar"]},
     "keywords": ["",""],
     "type": "apps",
@@ -23,7 +23,7 @@
   },
   {
     "name": "Faraday's Law",
-    "id": "faradays-law",
+    "slug": "faradays-law",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/faradays-law_en.html"]},
     "keywords": ["",""],
     "type": "apps",

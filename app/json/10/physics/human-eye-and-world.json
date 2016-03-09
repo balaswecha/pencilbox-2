@@ -1,7 +1,7 @@
 [
   {
     "name": "Color Vision",
-    "id": "color-vision",
+    "slug": "color-vision",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/color-vision_en.html"]},
     "keywords":["",""],
     "type": "apps",

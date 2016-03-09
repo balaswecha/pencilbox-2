@@ -1,7 +1,7 @@
 [
   {
     "name": "Stellarium",
-    "id": "stellarium",
+    "slug": "stellarium",
     "type":"apps",
     "exec": {"command": "stellarium", "args": []},
     "subject": "physics",
@@ -10,7 +10,7 @@
   },
   {
     "name": "Celestia",
-    "id": "celestia",
+    "slug": "celestia",
     "type":"apps",
     "exec": {"command": "celestia", "args": []},
     "subject": "physics",

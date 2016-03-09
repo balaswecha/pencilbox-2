@@ -1,7 +1,7 @@
 [
   {
     "name": "Human Atlas",
-    "id": "human-atlas",
+    "slug": "human-atlas",
     "type":"apps",
     "exec": {"command": "/opt/applications-bin/humanatlas", "args": []},
     "subject": "Biology",

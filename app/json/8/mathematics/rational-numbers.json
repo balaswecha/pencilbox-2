@@ -1,7 +1,7 @@
 [
     {
         "name": "KBruch",
-        "id": "KBruch",
+        "slug": "KBruch",
         "type":"apps",
         "exec": {"command": "kbruch", "args": []},
         "subject": "mathematics",
@@ -9,7 +9,7 @@
     },
 	{
         "name": "Between Fractions",
-        "id": "find-rational between-two-fractions",
+        "slug": "find-rational between-two-fractions",
         "type": "videos",
         "keywords": [
             "",
@@ -18,7 +18,7 @@
     },
 	{
         "name": "Between Integer",
-        "id": "finding-rational-number",
+        "slug": "finding-rational-number",
         "type": "videos",
         "keywords": [
             "",

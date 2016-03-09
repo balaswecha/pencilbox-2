@@ -2,6 +2,7 @@
 
 var db = new PouchDB('grades');
 var remoteCouch = 'http://localhost:5984/grades';
+var remoteDb = new PouchDB(remoteCouch);
 var opts = {live: true};
 var sync = PouchDB.sync('grades', remoteCouch, opts);
 
@@ -10,11 +11,7 @@ var ddoc = {
   _id: '_design/gradeSlug',
   views: {
     gradeSlug: {
-      map: function mapFun(doc) {
-        if (doc.grade) {
-          emit(doc.grade);
-        }
-      }.toString()
+      map: function mapFun(doc) {if (doc.grade) {emit(doc.grade);}}.toString()
     }
   }
 }
@@ -25,11 +22,35 @@ pencilBoxApp.factory('Grades', ['$q', function ($q) {
     return {
         queryAndKeepUpdated: function(callback) {
             var fetch = function() {
-                db.allDocs({include_docs: true, descending: true}, function (err, doc) {
-                    if (err) {
-                        console.log('ERROR', err);
-                    }
-                    callback(doc.rows.map(function(r) { return r.doc; }).filter(function(r){return typeof r.grade !== 'undefined'}));
+                remoteDb.allDocs({include_docs:true}).then(function(doc){
+                    var grades = doc.rows.map(function(r) { return r.doc; })
+                                        .filter(function(r){return typeof r.grade !== 'undefined'});
+                    grades.forEach(function(grade){
+                        delete grade['_id'];
+                        delete grade['_rev'];
+                        FileIO.writeToFile('app/json/' + grade.grade + '.json', JSON.stringify(grade));
+                    });
+                    callback(grades);
+                }).catch(function(err){
+                    db.allDocs({include_docs:true}).then(function(doc){
+                        var grades = doc.rows.map(function(r) { return r.doc; })
+                                            .filter(function(r){return typeof r.grade !== 'undefined'});
+                        if(grades.length===0){
+                            var gradesList = JSON.parse(FileIO.readFromFile('app/json/grades.json'));
+                            var gradesFromFile = [];
+                            gradesList.forEach(function(grade){
+                                var gradeDoc = JSON.parse(FileIO.readFromFile('app/json/' + grade.slug + '.json'));
+                                db.post(gradeDoc);
+                                gradesFromFile.push(gradeDoc);
+                            });
+                            gradesFromFile.sort(function(a,b){
+                                return parseInt(a.grade)-parseInt(b.grade);
+                            });
+                            callback(gradesFromFile);
+                        }else{
+                            callback(grades);
+                        }
+                    });
                 });
             };
 

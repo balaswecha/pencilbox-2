@@ -1,7 +1,7 @@
 [
   {
     "name": "Area Builder",
-    "id": "area-builder",
+    "slug": "area-builder",
     "type":"apps",
     "exec": {"command": "firefox", "args":["--new-window","/opt/phet/maths/area-builder_en.html"]},
     "subject": "mathematics",
@@ -13,7 +13,7 @@
   },
   	{
         "name": "Rectangle : Area and Perimeter",
-        "id": "area-and-perimeter-of-rectangle",
+        "slug": "area-and-perimeter-of-rectangle",
         "type": "videos",
         "keywords": [
             "",
@@ -22,7 +22,7 @@
     },
 	{
         "name": "Area and Perimeter",
-        "id": "area-and-perimeter",
+        "slug": "area-and-perimeter",
         "type": "videos",
         "keywords": [
             "",
@@ -31,7 +31,7 @@
     },
     {
         "name": "Parallelogram : Area",
-        "id": "Area-of-square-and-parallelogram",
+        "slug": "Area-of-square-and-parallelogram",
         "type": "videos",
         "keywords": [
             "",

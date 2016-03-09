@@ -1,7 +1,7 @@
 [
   {
     "name": "Eating & Exercise",
-    "id": "eating-exercise",
+    "slug": "eating-exercise",
     "exec": {"command": "java", "args":["-jar","/opt/phet/biology/eating-and-exercise_en.jar"]},
     "subject": "biology",
     "keywords":["",""],
@@ -14,7 +14,7 @@
   },
   {
     "name": "Nutrition",
-    "id": "food-component",
+    "slug": "food-component",
     "type": "videos",
     "keywords": [
         "",

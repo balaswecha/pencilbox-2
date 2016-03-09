@@ -1,7 +1,7 @@
 [
 	{
         "name": "Exponent Rules",
-        "id": "exponents-rules",
+        "slug": "exponents-rules",
         "type": "videos",
         "keywords": [
             "",
@@ -10,7 +10,7 @@
     },
 	{
         "name": "Exponents",
-        "id": "exponents",
+        "slug": "exponents",
         "type": "videos",
         "keywords": [
             "",
@@ -19,7 +19,7 @@
     },
     {
         "name": "Integer Exponents",
-        "id": "integer-exponents",
+        "slug": "integer-exponents",
         "type": "videos",
         "keywords": [
             "",

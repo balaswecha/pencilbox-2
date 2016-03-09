@@ -1,7 +1,7 @@
 [
   {
     "name": "Models of the Hydrogen Atom",
-    "id": "models-of-hydrogen-atom",
+    "slug": "models-of-hydrogen-atom",
     "type":"apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/hydrogen-atom_en.jar"]},
     "subject": "chemistry",

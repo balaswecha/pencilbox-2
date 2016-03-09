@@ -1,7 +1,7 @@
 [
   {
     "name": "Electrolysis",
-    "id": "electrolysis",
+    "slug": "electrolysis",
     "type":"apps",
     "exec": {"command": "chromium-browser --new-window http:localhost/phetsims/electrolysis/electrolysis_en.html", "args": []},
     "subject": "physics",

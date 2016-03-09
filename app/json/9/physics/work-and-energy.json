@@ -1,7 +1,7 @@
 [
   {
     "name": "The Ramp",
-    "id": "the-ramp",
+    "slug": "the-ramp",
     "type":"apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/the-ramp_en.jar"]},
     "subject": "physics",
@@ -14,7 +14,7 @@
   },
   {
     "name": "Energy stake Park",
-    "id": "energy-skate-park",
+    "slug": "energy-skate-park",
     "type":"apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/energy-skate-park_en.jar"]},
     "subject": "physics",
@@ -26,7 +26,7 @@
   },
   {
     "name": "Pulleys",
-    "id": "pulleys",
+    "slug": "pulleys",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/applications-bin/pulley/index.html"]},
     "subject": "physics",
     "keywords": [
@@ -37,7 +37,7 @@
   },
   {
     "name": "Masses & Springs",
-    "id": "masses-springs",
+    "slug": "masses-springs",
     "type":"apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/phet-mass-spring-lab/mass-spring-lab_en.html"]},
     "subject": "physics",

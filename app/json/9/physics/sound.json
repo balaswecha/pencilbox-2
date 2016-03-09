@@ -1,7 +1,7 @@
 [
   {
     "name": "Sound",
-    "id": "sound",
+    "slug": "sound",
     "type":"apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/sound_en.jar"]},
     "subject": "chemistry",
@@ -13,7 +13,7 @@
   },
   {
     "name": "Wave on a String",
-    "id": "wave-on-a-string",
+    "slug": "wave-on-a-string",
     "type":"apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/wave-on-a-string_en.html"]},
     "subject": "chemistry",

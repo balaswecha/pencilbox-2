@@ -1,7 +1,7 @@
 [
   {
     "name": "Sound",
-    "id": "sound",
+    "slug": "sound",
     "type":"apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/sound_en.jar"]},
     "subject": "chemistry",

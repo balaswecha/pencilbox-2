@@ -1,7 +1,7 @@
 [
   {
     "name": "Conductivity",
-    "id": "conductivity",
+    "slug": "conductivity",
     "type":"apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/conductivity_en.jar"]},
     "subject": "physics",

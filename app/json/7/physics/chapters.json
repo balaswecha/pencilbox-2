@@ -1,50 +1,50 @@
 [
     {
         "name": "Circuit",
-        "id": "circuit"
+        "slug": "circuit"
     },
     {
         "name": "Electricity",
-        "id": "electricity"
+        "slug": "electricity"
     },
     {
         "name": "Energy",
-        "id": "energy"
+        "slug": "energy"
     },
     {
         "name": "Heat",
-        "id": "heat"
+        "slug": "heat"
     },
     {
         "name": "Light",
-        "id": "light"
+        "slug": "light"
     },
     {
         "name": "Magnet",
-        "id": "magnet"
+        "slug": "magnet"
     },
     {
         "name": "Motion",
-        "id": "motion"
+        "slug": "motion"
     },
     {
         "name": "Planetarium",
-        "id": "planetarium"
+        "slug": "planetarium"
     },
     {
         "name": "Quantum Phenomena",
-        "id": "qphenomena"
+        "slug": "qphenomena"
     },
     {
         "name": "Radiation",
-        "id": "radiation"
+        "slug": "radiation"
     },
     {
         "name": "Sound",
-        "id": "sound"
+        "slug": "sound"
     },
     {
         "name": "Waves",
-        "id": "waves"
+        "slug": "waves"
     }
 ]

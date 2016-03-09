@@ -1,19 +1,19 @@
 [
     {
         "name":"Science",
-        "id":"science",
+        "slug":"science",
         "color": "#1c75bc",
         "topics_present" : true
     },
     {
         "name":"Mathematics",
-        "id":"mathematics",
+        "slug":"mathematics",
         "color": "#1c75bc",
         "topics_present" : true
     },
     {
         "name":"Social",
-        "id":"social",
+        "slug":"social",
         "color": "#1c75bc",
         "topics_present" : true
     }

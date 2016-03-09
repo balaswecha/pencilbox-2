@@ -1,62 +1,62 @@
 [
     {
         "name": "Food Components",
-        "id": "food-components"
+        "slug": "food-components"
     },
     {
         "name": "Acids & Bases",
-        "id": "acids-and-bases"
+        "slug": "acids-and-bases"
     },
     {
         "name": "Animal Fibre",
-        "id": "animal-fibre"
+        "slug": "animal-fibre"
     },
     {
         "name": "Motion & Time",
-        "id": "motion-and-time"
+        "slug": "motion-and-time"
     },
     {
         "name": "Temparature & its Measurement",
-        "id": "temparature-and-its-measurement"
+        "slug": "temparature-and-its-measurement"
     },
     {
         "name": "Weather & Climate",
-        "id": "weather-and-climate"
+        "slug": "weather-and-climate"
     },
     {
         "name": "Electricity - Current & Its Effect",
-        "id": "electricity-current-and-its-effect"
+        "slug": "electricity-current-and-its-effect"
     },
     {
         "name": "Air, Winds & Cyclones",
-        "id": "air-winds-and-cyclones"
+        "slug": "air-winds-and-cyclones"
     },
     {
         "name": "Reflection of Light",
-        "id": "reflection-of-light"
+        "slug": "reflection-of-light"
     },
     {
         "name": "Nutrition in Plants",
-        "id": "nutrition-in-plants"
+        "slug": "nutrition-in-plants"
     },
     {
         "name" : "Reproduction in plants`",
-        "id" : "reproduction-in-plants"
+        "slug" : "reproduction-in-plants"
     },
     {
         "name": "Water - Too little to Waste",
-        "id": "water-too-little-to-waste"
+        "slug": "water-too-little-to-waste"
     },
     {
         "name": "Soil - Our Life",
-        "id": "soil-our-life"
+        "slug": "soil-our-life"
     },
     {
         "name" : "Forest - Our Life",
-        "id" : "forest-our-life"
+        "slug" : "forest-our-life"
     },
     {
       "name":"changes around us",
-      "id":"changes-around-us"
+      "slug":"changes-around-us"
     }
 ]

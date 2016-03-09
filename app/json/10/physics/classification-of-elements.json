@@ -1,7 +1,7 @@
 [
   {
     "name": "Kalzium",
-    "id": "kalzium",
+    "slug": "kalzium",
     "exec": {"command": "kalzium", "args": []},
     "subject": "chemistry",
     "keywords": [

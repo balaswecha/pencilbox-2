@@ -1,7 +1,7 @@
 [
   {
     "name": "Balloons and Static Electricity",
-    "id": "balloons-static-energy",
+    "slug": "balloons-static-energy",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/balloons_en.html"]},
     "keywords":["",""],
     "type":"apps",
@@ -12,7 +12,7 @@
   },
   {
     "name": "John Travoltage",
-    "id": "john-travoltage",
+    "slug": "john-travoltage",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/john-travoltage_en.html"]},
     "keywords":["",""],
     "type":"apps",

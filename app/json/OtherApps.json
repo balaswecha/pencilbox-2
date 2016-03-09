@@ -1,11 +1,11 @@
 [
 	{
-		"id" : "chemical-colors",
+		"slug" : "chemical-colors",
 		"name" : "Chemical Colors",
 		"type" : "apps"
 	},
 	{
-		"id" : "play-with-equations",
+		"slug" : "play-with-equations",
 		"name" : "Play with equations",
 		"type" : "apps"
 	}

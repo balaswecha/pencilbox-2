@@ -1,7 +1,7 @@
 [
 	{
         "name": "Solving Equation",
-        "id": "solving-a-linear-equation",
+        "slug": "solving-a-linear-equation",
         "type": "videos",
         "keywords": [
             "",
@@ -10,7 +10,7 @@
     },
     {
         "name": "Solving by substraction",
-        "id": "solving-equation-by-substraction",
+        "slug": "solving-equation-by-substraction",
         "type": "videos",
         "keywords": [
             "",

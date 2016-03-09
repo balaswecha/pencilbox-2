@@ -1,25 +1,25 @@
 [
     {
         "name": "Magnet and Compass",
-        "id": "magnets-and- compass",
+        "slug": "magnets-and- compass",
         "exec": {"command": "java", "args":["-jar","/opt/phet/physics/magnet-and-compass_en.jar"]},
         "keywords":["",""] 
     },
     {
         "name": "Magnets and Electromagnets",
-        "id": "magnets-and-electromagnets",
+        "slug": "magnets-and-electromagnets",
         "exec": {"command": "java", "args":["-jar","/opt/phet/physics/magnets-and-electromagnets_en.jar"]},
         "keywords":["",""] 
     },
     {
         "name": "Faraday's Electromagnetic Lab",
-        "id": "faradays-electromagnetic-lab",
+        "slug": "faradays-electromagnetic-lab",
         "exec": {"command": "java", "args":["-jar","/opt/phet/physics/faraday_en.jar"]},
         "keywords":["",""]
     },
     {
         "name": "Radio Waves & Electromagnetic Fields",
-        "id": "radio-waves",
+        "slug": "radio-waves",
         "exec": {"command": "java", "args":["-jar","/opt/phet/physics/radio-waves_en.jar"]},
         "keywords":["",""]   
     }

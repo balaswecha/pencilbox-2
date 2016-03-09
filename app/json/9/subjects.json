@@ -1,25 +1,25 @@
 [
     {
         "name":"Physics",
-        "id":"physics",
+        "slug":"physics",
         "color": "#1c75bc",
         "topics_present" : true
     },
     {
         "name":"Maths",
-        "id":"mathematics",
+        "slug":"mathematics",
         "color": "#be1e2d",
         "topics_present": false
     },
     {
         "name":"Biology",
-        "id":"biology",
+        "slug":"biology",
         "color": "#00a14b",
         "topics_present" : false
     },
     {
         "name":"Social",
-        "id":"social",
+        "slug":"social",
         "color": "#a97c50",
         "topics_present" : false
     }

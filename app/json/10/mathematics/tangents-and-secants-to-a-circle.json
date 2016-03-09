@@ -1,7 +1,7 @@
 [
   {
     "name": "Geo Gebra",
-    "id": "geo-gebra",
+    "slug": "geo-gebra",
     "type":"apps",
     "exec": {"command": "geogebra", "args": []},
     "subject": "Mathematics",

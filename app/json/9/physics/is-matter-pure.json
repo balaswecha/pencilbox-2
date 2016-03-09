@@ -1,7 +1,7 @@
 [
   {
     "name": "Salts & Solubility",
-    "id": "salts-solubility",
+    "slug": "salts-solubility",
     "type":"apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/soluble-salts_en.jar"]},
     "subject": "chemistry",
@@ -13,7 +13,7 @@
   },
   {
     "name": "Concentration",
-    "id": "concentration",
+    "slug": "concentration",
     "type":"apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/concentration_en.html"]},
     "subject": "chemistry",

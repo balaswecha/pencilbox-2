@@ -1,7 +1,7 @@
 [
   {
     "name": "Geo Gebra",
-    "id": "geo-gebra",
+    "slug": "geo-gebra",
     "exec": {"command": "geogebra", "args": []},
     "type":"apps",
     "subject": "mathematics",
@@ -9,7 +9,7 @@
   },
   {
         "name": "Construction",
-        "id": "types-of-quadrilaterals",
+        "slug": "types-of-quadrilaterals",
         "type": "videos",
         "keywords": [
             "",

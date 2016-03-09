@@ -55,8 +55,11 @@
             writeToFile: function (filename, contents) {
                 fs.writeFileSync(filename, contents);
             },
+            readFromFile: function (filename) {
+                return fs.readFileSync(filename, 'utf-8');
+            },
             getUserHome: function() {
-              return process.env[(process.platform == 'win32') ? 'USERPROFILE' : 'HOME'];
+                return process.env[(process.platform == 'win32') ? 'USERPROFILE' : 'HOME'];
             }
         };
     </script>

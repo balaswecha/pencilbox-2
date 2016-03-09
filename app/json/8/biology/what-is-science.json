@@ -1,7 +1,7 @@
 [
 	{
 	    "name": "What is Science",
-	    "id": "what-is-science",
+	    "slug": "what-is-science",
 	    "type": "videos",
 	    "keywords": [
 	        "",

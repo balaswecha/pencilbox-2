@@ -1,7 +1,7 @@
 [
   {
     "name": "Natural Selection",
-    "id": "natural-selection",
+    "slug": "natural-selection",
     "type":"apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/biology/natural-selection_en.jar"]},
     "subject": "biology",
@@ -13,7 +13,7 @@
   },
   {
     "name": "Ecosystem and Biodiversity",
-    "id": "ecosystem-services-and-biodiversity",
+    "slug": "ecosystem-services-and-biodiversity",
     "type": "videos",
     "keywords": [
         "",

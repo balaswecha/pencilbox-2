@@ -1,7 +1,7 @@
 [
 	{
         "name": "Variables and Expressions",
-        "id": "algebric-expression-and-variables",
+        "slug": "algebric-expression-and-variables",
         "type": "videos",
         "keywords": [
             "",
@@ -10,7 +10,7 @@
     },
 	{
         "name": "Algebric Expressions",
-        "id": "algebric-expressions",
+        "slug": "algebric-expressions",
         "type": "videos",
         "keywords": [
             "",

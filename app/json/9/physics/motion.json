@@ -1,7 +1,7 @@
 [
   {
     "name": "Forces and Motion: Basics",
-    "id": "forces-and-motions-basics",
+    "slug": "forces-and-motions-basics",
     "type":"apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/forces-and-motion-basics_en.jar"]},
     "subject": "physics",
@@ -13,7 +13,7 @@
   },
   {
     "name": "Ramp: Forces and Motion",
-    "id": "ramp-forces-and -motion",
+    "slug": "ramp-forces-and -motion",
     "type":"apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/ramp-forces-and-motion_en.jar"]},
     "subject": "physics",
@@ -25,7 +25,7 @@
   },
   {
     "name": "The Moving Man",
-    "id": "moving-man",
+    "slug": "moving-man",
     "type":"apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/moving-man_en.jar"]},
     "subject": "physics",

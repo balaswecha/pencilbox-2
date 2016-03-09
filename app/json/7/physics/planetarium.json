@@ -1,20 +1,20 @@
 [
     {
         "name": "Stellarium",
-        "id": "stellarium",
+        "slug": "stellarium",
         "exec": {"command": "stellarium", "args": []},
         "audio": "/audio/stellarium.wav",
         "keywords":["",""]
     },
     {
         "name": "Celestia",
-        "id": "celestia",
+        "slug": "celestia",
         "exec": {"command": "celestia", "args": []},
         "keywords":["",""]
     },
     {
         "name": "My Solar System",
-        "id": "my-solar-system",
+        "slug": "my-solar-system",
         "exec": {"command": "java", "args":["-jar","/opt/phet/physics/my-solar-system_en.jar"]},
         "keywords":["",""]
     }

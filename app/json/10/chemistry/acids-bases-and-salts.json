@@ -1,7 +1,7 @@
 [
   {
     "name": "pH Scale: Basics",
-    "id": "ph-scale-basics",
+    "slug": "ph-scale-basics",
     "type": "apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/ph-scale-basics_en.html"]},
     "subject": "chemistry",
@@ -19,7 +19,7 @@
   },
   {
     "name": "Salts & Solubility",
-    "id": "salts-solubility",
+    "slug": "salts-solubility",
     "type":"apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/soluble-salts_en.jar"]},
     "subject": "chemistry",
@@ -31,7 +31,7 @@
   },
   {
     "name": "Acid - Base Solutions",
-    "id": "acid-base-solutions",
+    "slug": "acid-base-solutions",
     "type": "apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/acid-base-solutions_en.html"]},
     "subject": "chemistry",

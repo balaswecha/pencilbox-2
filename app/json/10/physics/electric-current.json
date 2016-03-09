@@ -1,7 +1,7 @@
 [
   {
     "name": "Color Vision",
-    "id": "color-vision",
+    "slug": "color-vision",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/color-vision_en.jar"]},
     "keywords":["",""],
     "type": "apps",
@@ -12,7 +12,7 @@
   },
   {
     "name": "Electric Field Hockey",
-    "id": "electric-field-hockey",
+    "slug": "electric-field-hockey",
     "type":"apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/electric-hockey_en.jar"]},
     "keywords":["",""],
@@ -23,7 +23,7 @@
   },
   {
     "name": "Electric Field of Dreams",
-    "id": "electric-field-of- dreams",
+    "slug": "electric-field-of- dreams",
     "type":"apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/efield_en.jar"]},
     "keywords":["",""],
@@ -34,7 +34,7 @@
   },
   {
     "name": "Charges and Fields",
-    "id": "charges-and-fields",
+    "slug": "charges-and-fields",
     "type":"apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/charges-and-fields_en.jar"]},
     "keywords":["",""],
@@ -45,7 +45,7 @@
   },
   {
     "name": "Ohm's Law",
-    "id": "ohms-law",
+    "slug": "ohms-law",
     "type":"apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/ohms-law_en.html"]},
     "keywords":["",""],
@@ -56,7 +56,7 @@
   },
   {
     "name": "Resistance in a Wire",
-    "id": "resistance-in-wire",
+    "slug": "resistance-in-wire",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/resistance-in-a-wire_en.html"]},
     "keywords":["",""],
     "type": "apps",
@@ -67,7 +67,7 @@
   },
   {
     "name": "Circuit Construction Kit (DC Only)",
-    "id": "circuit-construction- kit",
+    "slug": "circuit-construction- kit",
     "exec": {"command": "java", "args":["-jar","\/opt\/phet\/physics\/circuit-construction-kit-dc_en.jar"]},
     "type": "apps",
     "keywords": [

@@ -1,62 +1,62 @@
 [
     {
         "name": "Real Numbers",
-        "id": "real-numbers"
+        "slug": "real-numbers"
     },
     {
         "name": "Polynomials and Factorisation",
-        "id": "polynomials-and-factorisation"
+        "slug": "polynomials-and-factorisation"
     },
     {
         "name": "The Elements of Geometry",
-        "id": "the-elements-of-geometry"
+        "slug": "the-elements-of-geometry"
     },
     {
         "name": "Lines and Angles",
-        "id": "lines-and-angles"
+        "slug": "lines-and-angles"
     },
     {
         "name": "Co-Ordinate Geometry",
-        "id": "co-ordinate-geometry"
+        "slug": "co-ordinate-geometry"
     },
     {
         "name": "Linear Equations in Two Variables",
-        "id": "linear-equations-in-two-variables"
+        "slug": "linear-equations-in-two-variables"
     },
     {
         "name": "Triangles",
-        "id": "triangles"
+        "slug": "triangles"
     },
     {
         "name": "Quadrilaterals",
-        "id": "quadrilaterals"
+        "slug": "quadrilaterals"
     },
     {
         "name": "Statistics",
-        "id": "statistics"
+        "slug": "statistics"
     },
     {
         "name": "Surface Areas and Volumes",
-        "id": "surface-areas-and-volumes"
+        "slug": "surface-areas-and-volumes"
     },
     {
         "name": "Areas",
-        "id": "areas"
+        "slug": "areas"
     },
     {
         "name": "Circles",
-        "id": "circles"
+        "slug": "circles"
     },
     {
         "name": "Geometrical Constructions",
-        "id": "geometrical-constructions"
+        "slug": "geometrical-constructions"
     },
     {
         "name": "Probability",
-        "id": "probability"
+        "slug": "probability"
     },
     {
         "name": "Proofs in Mathematics",
-        "id": "proofs-in-mathematics"
+        "slug": "proofs-in-mathematics"
     }
 ]

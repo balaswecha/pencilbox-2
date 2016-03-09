@@ -1,7 +1,7 @@
 [
   {
     "name": "Density",
-    "id": "density",
+    "slug": "density",
     "type":"apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/phet-density/density_en.html"]},
     "subject": "physics",
@@ -13,7 +13,7 @@
   },
   {
     "name": "Buoyancy",
-    "id": "buoyancy",
+    "slug": "buoyancy",
     "type":"apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/phet-buoyancy/buoyancy_en.html"]},
     "subject": "physics",
@@ -26,7 +26,7 @@
   },
   {
     "name": "Under Pressure",
-    "id": "under-pressure",
+    "slug": "under-pressure",
     "type":"apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/under-pressure_en.html"]},
     "subject": "chemistry",

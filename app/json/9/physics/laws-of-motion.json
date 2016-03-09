@@ -1,7 +1,7 @@
 [
   {
     "name": "Ramp: Forces and Motion",
-    "id": "ramp-forces-and-motion",
+    "slug": "ramp-forces-and-motion",
     "type":"apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/ramp-forces-and-motion_en.jar"]},
     "subject": "physics",
@@ -13,7 +13,7 @@
   },
   {
     "name": "Gravity Force Lab",
-    "id": "gravity-force-lab",
+    "slug": "gravity-force-lab",
     "type":"apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/gravity-force-lab_en.html"]},
     "subject": "physics",
@@ -25,7 +25,7 @@
   },
   {
     "name": "Collision Lab",
-    "id": "collision-lab",
+    "slug": "collision-lab",
     "type":"apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/phet-collision-lab/collision-lab_en.html"]},
     "subject": "physics",

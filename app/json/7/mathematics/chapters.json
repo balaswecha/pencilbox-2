@@ -1,62 +1,62 @@
 [
     {
         "name": "Integers",
-        "id": "integers"
+        "slug": "integers"
     },
     {
         "name": "Fractions, Decimals AND Rational Numbers",
-        "id": "fractions-decimals-rational-numbers"
+        "slug": "fractions-decimals-rational-numbers"
     },
     {
         "name": "Simple Equations",
-        "id": "simple-equations"
+        "slug": "simple-equations"
     },
     {
         "name": "Lines and Angles",
-        "id": "lines-and-angles"
+        "slug": "lines-and-angles"
     },
     {
         "name": "Triangle and its properties",
-        "id": "triangle-and-its-properties"
+        "slug": "triangle-and-its-properties"
     },
     {
         "name": "Ratio - Applications",
-        "id": "ratio-applications"
+        "slug": "ratio-applications"
     },
     {
         "name": "Data handling",
-        "id": "data-handling"
+        "slug": "data-handling"
     },
     {
         "name": "Congruency of Triangle",
-        "id": "congruency-of-triangle"
+        "slug": "congruency-of-triangle"
     },
     {
         "name": "Construction of Triangles",
-        "id": "construction-of-triangle"
+        "slug": "construction-of-triangle"
     },
     {
         "name": "algebric Expressions",
-        "id": "algebric-expressions"
+        "slug": "algebric-expressions"
     },
     {
         "name": "Exponents",
-        "id": "exponents"
+        "slug": "exponents"
     },
     {
         "name": "Quadrilaterals",
-        "id": "quadrilaterals"
+        "slug": "quadrilaterals"
     },
     {
         "name": "Area and Perimeter",
-        "id": "area-and-perimeter"
+        "slug": "area-and-perimeter"
     },
     {
         "name": "Understanding 2D and 3D shapes",
-        "id": "understanding-2D-and-3D-shapes"
+        "slug": "understanding-2D-and-3D-shapes"
     },
     {
         "name": "Symmetry",
-        "id": "symmetry"
+        "slug": "symmetry"
     }
 ]

@@ -1,7 +1,7 @@
 [
 	{
 	    "name": "Rectangle : area and perimeter",
-	    "id": "area-and-perimeter-of-rectangle",
+	    "slug": "area-and-perimeter-of-rectangle",
 	    "type": "videos",
 	    "keywords": [
 	        "",
@@ -10,7 +10,7 @@
     },
     {
 	    "name": "Parallelogram : area and perimeter",
-	    "id": "Area-of-square-and-parallelogram",
+	    "slug": "Area-of-square-and-parallelogram",
 	    "type": "videos",
 	    "keywords": [
 	        "",
@@ -19,7 +19,7 @@
     },
     {
 	    "name": "Circle : area and circumference",
-	    "id": "circumference-and-area-of-circle",
+	    "slug": "circumference-and-area-of-circle",
 	    "type": "videos",
 	    "keywords": [
 	        "",

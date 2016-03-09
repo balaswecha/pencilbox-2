@@ -1,43 +1,43 @@
 [
     {
         "name": "Balloons and Static Electricity",
-        "id": "balloons-static-energy",
+        "slug": "balloons-static-energy",
         "exec": {"command": "java", "args":["-jar","/opt/phet/physics/balloons_en.jar"]},
         "keywords":["",""] 
     },
     {
         "name": "Generator",
-        "id": "generator",
+        "slug": "generator",
         "exec": {"command": "java", "args":["-jar","/opt/phet/physics/generator_en.jar"]},
         "keywords":["",""] 
     },
     {
         "name": "Electric Field Hockey",
-        "id": "electric-field-hockey",
+        "slug": "electric-field-hockey",
         "exec": {"command": "java", "args":["-jar","/opt/phet/physics/electric-hockey_en.jar"]},
         "keywords":["",""]
     },
     {
         "name": "Charges and Fields",
-        "id": "charges-and-fields",
+        "slug": "charges-and-fields",
         "exec": {"command": "java", "args":["-jar","/opt/phet/physics/charges-and-fields_en.jar"]},
         "keywords":["",""]  
     },
     {
         "name": "Ohm's Law",
-        "id": "ohms-law",
+        "slug": "ohms-law",
         "exec": {"command": "java", "args":["-jar","/opt/phet/physics/ohms-law_en.jar"]},
         "keywords":["",""] 
     },
     {
         "name": "Battery Voltage",
-        "id": "battery-voltage",
+        "slug": "battery-voltage",
         "exec": {"command": "java", "args":["-jar","/opt/phet/physics/battery-voltage_en.jar"]},
         "keywords":["",""] 
     },
     {
         "name": "Electric Field of Dreams",
-        "id": "electric-field-of- dreams",
+        "slug": "electric-field-of- dreams",
         "exec": {"command": "java", "args":["-jar","/opt/phet/physics/efield_en.jar"]},
         "keywords":["",""] 
     }

@@ -1,7 +1,7 @@
 [
   {
     "name": "Build an Atom",
-    "id": "build-an-atom",
+    "slug": "build-an-atom",
     "type":"apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/build-an-atom_en.html"]},
     "subject": "chemistry",
@@ -13,7 +13,7 @@
   },
   {
     "name": "Rutherford Scattering",
-    "id": "rutherfford-scattering",
+    "slug": "rutherfford-scattering",
     "type":"apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/rutherford-scattering_en.jar"]},
     "subject": "physics",
@@ -25,7 +25,7 @@
   },
   {
     "name": "Models of the Hydrogen Atom",
-    "id": "models-of-hydrogen-atom",
+    "slug": "models-of-hydrogen-atom",
     "type":"apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/hydrogen-atom_en.jar"]},
     "subject": "chemistry",
@@ -37,7 +37,7 @@
   },
   {
     "name": "Kalzium",
-    "id": "kalzium",
+    "slug": "kalzium",
     "exec": {"command": "kalzium", "args": []},
     "subject": "chemistry",
     "keywords": [
@@ -48,7 +48,7 @@
   },
   {
       "name": "Isotopes & Atomic Mass",
-      "id": "isotopes-and-atomic mass",
+      "slug": "isotopes-and-atomic mass",
       "type":"apps",
       "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/isotopes-and-atomic-mass_en.jar"]},
       "subject": "chemistry",

@@ -1,7 +1,7 @@
 [
   {
     "name": "Cell Structure",
-    "id": "cell-structure",
+    "slug": "cell-structure",
     "type": "apps",
     "exec": {"command": "chromium-browser --new-window http:localhost/phetsims/cell-structure/cell-structure_en.html", "args": []},
     "subject": "Biology",
@@ -12,7 +12,7 @@
   },
   {
     "name": "Human Atlas",
-    "id": "human-atlas",
+    "slug": "human-atlas",
     "type": "apps",
     "exec": {"command": "/opt/applications-bin/humanatlas", "args": []},
     "subject": "Biology",
@@ -23,7 +23,7 @@
   },
   {
     "name": "pH Scale: Basics",
-    "id": "ph-scale-basics",
+    "slug": "ph-scale-basics",
     "type": "apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/ph-scale-basics_en.html"]},
     "subject": "chemistry",
@@ -41,7 +41,7 @@
   },
   {
     "name": "Salts & Solubility",
-    "id": "salts-solubility",
+    "slug": "salts-solubility",
     "type": "apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/soluble-salts_en.jar"]},
     "subject": "chemistry",
@@ -59,7 +59,7 @@
   },
   {
     "name": "Acid - Base Solutions",
-    "id": "acid-base-solutions",
+    "slug": "acid-base-solutions",
     "type": "apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/acid-base-solutions_en.html"]},
     "subject": "chemistry",
@@ -77,7 +77,7 @@
   },
   {
     "name": "Kalzium",
-    "id": "kalzium",
+    "slug": "kalzium",
     "exec": {"command": "kalzium", "args": []},
     "type": "apps",
     "subject": "chemistry",
@@ -88,7 +88,7 @@
   },
   {
     "name": "Balancing Chemical Equations",
-    "id": "balancing-chemical-equations",
+    "slug": "balancing-chemical-equations",
     "type": "apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/balancing-chemical-equations_en.html"]},
     "subject": "chemistry",
@@ -106,7 +106,7 @@
   },
   {
     "name": "Reactions & Rates",
-    "id": "reactions-and-rates",
+    "slug": "reactions-and-rates",
     "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/reactions-and-rates_en.jar"]},
     "keywords": [
       "",
@@ -123,7 +123,7 @@
   },
   {
     "name": "Models of the Hydrogen Atom",
-    "id": "models-of-hydrogen-atom",
+    "slug": "models-of-hydrogen-atom",
     "type": "apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/hydrogen-atom_en.jar"]},
     "subject": "chemistry",
@@ -141,7 +141,7 @@
   },
   {
     "name": "Build an Atom",
-    "id": "build-an-atom",
+    "slug": "build-an-atom",
     "type": "apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/build-an-atom_en.html"]},
     "subject": "chemistry",
@@ -159,7 +159,7 @@
   },
   {
     "name": "Element Builder",
-    "id": "element-builder",
+    "slug": "element-builder",
     "type": "apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/ElementBuilder/index.html"]},
     "subject": "chemistry",
@@ -177,7 +177,7 @@
   },
   {
     "name": "Isotopes & Atomic Mass",
-    "id": "isotopes-and-atomic mass",
+    "slug": "isotopes-and-atomic mass",
     "type": "apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/isotopes-and-atomic-mass_en.jar"]},
     "subject": "chemistry",
@@ -195,7 +195,7 @@
   },
   {
     "name": "Geo Gebra",
-    "id": "geo-gebra",
+    "slug": "geo-gebra",
     "type": "apps",
     "exec": {"command": "geogebra", "args": []},
     "subject": "Mathematics",
@@ -206,7 +206,7 @@
   },
   {
     "name": "Radioactive Dating Game",
-    "id": "radio-active-dating-game",
+    "slug": "radio-active-dating-game",
     "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/radioactive-dating-game_en.jar"]},
     "subject": "chemistry",
     "keywords": [
@@ -217,7 +217,7 @@
   },
   {
     "name": "Reactants, Products and Leftovers",
-    "id": "reactants-products-leftovers",
+    "slug": "reactants-products-leftovers",
     "type": "apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/reactants-products-and-leftovers_en.jar"]},
     "subject": "chemistry",
@@ -235,7 +235,7 @@
   },
   {
     "name": "Color Vision",
-    "id": "color-vision",
+    "slug": "color-vision",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/color-vision_en.jar"]},
     "keywords": [
       "",
@@ -252,7 +252,7 @@
   },
   {
     "name": "Electric Field Hockey",
-    "id": "electric-field-hockey",
+    "slug": "electric-field-hockey",
     "type": "apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/electric-hockey_en.jar"]},
     "keywords": [
@@ -269,7 +269,7 @@
   },
   {
     "name": "Electric Field of Dreams",
-    "id": "electric-field-of- dreams",
+    "slug": "electric-field-of- dreams",
     "type": "apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/efield_en.jar"]},
     "keywords": [
@@ -286,7 +286,7 @@
   },
   {
     "name": "Charges and Fields",
-    "id": "charges-and-fields",
+    "slug": "charges-and-fields",
     "type": "apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/charges-and-fields_en.jar"]},
     "keywords": [
@@ -303,7 +303,7 @@
   },
   {
     "name": "Ohm's Law",
-    "id": "ohms-law",
+    "slug": "ohms-law",
     "type": "apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/ohms-law_en.html"]},
     "keywords": [
@@ -320,7 +320,7 @@
   },
   {
     "name": "Resistance in a Wire",
-    "id": "resistance-in-wire",
+    "slug": "resistance-in-wire",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/resistance-in-a-wire_en.html"]},
     "keywords": [
       "",
@@ -337,7 +337,7 @@
   },
   {
     "name": "Circuit Construction Kit (DC Only)",
-    "id": "circuit-construction- kit",
+    "slug": "circuit-construction- kit",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/circuit-construction-kit-dc_en.jar"]},
     "type": "apps",
     "keywords": [
@@ -358,7 +358,7 @@
   },
   {
     "name": "Faraday's Electromagnetic Lab",
-    "id": "faradays-electromagnetic-lab",
+    "slug": "faradays-electromagnetic-lab",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/faraday_en.jar"]},
     "keywords": [
       "",
@@ -375,7 +375,7 @@
   },
   {
     "name": "Magnets and Electromagnets",
-    "id": "magnets-and-electromagnets",
+    "slug": "magnets-and-electromagnets",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/magnets-and-electromagnets_en.jar"]},
     "keywords": [
       "",
@@ -392,7 +392,7 @@
   },
   {
     "name": "Faraday's Law",
-    "id": "faradays-law",
+    "slug": "faradays-law",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/faradays-law_en.html"]},
     "keywords": [
       "",
@@ -409,7 +409,7 @@
   },
   {
     "name": "Bending Light",
-    "id": "bending-light",
+    "slug": "bending-light",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/bending-light_en.jar"]},
     "keywords": [
       "",
@@ -426,7 +426,7 @@
   },
   {
     "name": "Geometric Optics",
-    "id": "geometric-optics",
+    "slug": "geometric-optics",
     "type": "apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/geometric-optics_en.jar"]},
     "subject": "physics",
@@ -444,7 +444,7 @@
   },
   {
     "name": "Blackbody Spectrum",
-    "id": "black-body-spectrum",
+    "slug": "black-body-spectrum",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/blackbody-spectrum_en.jar"]},
     "keywords": [
       "",
@@ -461,7 +461,7 @@
   },
   {
     "name": "Capacitor Lab",
-    "id": "capacitor-lab",
+    "slug": "capacitor-lab",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/capacitor-lab_en.jar"]},
     "type": "apps",
     "keywords": [
@@ -471,7 +471,7 @@
   },
   {
     "name": "Balloons & Buoyancy",
-    "id": "balloons-buoyancy",
+    "slug": "balloons-buoyancy",
     "type": "apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/balloons-and-buoyancy_en.jar"]},
     "keywords": [
@@ -481,7 +481,7 @@
   },
   {
     "name": "Eating & Exercise",
-    "id": "eating-exercise",
+    "slug": "eating-exercise",
     "type": "apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/biology/eating-and-exercise_en.jar"]},
     "subject": "biology",
@@ -503,7 +503,7 @@
   },
   {
     "name": "Forces and Motion",
-    "id": "forces-and-motion",
+    "slug": "forces-and-motion",
     "type": "apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/forces-and-motion_en.jar"]},
     "subject": "physics",
@@ -521,7 +521,7 @@
   },
   {
     "name": "Natural Selection",
-    "id": "natural-selection",
+    "slug": "natural-selection",
     "type": "apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/biology/natural-selection_en.jar"]},
     "subject": "biology",
@@ -539,7 +539,7 @@
   },
   {
     "name": "Area Builder",
-    "id": "area-builder",
+    "slug": "area-builder",
     "type": "apps",
     "exec": {"command": "firefox", "args":["--new-window","/opt/phet/maths/area-builder_en.html"]},
     "subject": "mathematics",
@@ -557,7 +557,7 @@
   },
   {
     "name": "KBruch",
-    "id": "KBruch",
+    "slug": "KBruch",
     "type": "apps",
     "exec": {"command": "kbruch", "args": []},
     "subject": "mathematics",
@@ -568,7 +568,7 @@
   },
   {
     "name": "Electrolysis",
-    "id": "electrolysis",
+    "slug": "electrolysis",
     "type": "apps",
     "exec": {"command": "chromium-browser --new-window http:localhost/phetsims/electrolysis/electrolysis_en.html", "args": []},
     "subject": "physics",
@@ -579,7 +579,7 @@
   },
   {
     "name": "The Moving Man",
-    "id": "moving-man",
+    "slug": "moving-man",
     "type": "apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/moving-man_en.jar"]},
     "subject": "physics",
@@ -597,7 +597,7 @@
   },
   {
     "name": "Friction",
-    "id": "friction",
+    "slug": "friction",
     "type": "apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/phet-friction/friction_en.html"]},
     "subject": "physics",
@@ -615,7 +615,7 @@
   },
   {
     "name": "Ramp: Forces and Motion",
-    "id": "ramp-forces-and -motion",
+    "slug": "ramp-forces-and -motion",
     "type": "apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/ramp-forces-and-motion_en.jar"]},
     "subject": "physics",
@@ -633,7 +633,7 @@
   },
   {
     "name": "Conductivity",
-    "id": "conductivity",
+    "slug": "conductivity",
     "type": "apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/conductivity_en.jar"]},
     "subject": "physics",
@@ -651,7 +651,7 @@
   },
   {
     "name": "Balloons and Static Electricity",
-    "id": "balloons-static-energy",
+    "slug": "balloons-static-energy",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/balloons_en.html"]},
     "keywords": [
       "",
@@ -668,7 +668,7 @@
   },
   {
     "name": "John Travoltage",
-    "id": "john-travoltage",
+    "slug": "john-travoltage",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/john-travoltage_en.html"]},
     "keywords": [
       "",
@@ -680,7 +680,7 @@
   },
   {
     "name": "Sound",
-    "id": "sound",
+    "slug": "sound",
     "type": "apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/sound_en.jar"]},
     "subject": "chemistry",
@@ -698,7 +698,7 @@
   },
   {
     "name": "Stellarium",
-    "id": "stellarium",
+    "slug": "stellarium",
     "type": "apps",
     "exec": {"command": "stellarium", "args": []},
     "audio": "/audio/stellarium.wav",
@@ -710,7 +710,7 @@
   },
   {
     "name": "Celestia",
-    "id": "celestia",
+    "slug": "celestia",
     "type": "apps",
     "exec": {"command": "celestia", "args": []},
     "audio": "/audio/celestia.wav",
@@ -722,7 +722,7 @@
   },
   {
     "name": "K Geography",
-    "id": "kgeography",
+    "slug": "kgeography",
     "type": "apps",
     "exec": {"command": "kgeography", "args": []},
     "subject": "social",
@@ -734,7 +734,7 @@
   },
   {
     "name": "Build a Molecule",
-    "id": "build-a-molecule",
+    "slug": "build-a-molecule",
     "type": "apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/build-a-molecule_en.jar"]},
     "subject": "chemistry",
@@ -752,7 +752,7 @@
   },
   {
     "name": "Density",
-    "id": "density",
+    "slug": "density",
     "type": "apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/phet-density/density_en.html"]},
     "subject": "physics",
@@ -770,7 +770,7 @@
   },
   {
     "name": "Buoyancy",
-    "id": "buoyancy",
+    "slug": "buoyancy",
     "type": "apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/phet-buoyancy/buoyancy_en.html"]},
     "subject": "physics",
@@ -792,7 +792,7 @@
   },
   {
     "name": "Under Pressure",
-    "id": "under-pressure",
+    "slug": "under-pressure",
     "type": "apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/under-pressure_en.html"]},
     "subject": "chemistry",
@@ -810,7 +810,7 @@
   },
   {
     "name": "Gravity and Orbits",
-    "id": "gravity-and-orbits",
+    "slug": "gravity-and-orbits",
     "type": "apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/gravity-and-orbits_en.jar"]},
     "subject": "chemistry",
@@ -828,7 +828,7 @@
   },
   {
     "name": "Gravity Force Lab",
-    "id": "gravity-force-lab",
+    "slug": "gravity-force-lab",
     "type": "apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/gravity-force-lab_en.html"]},
     "subject": "physics",
@@ -846,7 +846,7 @@
   },
   {
     "name": "Freefall Tower",
-    "id": "freefall-tower",
+    "slug": "freefall-tower",
     "type": "apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/applications-bin/freefalltower/index.html"]},
     "subject": "physics",
@@ -857,7 +857,7 @@
   },
   {
     "name": "Concentration",
-    "id": "concentration",
+    "slug": "concentration",
     "type": "apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/concentration_en.html"]},
     "subject": "chemistry",
@@ -875,7 +875,7 @@
   },
   {
     "name": "Ramp: Forces and Motion",
-    "id": "ramp-forces-and-motion",
+    "slug": "ramp-forces-and-motion",
     "type": "apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/ramp-forces-and-motion_en.jar"]},
     "subject": "physics",
@@ -893,7 +893,7 @@
   },
   {
     "name": "Collision Lab",
-    "id": "collision-lab",
+    "slug": "collision-lab",
     "type": "apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/phet-collision-lab/collision-lab_en.html"]},
     "subject": "physics",
@@ -911,7 +911,7 @@
   },
   {
     "name": "States of Matter: Basics",
-    "id": "states-of-matter-basics",
+    "slug": "states-of-matter-basics",
     "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/states-of-matter-basics_en.jar"]},
     "keywords": [
       "",
@@ -928,7 +928,7 @@
   },
   {
     "name": "Forces and Motion: Basics",
-    "id": "forces-and-motions-basics",
+    "slug": "forces-and-motions-basics",
     "type": "apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/forces-and-motion-basics_en.jar"]},
     "subject": "physics",
@@ -946,7 +946,7 @@
   },
   {
     "name": "Wave on a String",
-    "id": "wave-on-a-string",
+    "slug": "wave-on-a-string",
     "type": "apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/wave-on-a-string_en.html"]},
     "subject": "chemistry",
@@ -964,7 +964,7 @@
   },
   {
     "name": "Rutherford Scattering",
-    "id": "rutherfford-scattering",
+    "slug": "rutherfford-scattering",
     "type": "apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/rutherford-scattering_en.jar"]},
     "subject": "physics",
@@ -982,7 +982,7 @@
   },
   {
     "name": "The Ramp",
-    "id": "the-ramp",
+    "slug": "the-ramp",
     "type": "apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/the-ramp_en.jar"]},
     "subject": "physics",
@@ -1004,7 +1004,7 @@
   },
   {
     "name": "Energy stake Park",
-    "id": "energy-skate-park",
+    "slug": "energy-skate-park",
     "type": "apps",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/energy-skate-park_en.jar"]},
     "subject": "physics",
@@ -1022,7 +1022,7 @@
   },
   {
     "name": "Pulleys",
-    "id": "pulleys",
+    "slug": "pulleys",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/applications-bin/pulley/index.html"]},
     "subject": "physics",
     "keywords": [
@@ -1033,7 +1033,7 @@
   },
   {
     "name": "Masses & Springs",
-    "id": "masses-springs",
+    "slug": "masses-springs",
     "type": "apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/physics/phet-mass-spring-lab/mass-spring-lab_en.html"]},
     "subject": "physics",

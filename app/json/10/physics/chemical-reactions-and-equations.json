@@ -1,7 +1,7 @@
 [
     {
         "name": "Balancing Chemical Equations",
-        "id": "balancing-chemical-equations",
+        "slug": "balancing-chemical-equations",
         "type":"apps",
         "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/balancing-chemical-equations_en.html"]},
         "subject": "chemistry",
@@ -13,7 +13,7 @@
     },
     {
         "name": "Reactants, Products and Leftovers",
-        "id": "reactants-products-leftovers",
+        "slug": "reactants-products-leftovers",
         "type":"apps",
         "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/reactants-products-and-leftovers_en.jar"]},
         "subject": "chemistry",
@@ -25,7 +25,7 @@
     },
     {
         "name": "Kalzium",
-        "id": "kalzium",
+        "slug": "kalzium",
         "exec": {"command": "kalzium", "args": []},
         "type":"apps",
         "subject": "chemistry",

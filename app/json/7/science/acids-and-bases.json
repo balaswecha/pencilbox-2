@@ -1,7 +1,7 @@
 [
   {
     "name": "Acid - Base Solutions",
-    "id": "acid-base-solutions",
+    "slug": "acid-base-solutions",
     "type": "apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/acid-base-solutions_en.html"]},
     "exec": {"command": "firefox", "args": ["--new-window", "file:///opt/phet/chemistry/acid-base-solutions_en.html"]},
@@ -20,7 +20,7 @@
   },
   {
     "name": "pH Scale: Basics",
-    "id": "ph-scale-basics",
+    "slug": "ph-scale-basics",
     "type": "apps",
     "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/ph-scale-basics_en.html"]},
     "subject": "chemistry",
@@ -38,7 +38,7 @@
   },
   {
     "name": "Acids Bases and Salts",
-    "id": "acid-base-and-salts",
+    "slug": "acid-base-and-salts",
     "type": "videos",
     "keywords": [
         "",

@@ -1,7 +1,7 @@
 [
 	{
 	    "name": "Substraction",
-	    "id": "substraction",
+	    "slug": "substraction",
 	    "type": "videos",
 	    "keywords": [
 	        "",
@@ -10,7 +10,7 @@
     },
     {
 	    "name": "Associative Law",
-	    "id": "associative-law",
+	    "slug": "associative-law",
 	    "type": "videos",
 	    "keywords": [
 	        "",
@@ -19,7 +19,7 @@
     },
     {
 	    "name": "Addition",
-	    "id": "basic-addition",
+	    "slug": "basic-addition",
 	    "type": "videos",
 	    "keywords": [
 	        "",
@@ -27,7 +27,7 @@
 	    ]
     },{
 	    "name": "Cummutative Law",
-	    "id": "cummutative-law",
+	    "slug": "cummutative-law",
 	    "type": "videos",
 	    "keywords": [
 	        "",
@@ -36,7 +36,7 @@
     },
     {
 	    "name": "Distributive Law",
-	    "id": "distributive-law",
+	    "slug": "distributive-law",
 	    "type": "videos",
 	    "keywords": [
 	        "",
@@ -45,7 +45,7 @@
     },
     {
 	    "name": "Multiplication",
-	    "id": "multiplication",
+	    "slug": "multiplication",
 	    "type": "videos",
 	    "keywords": [
 	        "",
@@ -54,7 +54,7 @@
     },
     {
 	    "name": "Division",
-	    "id": "division",
+	    "slug": "division",
 	    "type": "videos",
 	    "keywords": [
 	        "",

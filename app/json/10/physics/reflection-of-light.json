@@ -1,7 +1,7 @@
 [
     {
         "name": "Bending Light",
-        "id": "bending-light",
+        "slug": "bending-light",
         "exec": {"command": "java", "args":["-jar","/opt/phet/physics/bending-light_en.jar"]},
         "keywords":["",""],
         "type": "apps",

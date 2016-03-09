@@ -1,7 +1,7 @@
 [
 	{
         "name": "Volume",
-        "id": "volume-of-cuboid",
+        "slug": "volume-of-cuboid",
         "type": "videos",
         "keywords": [
             "",
@@ -10,7 +10,7 @@
     },
     {
         "name": "Total and Lateral surface area",
-        "id": "lateral-and-total-surface-area",
+        "slug": "lateral-and-total-surface-area",
         "type": "videos",
         "keywords": [
             "",

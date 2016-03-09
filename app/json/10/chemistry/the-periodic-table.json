@@ -1,7 +1,7 @@
 [
     {
       "name": "Kalzium",
-      "id": "kalzium",
+      "slug": "kalzium",
       "exec": {"command": "kalzium", "args": []},
       "type":"apps",
       "subject": "chemistry",
@@ -9,7 +9,7 @@
     },
     {
         "name": "Build an Atom",
-        "id": "build-an-atom",
+        "slug": "build-an-atom",
         "type":"apps",
         "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/build-an-atom_en.html"]},
         "subject": "chemistry",
@@ -21,7 +21,7 @@
     },
     {
         "name": "Element Builder",
-        "id": "element-builder",
+        "slug": "element-builder",
         "type":"apps",
         "exec": {"command": "firefox", "args":["--new-window","file:///opt/phet/chemistry/ElementBuilder/index.html"]},
         "subject": "chemistry",
@@ -33,7 +33,7 @@
     },
     {
         "name": "Isotopes & Atomic Mass",
-        "id": "isotopes-and-atomic mass",
+        "slug": "isotopes-and-atomic mass",
         "type":"apps",
         "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/isotopes-and-atomic-mass_en.jar"]},
         "subject": "chemistry",

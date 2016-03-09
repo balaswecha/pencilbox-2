@@ -1,7 +1,7 @@
 [
   	{
 	    "name": "K Geography",
-	    "id": "kgeography",
+	    "slug": "kgeography",
 	    "type":"apps",
 	    "exec": {"command": "kgeography", "args": []},
 	    "subject": "social",
@@ -10,7 +10,7 @@
 	},
 	{
         "name": "Reading Map",
-        "id": "reading-maps",
+        "slug": "reading-maps",
         "type": "videos",
         "keywords": [
             "",

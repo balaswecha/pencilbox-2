@@ -1,7 +1,7 @@
 [
   {
     "name": "Blackbody Spectrum",
-    "id": "black-body-spectrum",
+    "slug": "black-body-spectrum",
     "exec": {"command": "java", "args":["-jar","/opt/phet/physics/blackbody-spectrum_en.jar"]},
     "keywords":["",""],
     "type": "apps",

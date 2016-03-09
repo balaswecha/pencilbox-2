@@ -2,42 +2,42 @@
 
     {
         "name": "Nutrition",
-        "id": "nutrition"
+        "slug": "nutrition"
     },
     {
         "name": "Respiration",
-        "id": "respiration"
+        "slug": "respiration"
     },
     {
         "name": "Transportation",
-        "id": "transportation"
+        "slug": "transportation"
     },
     {
         "name": "Excretion",
-        "id": "excretion"
+        "slug": "excretion"
     },
     {
         "name": "Coordination",
-        "id": "coordination"
+        "slug": "coordination"
     },
     {
         "name": "Reproduction",
-        "id": "reproduction"
+        "slug": "reproduction"
     },
     {
         "name": "Coordination in life processes",
-        "id": "coordination-in-life-processes"
+        "slug": "coordination-in-life-processes"
     },
     {
         "name": "Heredity",
-        "id": "heredity"
+        "slug": "heredity"
     },
     {
         "name": "Our environment",
-        "id": "our-environment"
+        "slug": "our-environment"
     },
     {
         "name": "Natural resources",
-        "id": "natural-resources"
+        "slug": "natural-resources"
     }
 ]

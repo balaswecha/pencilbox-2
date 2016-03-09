@@ -1,58 +1,58 @@
 [
     {
         "name": "Heat",
-        "id": "heat"
+        "slug": "heat"
     },
     {
         "name": "Classification of Elements",
-        "id": "classification-of-elements"
+        "slug": "classification-of-elements"
     },
     {
         "name": "The Periodic Table",
-        "id": "the-periodic-table"
+        "slug": "the-periodic-table"
     },
     {
         "name": "Priciples of Metallurgy",
-        "id": "principles-of-metallurgy"
+        "slug": "principles-of-metallurgy"
     },
     {
         "name": "Carbon and it's Compunds",
-        "id": "carbon-and-its-compunds"
+        "slug": "carbon-and-its-compunds"
     },
     {
         "name": "Chemical Reactions & Equations",
-        "id": "chemical-reactions-and-equations"
+        "slug": "chemical-reactions-and-equations"
     },
     {
         "name": "Reflection of Light",
-        "id": "reflection-of-light"
+        "slug": "reflection-of-light"
     },
     {
         "name": "Acids, Bases & Salts",
-        "id": "acids-bases-and-salts"
+        "slug": "acids-bases-and-salts"
     },
     {
         "name": "Refraction of Light at Plane Surfaces",
-        "id": "refraction-of-light-at-plane-surfaces"
+        "slug": "refraction-of-light-at-plane-surfaces"
     },
     {
         "name": "Refraction of Light at Curved Surfaces",
-        "id": "refraction-of-light-at-curved-surfaces"
+        "slug": "refraction-of-light-at-curved-surfaces"
     },
     {
         "name": "Human Eye & World",
-        "id": "human-eye-and-world"
+        "slug": "human-eye-and-world"
     },
     {
         "name": "Structure of Atom",
-        "id": "structure-of-atom"
+        "slug": "structure-of-atom"
     },
     {
         "name": "Electric Current",
-        "id": "electric-current"
+        "slug": "electric-current"
     },
     {
         "name": "Electromagnetism",
-        "id": "electromagnetism"
+        "slug": "electromagnetism"
     }
 ]

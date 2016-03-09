@@ -1,94 +1,94 @@
 [
     {
         "name": "Reading Maps of Different Kinds",
-        "id": "reading-maps-of-different-kinds"
+        "slug": "reading-maps-of-different-kinds"
     },
     {
         "name": "Rain and Rivers",
-        "id": "rain-and-rivers"
+        "slug": "rain-and-rivers"
     },
     {
         "name": "Tanks and Ground Water",
-        "id": "tanks-and-ground-water"
+        "slug": "tanks-and-ground-water"
     },
     {
         "name": "Oceans and Fishing",
-        "id": "oceans-and-fishing"
+        "slug": "oceans-and-fishing"
     },
     {
         "name": "Europe",
-        "id": "europe"
+        "slug": "europe"
     },
     {
         "name": "France - A European Country",
-        "id": "france-a-european-country"
+        "slug": "france-a-european-country"
     },
     {
         "name": "Africa",
-        "id": "africa"
+        "slug": "africa"
     },
     {
         "name": "Nigeria - An African Country",
-        "id": "nigeria-an-african-country"
+        "slug": "nigeria-an-african-country"
     },
     {
         "name": "Handicrafts and Handlooms",
-        "id": "handicrafts-and-handlooms"
+        "slug": "handicrafts-and-handlooms"
     },
     {
         "name": "Industrial Revolution",
-        "id": "industrial-revolution"
+        "slug": "industrial-revolution"
     },
     {
         "name" : "Importance of Transport System",
-        "id" : "importance-of-transport-system"
+        "slug" : "importance-of-transport-system"
     },
     {
         "name" : "New Kings and Kingdoms",
-        "id" : "new-kings-and-kingdoms"
+        "slug" : "new-kings-and-kingdoms"
     },
     {
         "name" : "The Kakatiyas - Emergence of a Regional Kingdom",
-        "id" : "the-kakatiyas-emergence-of-a-regional-kingdom"
+        "slug" : "the-kakatiyas-emergence-of-a-regional-kingdom"
     },
     {
         "name" : "The Kings of Vijayanagara",
-        "id" : "the-kings-of-vijayanagara"
+        "slug" : "the-kings-of-vijayanagara"
     },
     {
         "name" : "Mughal Empire",
-        "id" : "mughal-empire"
+        "slug" : "mughal-empire"
     },
     {
         "name" : "Establishment of British Empire in India",
-        "id" : "establishment-of-british-empire-in-india"
+        "slug" : "establishment-of-british-empire-in-india"
     },
     {
         "name" : "Making of Laws in the State Assembly",
-        "id" : "making-of-laws-in-the-state-assembly"
+        "slug" : "making-of-laws-in-the-state-assembly"
     },
     {
         "name" : "Implementation of Laws in the District",
-        "id" : "implementaion-of-laws-in-the-district"
+        "slug" : "implementaion-of-laws-in-the-district"
     },
     {
         "name" : "Caste Discrimination and the Struggle for Equality",
-        "id" : "caste-discrimination-and-the-struggle-for-equality"
+        "slug" : "caste-discrimination-and-the-struggle-for-equality"
     },
     {
         "name" : "Livelihood and Struggles of Urban Workers",
-        "id" : "livelihood-and-struggles-of-urban-workers"
+        "slug" : "livelihood-and-struggles-of-urban-workers"
     },
     {
         "name" : "Folk Religion",
-        "id" : "folk-religion"
+        "slug" : "folk-religion"
     },
     {
         "name" : "Devotional Paths to the Divine",
-        "id" : "devotional-paths-to-the-divine"
+        "slug" : "devotional-paths-to-the-divine"
     },
     {
         "name" : "Rulers and Buildings",
-        "id" : "rulers-and-buildings"
+        "slug" : "rulers-and-buildings"
     }
 ]

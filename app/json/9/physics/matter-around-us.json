@@ -1,7 +1,7 @@
 [
   {
     "name": "States of Matter: Basics",
-    "id": "states-of-matter-basics",
+    "slug": "states-of-matter-basics",
     "exec": {"command": "java", "args":["-jar","/opt/phet/chemistry/states-of-matter-basics_en.jar"]},
     "keywords":["",""],
     "type": "apps",
