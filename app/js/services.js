@@ -43,9 +43,6 @@ pencilBoxApp.factory('Grades', ['$q', function ($q) {
                                 db.post(gradeDoc);
                                 gradesFromFile.push(gradeDoc);
                             });
-                            gradesFromFile.sort(function(a,b){
-                                return parseInt(a.grade)-parseInt(b.grade);
-                            });
                             callback(gradesFromFile);
                         }else{
                             callback(grades);

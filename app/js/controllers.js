@@ -8,6 +8,9 @@ pencilBoxApp.controller('GradeListController', ['$scope', 'Grades', '$timeout',
     function ($scope, Grades, $timeout) {
         Grades.queryAndKeepUpdated(function(grades) {
             $timeout(function() {
+                grades.sort(function(a,b){
+                    return parseInt(a.grade)-parseInt(b.grade);
+                });
                 $scope.grades = grades;
             }, 0);
         });
