@@ -17,9 +17,18 @@ var ddoc = {
       }.toString()
     }
   }
-}
+};
 
 db.put(ddoc);
+
+db.allDocs({include_docs: true, descending: true}, function (err, doc) {
+    if (err) {
+        populateInitialData();
+    }
+    if(doc.rows.map(function(r) { return r.doc; }).filter(function(r){return typeof r.grade !== 'undefined'}).length<1){
+        populateInitialData();
+    }
+});
 
 pencilBoxApp.factory('Grades', ['$q', function ($q) {
     return {
