@@ -1,5 +1,33 @@
 var pencilBoxApp = angular.module('pencilBoxApp',['ngResource', 'ngRoute', 'dndLists']);
 
+var db = new PouchDB('grades');
+var remoteCouch = 'http://localhost:5984/grades';
+var opts = {live: true};
+var sync = PouchDB.sync('grades', remoteCouch, opts);
+
+// create a design doc
+var ddoc = {
+  _id: '_design/gradeSlug',
+  views: {
+    gradeSlug: {
+      map: function mapFun(doc) {
+        if (doc.grade) {
+          emit(doc.grade);
+        }
+      }.toString()
+    }
+  }
+};
+
+db.info().then(function(data){
+  if(data.doc_count == 0){
+    populateInitialData();
+    window.location.reload();
+  }
+});
+
+db.put(ddoc);
+
 pencilBoxApp.config(['$routeProvider',function($routeProvider){
   "use strict";
 

@@ -1,7 +1,7 @@
 function populateInitialData() {
     var fs = require('fs');
     var dbName = 'grades';
-    var dumpFile = 'app/js/BalaSwechaInitialData.txt';
+    var dumpFile = __dirname + '/js/BalaSwechaInitialData.txt';
 
 
     fs.readFile(dumpFile, 'utf8', function (err, data) {
