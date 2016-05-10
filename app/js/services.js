@@ -48,7 +48,7 @@ pencilBoxApp.factory('Grades', ['$q', function ($q) {
             fetch();
         },
         get: function(slug){
-            slug = +slug;
+            slug = slug.toString();
             return $q(function(resolve, reject) {
                 db.query('gradeSlug', {
                     key: slug,

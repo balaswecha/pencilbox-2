@@ -30,7 +30,7 @@
                             <li ng-repeat="subject in subjects" ng-class="isCurrentSubject(subject.slug) ? 'selected t-center' : 't-center'">
                                 <a href="#/grades/{{current_grade}}/subject/{{subject.slug}}/" class="a-container">
                                     <div class="img-container circle">
-                                        <img src="images/subjects/{{subject.slug}}.png" alt="{{subject.slug}}" class="subject-img circle theme-orange-bg-hover"/>
+                                        <img ng-src="images/subjects/{{subject.slug}}.png" alt="{{subject.slug}}" class="subject-img circle theme-orange-bg-hover"/>
                                     </div>
                                     <div class="subject-name">{{subject.name}}</div>
                                 </a>
@@ -47,7 +47,7 @@
                             <li ng-repeat="chapter in chapters" ng-class="isCurrentChapter(chapter.slug) ? 'selected theme-orange-bg t-left theme-orange-bg-hover' : 't-left theme-orange-bg-hover'">
                                 <a href="#/grades/{{current_grade}}/subject/{{current_subject}}/{{chapter.slug}}/" class="a-container">
                                     <div class="img-container circle">
-                                        <img src="images/topics/grey/g-{{chapter.slug}}.png" alt="{{chapter.slug}}" class="chapter-img"/>
+                                        <img ng-src="images/topics/grey/g-{{chapter.slug}}.png" alt="{{chapter.slug}}" class="chapter-img"/>
                                     </div>
                                     <div class="chapter-name">{{chapter.name}}</div>
                                 </a>
@@ -72,7 +72,7 @@
                                     <li ng-if="isApplication(content.type)" ng-repeat="content in contents" class="item border">
                                         <a href="{content.exec}" class="a-container wrapper">
                                             <div class="img-container">
-                                                <img src="images/subjects/{{content.subject}}.png" alt="biology" class="subject-img">
+                                                <img ng-src="images/subjects/{{content.subject}}.png" alt="biology" class="subject-img">
                                             </div>
                                             <p class="subject-name t-center border-top">{{content.name}}</p>
                                         </a>
@@ -87,7 +87,7 @@
                                     <li ng-if="isVideo(content.type)" ng-repeat="content in contents" class="item border">
                                         <a href="{content.exec}" class="a-container wrapper">
                                             <div class="img-container">
-                                                <img src="images/subjects/{{content.subject}}.png" alt="biology" class="subject-img">
+                                                <img ng-src="images/subjects/{{content.subject}}.png" alt="biology" class="subject-img">
                                             </div>
                                             <p class="subject-name t-center border-top">{{content.name}}</p>
                                         </a>
@@ -102,7 +102,7 @@
                                     <li ng-if="isQuiz(content.type)" ng-repeat="content in contents" class="item border">
                                         <a href="{content.exec}" class="a-container wrapper">
                                             <div class="img-container">
-                                                <img src="images/subjects/{{content.subject}}.png" alt="biology" class="subject-img">
+                                                <img ng-src="images/subjects/{{content.subject}}.png" alt="biology" class="subject-img">
                                             </div>
                                             <p class="subject-name t-center border-top">{{content.name}}</p>
                                         </a>

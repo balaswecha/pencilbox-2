@@ -19,7 +19,7 @@ pencilBoxApp.controller('SubjectListController', ['$scope', '$routeParams', 'Sub
         Subjects.queryAndKeepUpdated($scope.current_grade, function(subjects) {
             $timeout(function() {
                 $scope.subjects = subjects;
-                $scope.current_subject = $scope.subjects[0] ? $scope.subjects[0].id : "";
+                $scope.current_subject = $scope.subjects[0] ? $scope.subjects[0].slug : "";
             }, 0);
         });
 

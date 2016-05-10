@@ -33,7 +33,7 @@
                                 ng-class="isCurrentSubject(subject.slug) ? 'selected t-center' : 't-center'">
                                 <a href="#/grades/{{current_grade}}/subject/{{subject.slug}}/" class="a-container">
                                     <div class="img-container circle">
-                                        <img src="images/subjects/{{subject.slug}}.png" alt="{{subject.name}}"
+                                        <img ng-src="images/subjects/{{subject.slug}}.png" alt="{{subject.name}}"
                                              class="subject-img circle theme-orange-bg-hover"/>
                                     </div>
                                     <div class="subject-name">{{subject.name}}</div>
@@ -53,7 +53,7 @@
                                 <a href="#/grades/{{current_grade}}/subject/{{current_subject}}/{{chapter.slug}}/"
                                    class="a-container">
                                     <div class="img-container circle">
-                                        <img src='images/topics/grey/g-{{chapter.slug}}.png' alt="{{chapter.slug}}"
+                                        <img ng-src='images/topics/grey/g-{{chapter.slug}}.png' alt="{{chapter.slug}}"
                                              class="chapter-img"/>
                                     </div>
                                     <div class="chapter-name">{{chapter.name}}</div>
@@ -124,7 +124,7 @@
                                         ng-click="selectApp(content)">
                                         <a href="" class="a-container wrapper">
                                             <div class="img-container">
-                                                <img src="images/{{content.slug}}.png" alt="app-icon"
+                                                <img ng-src="images/{{content.slug}}.png" alt="app-icon"
                                                      class="subject-img">
                                             </div>
                                             <p class="subject-name t-center border-top">{{content.name}}</p>
@@ -221,7 +221,7 @@
             </header>
             <main class="modal-content app-modal">
                 <button class="launcher" ng-click="invokeCommand(selectedApp.exec)">
-                    <img src="images/{{selectedApp.slug}}.png" alt="app-icon"
+                    <img ng-src="images/{{selectedApp.slug}}.png" alt="app-icon"
                          class="subject-img">
                     <span>Launch App</span>
                 </button>
@@ -234,10 +234,10 @@
                             <h3>Instructions</h3>
                             <p>
                                 <button class="audio-button" ng-click="isPlaying = !isPlaying">
-                                    <img src="/image/audio-pause.svg" ng-show="isPlaying"/>
-                                    <img src="/image/audio-play.svg" ng-show="!isPlaying"/>
+                                    <img src="image/audio-pause.svg" ng-show="isPlaying"/>
+                                    <img src="image/audio-play.svg" ng-show="!isPlaying"/>
                                 </button>
-                                <audio src="{{selectedApp.audio}}" id="player"></audio>
+                                <audio ng-src="{{selectedApp.audio}}" id="player"></audio>
                             </p>
                         </div>
                         <div class="manuals" ng-show="!!(selectedApp.manuals && selectedApp.manuals.length)">
