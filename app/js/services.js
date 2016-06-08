@@ -88,7 +88,7 @@ pencilBoxApp.factory('Chapters', ['Subjects', function (Subjects) {
     };
 }]);
 
-pencilBoxApp.factory('Contents', ['Grades', 'Subjects', 'Chapters', function (Grades, Subjects, Chapters) {
+pencilBoxApp.factory('Contents', ['Grades', 'Subjects', 'Chapters', '$route', function (Grades, Subjects, Chapters, $route) {
     var getCurrentChapter = function(gradeDoc, subject, chapter){
         return gradeDoc.subjects.find(function(s) {
                return s.slug == subject;
@@ -119,6 +119,7 @@ pencilBoxApp.factory('Contents', ['Grades', 'Subjects', 'Chapters', function (Gr
                         return content.type!=="quiz" || content.name!==data.name;
                     });
                     Grades.put(grade);
+                    $route.reload();
                 });
         }
     };
