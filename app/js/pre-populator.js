@@ -13,6 +13,7 @@ function populateInitialData() {
 
         db.load(myDumpedString).then(function () {
             console.log("PouchDB is dumped with initial data successfully");
+            window.location.reload();
         }).catch(function (err) {
             console.log("File was read! But enable to dump to PouchDB:" + dbName + "! \nResolve these errors: " + err);
         });

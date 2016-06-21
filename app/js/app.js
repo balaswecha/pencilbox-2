@@ -22,7 +22,6 @@ var ddoc = {
 db.info().then(function(data){
   if(data.doc_count == 0){
     populateInitialData();
-    $route.reload();
   }
 });
 
