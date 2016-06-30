@@ -94,7 +94,7 @@ pencilBoxApp.controller('ContentListController', ['$scope', '$routeParams', 'Con
             var overlay = new Overlay();
             overlay.setMaskClassName(type);
             if (type === "videos") {
-                var videoName = 'videos/' + content.id + '.mp4';
+                var videoName = 'videos/' + content.slug + '.mp4';
                 innerHTML = "<div id='overlayContent'>" +
                         "<video id='video' controls autoplay src='" + videoName + "' class='video'></video>" +
                         "</div>";

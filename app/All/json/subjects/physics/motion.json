@@ -157,7 +157,7 @@
     },
     {
         "name": "Ramp: Forces and Motion",
-        "id": "ramp-forces-and -motion",
+        "id": "ramp-forces-and-motion",
         "exec": {"command": "java", "args":["-jar","/opt/phet/physics/ramp-forces-and-motion_en.jar"]},
         "keywords":["",""]
     },
