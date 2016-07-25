@@ -50,7 +50,7 @@
 .home-view .header-content .search {
     width: 620px;
     margin: auto;
-    display: block;
+    /*display: block;*/
     padding: 20px;
 }
 

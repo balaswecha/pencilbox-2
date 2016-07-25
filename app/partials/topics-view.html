@@ -1,21 +1,21 @@
 <div class="topics-view view">
     <div class="header-content">
         <div class="logo-header">
-          <a id="link" href="/">
+          <a id="link" href="#/grades">
             <img id="logo" src="images/logo.png" alt="logo">
           </a>
         </div>
         <div ng-repeat="subject in subjects" class="header-icon">
             <a ng-if="isNotCurrentSubject(subject.id)" class="icon"
                style="background-image: url('images/subjects/{{subject.id}}.png')"
-               href="#/subjects/{{subject.id}}{{subject.topics_present ? '/subsections':''}}"></a>
+               href="#/AllAppsView/{{subject.id}}{{subject.topics_present ? '/subsections':''}}"></a>
             <a ng-if="isCurrentSubject(subject.id)" class="icon"
                style="background-color: {{subject.color}};background-image: url('images/subjects/{{subject.id}}.png')"
-               href="#/subjects/{{subject.id}}{{subject.topics_present ? '/subsections':''}}"></a>
+               href="#/AllAppsView/{{subject.id}}{{subject.topics_present ? '/subsections':''}}"></a>
             <a ng-if="isNotCurrentSubject(subject.id)" class="icon-text"
-               href="#/subjects/{{subject.id}}{{subject.topics_present ? '/subsections':''}}">{{subject.name}}</a>
+               href="#/AllAppsView/{{subject.id}}{{subject.topics_present ? '/subsections':''}}">{{subject.name}}</a>
             <a ng-if="isCurrentSubject(subject.id)" class="icon-text" style="color:{{subject.color}}"
-               href="#/subjects/{{subject.id}}{{subject.topics_present ? '/subsections':''}}">{{subject.name}}</a>
+               href="#/AllAppsView/{{subject.id}}{{subject.topics_present ? '/subsections':''}}">{{subject.name}}</a>
         </div>
         <div class="search">
             <input type="text" ng-model="keyword" placeholder="Search app with subject, topic" />
@@ -28,14 +28,14 @@
             <div ng-repeat="topic in topics" class="topics-block">
 
                 <a ng-if="isCurrentTopic(topic.id)" style="background-image: url('images/topics/blue/b-{{topic.id}}.png')"
-                   href="#/subjects/{{current_subject}}/{{topic.id}}" class="topics-block-img"></a>
+                   href="#/AllAppsView/{{current_subject}}/{{topic.id}}" class="topics-block-img"></a>
                 <a ng-if="isNotCurrentTopic(topic.id)" style="background-image: url('images/topics/grey/g-{{topic.id}}.png')"
-                   href="#/subjects/{{current_subject}}/{{topic.id}}" class="topics-block-img"></a>
+                   href="#/AllAppsView/{{current_subject}}/{{topic.id}}" class="topics-block-img"></a>
 
                 <div class="topics-block-text">
-                    <a ng-if="isCurrentTopic(topic.id)" href="#/subjects/{{current_subject}}/{{topic.id}}"
+                    <a ng-if="isCurrentTopic(topic.id)" href="#/AllAppsView/{{current_subject}}/{{topic.id}}"
                        style="color: {{getSubjectColor()}}">{{topic.name}}</a>
-                    <a ng-if="isNotCurrentTopic(topic.id)" href="#/subjects/{{current_subject}}/{{topic.id}}"> {{topic.name}}</a>
+                    <a ng-if="isNotCurrentTopic(topic.id)" href="#/AllAppsView/{{current_subject}}/{{topic.id}}"> {{topic.name}}</a>
                 </div>
 
                 <hr class="lines">

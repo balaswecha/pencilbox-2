@@ -77,6 +77,13 @@ pencilBoxApp.factory('Subjects', ['Grades', function (Grades) {
     };
 }]);
 
+pencilBoxApp.factory('AllSubjects', ['$resource',
+    function($resource){
+        return $resource('json/subjects/:subject/:topic.json', {}, {
+            query: {method:'GET', isArray:true }
+        });
+    }]);
+
 pencilBoxApp.factory('Chapters', ['Subjects', function (Subjects) {
     return {
         queryAndKeepUpdated: function(grade, subject, callback) {

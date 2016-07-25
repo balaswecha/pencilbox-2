@@ -4,6 +4,93 @@
 //     $scope.subjects = Subjects.query();
 //   }]);
 
+// pencilBoxApp.controller('AllAppsViewController',['$scope','$Grades', 'Subjects','$timeout',
+// function($scope, $routeParams, Subjects, $timeout){
+//     console.log('ON ALL APPS VIEW PAGE');
+// }])
+
+pencilBoxApp.controller('AllAppsViewController',['$scope','AllSubjects',
+    function($scope, AllSubjects){
+        $scope.subjects = AllSubjects.query();
+    }]);
+
+pencilBoxApp.controller('SubSectionListController', ['$scope', '$routeParams', 'AllSubjects',
+    function($scope, $routeParams, AllSubjects) {
+        $scope.subjects = AllSubjects.query();
+        $scope.topics = AllSubjects.query({ subject: $routeParams.subjectId });
+        $scope.current_subject = $routeParams.subjectId;
+        $scope.isCurrentSubject = function(subject) {
+            return $scope.current_subject.toLowerCase() === subject.toLowerCase();
+        };
+        $scope.isNotCurrentSubject = function(subject) {
+            return $scope.current_subject.toLowerCase() !== subject.toLowerCase();
+        };
+        $scope.getSubjectColor = function() {
+            for(var index=0; index < $scope.subjects.length; index++){
+                if( $scope.subjects[index].id === $scope.current_subject){
+                    return $scope.subjects[index].color;
+                }
+            }
+        };
+    }]);
+
+
+pencilBoxApp.controller('AppListController', ['$scope', '$routeParams', 'AllSubjects',
+    function($scope, $routeParams, AllSubjects) {
+        $scope.subjects = AllSubjects.query();
+        $scope.apps = AllSubjects.query({ subject: $routeParams.subjectId });
+        $scope.current_subject = $routeParams.subjectId;
+        $scope.invokeCommand = function(command) {
+            CommandApi.invokeCommand(command);
+        };
+        $scope.isCurrentSubject = function(subject) {
+            return $scope.current_subject.toLowerCase() === subject.toLowerCase();
+        };
+        $scope.isNotCurrentSubject = function(subject) {
+            return $scope.current_subject.toLowerCase() !== subject.toLowerCase();
+        };
+        $scope.getSubjectColor = function() {
+            for(var index=0; index < $scope.subjects.length; index++){
+                if( $scope.subjects[index].id === $scope.current_subject){
+                    return $scope.subjects[index].color;
+                }
+            }
+        };
+    }]);
+
+pencilBoxApp.controller('TopicListController', ['$scope', '$routeParams', 'AllSubjects',
+    function($scope, $routeParams, AllSubjects) {
+        $scope.subjects = AllSubjects.query();
+        $scope.topics = AllSubjects.query({ subject: $routeParams.subjectId });
+        $scope.apps = AllSubjects.query({ subject: $routeParams.subjectId, topic: $routeParams.topicId });
+        $scope.current_subject = $routeParams.subjectId;
+        $scope.current_topic = $routeParams.topicId;
+        $scope.isCurrentTopic = function(topic) {
+            return $scope.current_topic.toLowerCase() === topic.toLowerCase();
+        };
+        $scope.isNotCurrentTopic = function(topic) {
+            return $scope.current_topic.toLowerCase() !== topic.toLowerCase();
+        };
+        $scope.isCurrentSubject = function(subject) {
+            return $scope.current_subject.toLowerCase() === subject.toLowerCase();
+        };
+        $scope.isNotCurrentSubject = function(subject) {
+            return $scope.current_subject.toLowerCase() !== subject.toLowerCase();
+        };
+        $scope.getSubjectColor = function() {
+            for(var index=0; index < $scope.subjects.length; index++){
+                if( $scope.subjects[index].id === $scope.current_subject){
+                    return $scope.subjects[index].color;
+                }
+            }
+        };
+        //QtProcess API calling
+        $scope.invokeCommand = function(command) {
+            CommandApi.invokeCommand(command);
+        };
+    }]);
+
+
 pencilBoxApp.controller('GradeListController', ['$scope', 'Grades', '$timeout',
     function ($scope, Grades, $timeout) {
         Grades.queryAndKeepUpdated(function(grades) {
@@ -12,7 +99,6 @@ pencilBoxApp.controller('GradeListController', ['$scope', 'Grades', '$timeout',
             }, 0);
         });
     }]);
-
 pencilBoxApp.controller('SubjectListController', ['$scope', '$routeParams', 'Subjects', '$timeout',
     function ($scope, $routeParams, Subjects, $timeout) {
         $scope.current_grade = $routeParams.gradeId;

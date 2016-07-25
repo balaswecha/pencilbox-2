@@ -66,6 +66,22 @@ pencilBoxApp.config(['$routeProvider',function($routeProvider){
     templateUrl: 'partials/search-results-view.html',
     controller: 'SearchResultController'
   })
+      .when('/AllAppsView', {
+        templateUrl: 'partials/all-apps-view.html',
+        controller: 'AllAppsViewController'
+      })
+      .when('/AllAppsView/:subjectId/subsections', {
+        templateUrl: 'partials/subsections-view.html',
+        controller: 'SubSectionListController'
+      })
+      .when('/AllAppsView/:subjectId', {
+        templateUrl: 'partials/apps-view.html',
+        controller: 'AppListController'
+      })
+      .when('/AllAppsView/:subjectId/:topicId', {
+        templateUrl: 'partials/topics-view.html',
+        controller: 'TopicListController'
+      })
   .otherwise({
     redirectTo: '/grades'
   });
