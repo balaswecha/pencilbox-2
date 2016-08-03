@@ -29,7 +29,11 @@ a.a-container {
 }
 img {
     vertical-align: top;
-    width: 68%;
+    width: 100%;
+}
+.search-submit img {
+    vertical-align: top;
+    width: 59%;
 }
 ul, li {
     list-style-type: none;
