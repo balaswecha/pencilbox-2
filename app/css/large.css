@@ -36,8 +36,8 @@
 .subsection-view .header-content .search button, .apps-view .header-content .search button,
 .topics-view .header-content .search button {
     background-size: 90px 63px;
-    width: 85px;
-    height: 63px;
+    width: 83px;
+    height: 59px;
     background-position: -5px -1px;
     border-radius: 0px 10px 10px 0px;
     margin-left: -10px;
