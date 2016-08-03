@@ -3,7 +3,10 @@ pencilBoxApp.directive('search', function () {
         templateUrl: 'partials/search.html',
         link: function(scope){
             scope.$watch('keyword', function() {
-                scope.url = '#/search/' + (scope.keyword || '');
+                if(scope.keyword!=undefined)
+                    scope.url = '#/search/' + (scope.keyword || '');
+                else
+                    document.getElementsByClassName("search-submit").disabled = true
             })
         }
     };

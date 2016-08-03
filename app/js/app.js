@@ -66,6 +66,10 @@ pencilBoxApp.config(['$routeProvider',function($routeProvider){
     templateUrl: 'partials/search-results-view.html',
     controller: 'SearchResultController'
   })
+      .when('/search/', {
+        templateUrl: 'partials/search-results-view.html',
+        controller: 'SearchResultController'
+      })
       .when('/AllAppsView', {
         templateUrl: 'partials/all-apps-view.html',
         controller: 'AllAppsViewController'
