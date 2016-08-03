@@ -17,10 +17,11 @@
             <a ng-if="isCurrentSubject(subject.id)" class="icon-text" style="color:{{subject.color}}"
                href="#">{{subject.name}}</a>
         </div>
-        <div class="search">
-            <input type="text" ng-model="keyword" placeholder="Search app with subject, topic" />
-            <a href="#/search/{{keyword}}"><button id="search-icon"></button></a>
-        </div>
+        <!--<div class="search">-->
+            <!--<input type="text" ng-model="keyword" placeholder="Search app with subject, topic" />-->
+            <!--<a href="#/search/{{keyword}}"><button id="search-icon"></button></a>-->
+        <!--</div>-->
+        <search></search>
     </div>
     <div class="clearfix"></div>
     <div class="main-content">

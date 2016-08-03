@@ -20,7 +20,7 @@
 .apps-view .header-content .search button {
     display: inline-block;
     float: left;
-    background-image: url("../images/search.png");
+    /*background-image: url("../images/search.png");*/
     border:none;
     background-position: -5px -1px;
     border-radius: 0px 5px 5px 0px;
