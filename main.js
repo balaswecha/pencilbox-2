@@ -12,10 +12,32 @@ let mainWindow;
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 600});
+  var displays = electron.screen.getAllDisplays()[0].workAreaSize;
+
+  // mainWindow = new BrowserWindow({width: 1024, height: 768});
+  mainWindow = new BrowserWindow({width: displays.width, height: displays.height});
 
   // and load the index.html of the app.
-  mainWindow.loadURL('file://' + __dirname + '/app/index.html');
+  if(process.argv[2]=='physics'){
+    mainWindow.loadURL('file://' + __dirname + '/app/index.html#/AllAppsView/physics/subsections');
+  }
+  else if(process.argv[2]=='mathematics'){
+    mainWindow.loadURL('file://' + __dirname + '/app/index.html#/AllAppsView/mathematics');
+  }
+  else if(process.argv[2]=='chemistry'){
+    mainWindow.loadURL('file://' + __dirname + '/app/index.html#/AllAppsView/chemistry');
+  }
+  else if(process.argv[2]=='biology'){
+    mainWindow.loadURL('file://' + __dirname + '/app/index.html#/AllAppsView/biology');
+  }
+  else if(process.argv[2]=='english'){
+    mainWindow.loadURL('file://' + __dirname + '/app/index.html#/AllAppsView/english');
+  }
+  else if(process.argv[2]=='social'){
+    mainWindow.loadURL('file://' + __dirname + '/app/index.html#/AllAppsView/social');
+  }
+  else
+    mainWindow.loadURL('file://' + __dirname + '/app/index.html');
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
