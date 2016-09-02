@@ -2,5 +2,7 @@
 .DS_Store
 videos
 .vagrant
-node_modules
+node_modules/
 pencilbox-2.iml
+deb/dist/
+deb/key.rb
