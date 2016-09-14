@@ -7,7 +7,7 @@ $current_date = `date -I`
 $current_date = $current_date.chomp
 def create_package()
 
-   `curl -v -u#{$key} -H "Content-Type: application/json" -X POST https://api.bintray.com/packages/balaswecha/balaswecha-dev --data '{ \"name\": \"pencilbox\", \"licenses\": [ \"GPL-3.0\" ], \"website_url\":\"https://phet.colorado.edu/en/simulation/pencilbox\", \"vcs_url\":\"https://github.com/phetsims/pencilbox\" }'` 
+   `curl -v -u#{$key} -H "Content-Type: application/json" -X POST https://api.bintray.com/packages/balaswecha/balaswecha-dev --data '{ \"name\": \"pencilbox\", \"licenses\": [ \"GPL-3.0\" ], \"website_url\":\"https://github.com/balaswecha/pencilbox-2\", \"vcs_url\":\"https://github.com/balaswecha/pencilbox-2\" }'` 
 end
 
 def create_version()
