@@ -18,23 +18,17 @@ function createWindow () {
   mainWindow = new BrowserWindow({width: displays.width, height: displays.height});
 
   // and load the index.html of the app.
-  if(process.argv[2]=='physics'){
-    mainWindow.loadURL('file://' + __dirname + '/app/index.html#/AllAppsView/physics/subsections');
+  if(process.argv[2]=='10'){
+    mainWindow.loadURL('file://' + __dirname + '/app/index.html#/grades/10');
   }
-  else if(process.argv[2]=='mathematics'){
-    mainWindow.loadURL('file://' + __dirname + '/app/index.html#/AllAppsView/mathematics');
+  else if(process.argv[2]=='9'){
+    mainWindow.loadURL('file://' + __dirname + '/app/index.html#/grades/9');
   }
-  else if(process.argv[2]=='chemistry'){
-    mainWindow.loadURL('file://' + __dirname + '/app/index.html#/AllAppsView/chemistry');
+  else if(process.argv[2]=='8'){
+    mainWindow.loadURL('file://' + __dirname + '/app/index.html#/grades/8');
   }
-  else if(process.argv[2]=='biology'){
-    mainWindow.loadURL('file://' + __dirname + '/app/index.html#/AllAppsView/biology');
-  }
-  else if(process.argv[2]=='english'){
-    mainWindow.loadURL('file://' + __dirname + '/app/index.html#/AllAppsView/english');
-  }
-  else if(process.argv[2]=='social'){
-    mainWindow.loadURL('file://' + __dirname + '/app/index.html#/AllAppsView/social');
+  else if(process.argv[2]=='7'){
+    mainWindow.loadURL('file://' + __dirname + '/app/index.html#/grades/7');
   }
   else
     mainWindow.loadURL('file://' + __dirname + '/app/index.html');
