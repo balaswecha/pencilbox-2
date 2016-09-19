@@ -48,7 +48,6 @@ def generate_meta_files()
     generate_postinst()
     generate_postrm()
   end
-  puts ".. Done!"
 end
 
 def generate_copyright()
@@ -121,17 +120,22 @@ end
 
 def generate_postinst()
   contents = <<-FILE.gsub(/^ {4}/, '')
-   #!/bin/bash
-   ln -s /usr/lib/balaswecha/pencilbox/lib/pencilbox /usr/bin/pencilbox
+   #!/bin/sh
+   if [ ! -f /usr/bin/pencilbox ]; then
+     ln -s /usr/lib/balaswecha/pencilbox/lib/pencilbox /usr/bin/pencilbox
+   fi
+   exit 0
   FILE
   File.write("postinst", contents)
 end
 
 def generate_postrm()
   contents = <<-FILE.gsub(/^ {4}/, '')
-    #!/bin/bash
-    if [ -f /usr/bin/pencilbox ]; 
+    #!/bin/sh
+    if [ -f /usr/bin/pencilbox ]; then
       rm /usr/bin/pencilbox
+    fi
+    exit 0
   FILE
   File.write("postrm", contents)
 end
@@ -154,6 +158,7 @@ end
 
 def generate_deb
   `debuild -i -us -uc -b`
+  puts ".. Done!"
 end
 
 FileUtils.rm_rf 'dist'
