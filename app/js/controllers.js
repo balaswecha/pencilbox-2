@@ -144,6 +144,7 @@ pencilBoxApp.controller('ContentListController', ['$scope', '$routeParams', 'Con
     function ($scope, $routeParams, Contents, Chapters, Subjects, $location, $timeout, $sce, $q) {
         $scope.current_grade = $routeParams.gradeId;
         $scope.current_subject = $routeParams.subjectId;
+        console.log($scope.current_subject,'.....');
         $scope.current_chapter = $routeParams.chapterId;
         $scope.subjects = [];
         $scope.chapters = [];
@@ -180,7 +181,7 @@ pencilBoxApp.controller('ContentListController', ['$scope', '$routeParams', 'Con
             var overlay = new Overlay();
             overlay.setMaskClassName(type);
             if (type === "videos") {
-                var videoName = 'videos/' + content.slug + '.mp4';
+                var videoName = '/usr/share/balaswecha/videos/'+ $scope.current_subject+'/'+ content.slug + '.mp4';
                 innerHTML = "<div id='overlayContent'>" +
                         "<video id='video' controls autoplay src='" + videoName + "' class='video'></video>" +
                         "</div>";
