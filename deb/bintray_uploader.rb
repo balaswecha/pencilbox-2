@@ -18,7 +18,7 @@ end
 
 def upload_package()
 
-`curl -v -u#{$key} -H "X-Bintray-Debian-Distribution: trusty" -H "X-Bintray-Debian-Component: main" -H "X-Bintray-Debian-Architecture: amd64" -H "publish:1" -X PUT -T pencilbox_1.0-1_amd64.deb https://api.bintray.com/content/balaswecha/balaswecha-dev/pencilbox/1.0-1/pool/main/pencilbox/pencilbox/pencilbox_1.0-1_amd64.deb`
+`curl -v -u#{$key} -H "X-Bintray-Debian-Distribution: trusty,xenial,jessie,stretch" -H "X-Bintray-Debian-Component: main" -H "X-Bintray-Debian-Architecture: amd64" -H "publish:1" -X PUT -T pencilbox_1.0-1_amd64.deb https://api.bintray.com/content/balaswecha/balaswecha-dev/pencilbox/1.0-1/pool/main/pencilbox/pencilbox/pencilbox_1.0-1_amd64.deb`
 
 end
 

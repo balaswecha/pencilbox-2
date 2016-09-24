@@ -97,7 +97,8 @@ def generate_control()
 
     Package: pencilbox
     Architecture: amd64
-    Depends: ${shlibs:Depends}, ${misc:Depends}
+    Depends: ${shlibs:Depends}, ${misc:Depends}, balaswecha-apps
+    Recommends: balaswecha-videos
     Description: Launcher for BalaSwecha simulations
   FILE
   File.write('control', contents)
