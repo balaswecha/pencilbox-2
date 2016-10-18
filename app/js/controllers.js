@@ -249,17 +249,38 @@ pencilBoxApp.controller('ContentListController', ['$scope', '$routeParams', 'Con
             return true;
         };
 
-        $scope.verifyPassword = function ($event) {
-            var password = prompt("Enter the Master Password", '');
-            if (password == null) {
-                $event && $event.preventDefault();
-                return false;
+        $scope.verifyPasswordForUploadFile = function ($event) {
+            if ($event) {
+                $event.preventDefault();
             }
-            if (password !== "admin") {
-                $event && $event.preventDefault();
-                alert("Wrong Master Password");
-                return false;
-            }
+            var options = {
+                title: "Alert",
+                description: "Please enter the master password",
+                className: "master-password",
+                buttons: ["ok", "cancel"],
+                closeHandler: true,
+                callback: function (event) {
+                    if (event.context.inputText === "admin") {
+                        event.context.disposeOverlay();
+                        const remote = require('remote');
+                        var dialog = remote.require('electron').dialog;
+                        var path = dialog.showOpenDialog({ properties:['openFile']});
+                        var data = fs.readFileSync(path[0],'utf8');
+                        $scope.uploadFile(JSON.parse(data));
+                    } else {
+                        var error = document.createElement('p');
+                        error.className = 'error';
+                        error.innerHTML = "Incorrect password";
+                        var container = event.context.input.parentElement.parentElement;
+                        if (!container.querySelector('.error')) {
+                            container.appendChild(error);
+                        }
+                    }
+                },
+                inputCheck: true,
+                placeholder: 'Enter your password'
+            };
+            new CustomDialog($q, options);
             return true;
         };
 

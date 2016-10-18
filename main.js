@@ -1,5 +1,9 @@
 'use strict';
 
+const index = process.argv.indexOf("--subject");
+
+const subject = process.argv[index + 1];
+
 const electron = require('electron');
 // Module to control application life.
 const app = electron.app;
@@ -20,7 +24,6 @@ var shouldQuit = app.makeSingleInstance(function(commandLine, workingDirectory) 
 
 if (shouldQuit) {
   app.quit();
-  return;
 }
 
 function createWindow () {
@@ -31,23 +34,16 @@ function createWindow () {
   mainWindow = new BrowserWindow({width: displays.width, height: displays.height});
 
   // and load the index.html of the app.
-  if(process.argv[2]=='10'){
-    mainWindow.loadURL('file://' + __dirname + '/app/index.html#/grades/10');
-  }
-  else if(process.argv[2]=='9'){
-    mainWindow.loadURL('file://' + __dirname + '/app/index.html#/grades/9');
-  }
-  else if(process.argv[2]=='8'){
-    mainWindow.loadURL('file://' + __dirname + '/app/index.html#/grades/8');
-  }
-  else if(process.argv[2]=='7'){
-    mainWindow.loadURL('file://' + __dirname + '/app/index.html#/grades/7');
-  }
+  if(subject)
+    if(subject == "physics")
+      mainWindow.loadURL('file://' + __dirname + '/app/index.html#/AllAppsView/' + subject + '/subsections');
+    else
+      mainWindow.loadURL('file://' + __dirname + '/app/index.html#/AllAppsView/' + subject );
   else
     mainWindow.loadURL('file://' + __dirname + '/app/index.html');
 
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools();
+//  mainWindow.webContents.openDevTools();
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {

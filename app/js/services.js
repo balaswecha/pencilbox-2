@@ -116,6 +116,7 @@ pencilBoxApp.factory('Contents', ['Grades', 'Subjects', 'Chapters', '$route', fu
                     var chapter = getCurrentChapter(grade, data.subject, data.chapter);
                     chapter.contents.push(data.quiz);
                     Grades.put(grade);
+                    $route.reload();
                 });
         },
         deleteQuiz: function(data) {
